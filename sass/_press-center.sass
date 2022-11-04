@@ -1,0 +1,92 @@
+.press-center
+  padding: 8.2rem 0 8rem
+  &__content
+    display: flex
+    justify-content: space-between
+  &__side
+    width: 19.3%
+  &__body
+    width: 77%
+  &__group
+    .blog
+      &-heading
+        margin-bottom: 3.6rem
+      &-more.btn
+        padding: 0 3.3rem
+      &-slider
+        &-wrapper
+          display: grid
+          grid-template-columns: repeat(3, 1fr)
+          grid-gap: 3.8rem 3.2rem
+        &__item
+          width: 100%
+          min-height: 34rem
+          padding: 3.8rem 4rem 11rem
+          box-shadow: none
+          &.wide
+            grid-column: span 2
+            padding: 3.8rem 4rem 7rem
+            .blog-slider
+              &__label
+                margin-bottom: 2rem
+              &__title
+                width: 55%
+                font-size: 2.6rem
+                font-weight: 600
+                line-height: 1.31
+                margin-bottom: 1.8rem
+              &__description
+                display: block
+                margin-bottom: 2rem
+              &__info
+                right: 4.6rem
+                bottom: 4rem
+          &:not(.wide)
+            .blog-slider
+              &__label
+                margin-bottom: 4.2rem
+              &__title
+                width: 100%
+                font-size: 1.8rem
+                font-weight: 700
+                line-height: 1.44
+                margin-left: 0
+              &__info
+                display: block
+                left: 4rem
+                right: 4rem
+                bottom: 4rem
+              &__left
+                max-width: none
+                margin-bottom: 2.5rem
+                margin-left: 2rem
+        &__description
+          display: none
+          width: 75%
+          font-size: 1.4rem
+          font-weight: 500
+          line-height: 1.86
+          margin-left: .5rem 
+    &:not(:last-child)
+      margin-bottom: 8rem
+  .news
+    padding-bottom: 7.6rem
+    &-heading
+      margin-bottom: 4.2rem
+    &-content
+      &::after
+        content: none
+    &-slider
+      &-wrapper
+        justify-content: space-between
+      &__item
+        width: 33.8rem
+        padding: 4rem 3rem 5.3rem 5.1rem
+        &:not(:last-child)
+          margin-right: 0
+      &__date
+        margin-bottom: 3rem
+      &__title
+        font-size: 1.6rem
+        line-height: 1.62
+        margin-bottom: 2.5rem

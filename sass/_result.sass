@@ -1,0 +1,296 @@
+.result
+  // padding: 10.6rem 0 17.9rem
+  padding: 10.6rem 0 7.9rem
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 69.6rem
+    background: url(../img/result-bg.svg) 50% / contain no-repeat
+    z-index: -1
+  &-title
+    font-weight: 400
+    margin-bottom: 1rem
+    span
+      font-weight: 700
+  &-heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    margin-bottom: 5.2rem
+    #marker
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 25.3rem
+      height: 1rem
+      background: red
+      z-index: 2
+      transition: all .25s
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 1px
+      background: rgba(46, 46, 46, 0.14)
+    &__item
+      display: inline-flex
+      align-items: baseline
+      padding: 2.4rem .5rem
+      font-size: 1.3rem
+      font-weight: 500
+      color: rgba(#000, .3)
+      position: relative
+      cursor: pointer
+      z-index: 1
+      &-text
+        transition: color .25s, text-shadow .25s
+        pointer-events: none
+      span
+        font-size: 3.4rem
+        font-weight: 600
+        line-height: 1
+        transition: color .25s
+        margin-right: 0.5rem
+        pointer-events: none
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: .4rem
+        border-radius: .3rem .3rem 0 0
+        background: #1A89FF
+        opacity: 0
+        transition: opacity .25s
+      &.active
+        span
+          color: #1A89FF
+        .result-heading__item-text
+          text-shadow: 0 0 .1rem rgba(#000, .82)
+          color: rgba(#000, .82)
+        &::after
+          opacity: 1
+      &:hover
+        span
+          color: #1A89FF
+        .result-heading__item-text
+          text-shadow: 0 0 .1rem rgba(#000, .82)
+          color: rgba(#000, .82)
+        &::after
+          opacity: 1
+  &-item
+    display: none
+    justify-content: space-between
+    &.active
+      display: flex
+    &__left
+      width: 29%
+      flex-shrink: 0
+      padding: 2.1rem 0
+    &__right
+      width: 65%
+      flex-shrink: 0
+      background: #fff
+      border-radius: .6rem
+      box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+      position: relative
+      &-bg
+        position: absolute
+        top: 49.5%
+        right: 4rem
+        transform: translateY(-50%)
+        width: 40.3rem
+        height: 56rem
+        object-fit: contain
+    &__consultation
+      &-left
+        .result-item
+          &__title
+            width: 75%
+          &__description
+            margin-bottom: 4.9rem
+          &__group
+            margin-bottom: 4.3rem
+      &-right
+        padding: 7.3rem 43rem 6.1rem 7.5rem
+        .result-item
+          &__title
+            margin-bottom: 4rem
+          &__block
+            width: 90%
+    &__strategy
+      .result-item
+        &__left
+          width: 32%
+          padding: 7.2rem 5.1rem 5.3rem
+          background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+          border-radius: 0.6rem    
+        &__title
+          margin-bottom: 3.9rem
+        &__description
+          width: 100%
+          margin-bottom: 3.8rem
+        &__right
+          display: flex
+          justify-content: space-between
+          align-content: baseline
+          flex-wrap: wrap
+          padding: 7.3rem 6.5rem 6rem
+          &-bg
+            width: 48.7rem
+            height: 48.7rem
+            top: auto
+            bottom: -4.7rem
+            right: -5.3rem
+            transform: none
+        &__block
+          width: 56%
+          &:not(:last-child)
+            margin-bottom: 3.3rem
+          &:nth-of-type(2)
+            width: 40%
+            .result-item__block-description
+              width: 112%
+          &:nth-of-type(3), &:nth-of-type(4)
+            width: 53%
+            margin-right: 40%
+    &__documents
+      align-items: flex-start
+      .result-item
+        &__left
+          width: 56%
+          padding: 5.7rem 6rem 5.3rem 6.5rem
+          background: #fff
+          box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+          border-radius: 0.6rem  
+        &__title
+          width: 75%
+          margin-bottom: 3.9rem
+        &__description
+          width: 100%
+          margin-bottom: 2.5rem
+        &__group
+          display: flex
+          justify-content: space-between
+          margin-bottom: 3rem
+        &__list
+          max-width: 47.5%
+        &__right
+          width: 40.4%
+          display: flex
+          justify-content: space-between
+          flex-wrap: wrap
+          background: none
+          box-shadow: none
+        &__document
+          width: 100%
+          height: 24rem
+          object-fit: cover
+          filter: drop-shadow(0 2.5rem 4rem rgba(0, 0, 0, 0.1)) drop-shadow(0 .5rem 2.75rem rgba(0, 0, 0, 0.15)) drop-shadow(0 .5rem 1.75rem rgba(0, 0, 0, 0.1))
+          margin-bottom: -4.2rem
+          &-block
+            width: 47.5%
+            padding: 2.8rem 4.9rem 0
+            background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+            border-radius: 0.6rem
+            margin-bottom: 8.2rem
+    &__protection
+      .result-item
+        &__left
+          width: 100%
+          padding: 0
+        &__title
+          margin-bottom: 3.3rem
+        &__description
+          width: 68%
+          margin-bottom: 3.8rem
+        &__group
+          padding: 4.5rem 7rem
+          background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+          border-radius: 0.6rem
+          &-title
+            font-size: 2rem
+            margin-bottom: 3.6rem
+        &__block
+          max-width: 33.3%
+          &:not(:last-child)
+            margin-bottom: 4.5rem
+          &-decor
+            margin-top: 0.8rem
+          &-title
+            font-size: 1.3rem
+            line-height: 1.69
+          &-description
+            width: 95%
+
+
+    &__title
+      font-size: 2.2rem
+      font-weight: 500
+      line-height: 1.36
+      margin-bottom: 2.2rem
+      span
+        font-weight: 700
+    &__description
+      width: 93%
+      font-size: 1.4rem
+      line-height: 1.86
+      p
+        &:not(:last-child)
+          margin-bottom: 2.6rem
+    &__group
+      &-title
+        font-size: 1.6rem
+        font-weight: 600
+        line-height: 1.62
+        letter-spacing: .02em
+        color: rgba(0, 0, 0, 0.9)
+        margin-bottom: 2rem
+    &__list
+      width: 90%
+      padding-left: 3rem
+      li
+        font-size: 1.4rem
+        line-height: 1.86
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 1.4rem
+          left: -2.9rem
+          width: 1.6rem
+          height: 1px
+          background: #1A89FF
+    &__block
+      display: flex
+      align-items: flex-start
+      color: rgba(#000, .82)
+      &-wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: -.7rem
+      &:not(:last-child)
+        margin-bottom: 3.1rem
+      &-decor
+        flex-shrink: 0
+        margin-top: .5rem
+        margin-right: 2.2rem
+        svg
+          width: 1.2rem
+          height: auto
+      &-title
+        font-size: 1.6rem
+        font-weight: 600
+        margin-bottom: .8rem
+      &-description
+        font-size: 1.3rem
+        line-height: 1.85

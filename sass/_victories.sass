@@ -1,0 +1,133 @@
+.victories
+  // padding-bottom: 10.4rem
+  padding: 10.5rem 0 10.4rem
+  overflow: hidden
+  &-content
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: -7rem  
+      right: 0
+      bottom: -7rem
+      width: 44.3rem
+      // background: linear-gradient(267.78deg, rgba(251, 251, 251, 0) -8.92%, #FFFFFF -8.91%, rgba(255, 255, 255, 0) 98.05%)
+      background: linear-gradient(267.78deg, rgba(251, 251, 251, 0) -8.92%, #FFFFFF -8.91%, rgba(255, 255, 255, 0) 95.05%)
+      // background: linear-gradient(267.78deg, rgba(251, 251, 251, 0) -8.92%, #FFFFFF -8.91%, rgba(255, 255, 255, 0) 50.05%)
+      pointer-events: none
+      z-index: 1
+    &:hover
+      .victories
+        &-button
+          &-prev, &-next
+            opacity: 1
+            &.swiper-button-disabled
+              opacity: 0
+  &-slider
+    overflow: visible
+    z-index: unset
+    &__item
+      display: flex
+      flex-direction: column
+      flex-shrink: 0
+      width: 44.4rem
+      min-height: 52.4rem
+      // border: .14rem solid #1A89FF
+      position: relative
+      transition: box-shadow .25s, transform .25s
+      border-radius: .6rem
+      &:not(:last-child)
+        margin-right: 3.4rem
+      &:hover
+        box-shadow: 0 .3rem .8rem rgba(#000, .36), 0 .9rem 1.6rem rgba(#000, .18)
+        transform: translateY(-.4rem)
+        // .victories-slider__img
+        //   box-shadow: 0 1.7rem 8rem rgba(0, 0, 0, 0.36), 0 .9rem 1.6rem rgba(0, 0, 0, 0.18)
+    &__img
+      position: relative
+      height: 27.6rem
+      z-index: 1
+      background: linear-gradient(92.91deg, #102E69 3.61%, #183A7A 96.2%, #2E4B91 97.09%)
+      transition: all .25s
+      border-radius: .6rem .6rem 0 0
+      overflow: hidden
+      img
+        +cover
+    &__label.btn
+      position: absolute
+      top: 3rem
+      left: 3rem
+      background: rgba(255, 255, 255, 0.2)
+      font-size: 1.4rem
+      +futura
+      font-weight: 300
+    &__text
+      flex-grow: 1
+      padding: 3.8rem 4.6rem
+      border: .14rem solid #1A89FF
+      border-top: none
+      border-radius: 0 0 .6rem .6rem 
+    &__title
+      font-size: 1.8rem
+      font-weight: 600
+      line-height: 1.56
+      letter-spacing: .02em
+      color: rgba(0, 0, 0, 0.9)
+      margin-bottom: 4rem
+    &__group
+      width: 98.5%
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      &-item
+        display: flex
+        &:not(:nth-child(2n))
+          margin-right: 1.9rem
+      &-circle
+        width: 4.8rem
+        height: 4.8rem
+        border-radius: 50%
+        background: rgba(26, 137, 255, 0.04)
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        margin-right: 1.6rem
+        font-size: 1.3rem
+        span
+          font-size: 2.8rem
+          font-weight: 500
+          color: #1A89FF
+        &-number
+          position: relative
+          left: 50%
+          transform: translateX(-50%)
+          span
+            font-size: 3rem
+      &-title
+        font-size: 2rem
+        font-weight: 600
+      &-subtitle
+        font-size: 1.3rem
+        text-transform: lowercase
+  &-button
+    &-prev, &-next
+      opacity: 0
+      top: 48.5%
+      z-index: 2
+      &.swiper-button-disabled
+        opacity: 0
+    &-prev
+      transform: translateX(-50%)
+    &-next
+      transform: translateX(50%)
+  
+  &.other-victories
+    padding: 0 0 10rem
+    margin-top: -1.5rem
+    .victories
+      &-content
+        &::after
+          // content: none
+      &-slider
+        // overflow: hidden

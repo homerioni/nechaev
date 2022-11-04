@@ -1,0 +1,697 @@
+// $gray: #CECEDA
+
+@mixin cover
+  height: 100%
+  object-fit: cover
+
+.mobile
+  display: none !important
+
+.o-hidden
+  overflow: hidden
+
+.d-none
+  display: none !important
+
+.bxs-group
+  box-shadow: 0 .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+
+.decor
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-shrink: 0
+  width: 4.2rem
+  height: 4.2rem
+  border-radius: 50%
+  background: rgba(26, 137, 255, 0.08)
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    inset: .8rem
+    border: 1px solid rgba(26, 137, 255, 0.2)
+    border-radius: inherit
+    z-index: -1
+  svg, img
+    width: 1.2rem
+    height: auto
+  &.decor-animate
+    background: none
+    &::before
+      // background: rgba(26, 137, 255, 0.08)
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 100%
+      height: 100%
+      border-radius: inherit
+      background: rgba(26, 137, 255, 0.08)
+      transition: background .25s
+      animation: decorPulse 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+      z-index: -1
+
+@keyframes decorPulse
+  0%
+    width: 0
+    height: 0
+    opacity: 0
+
+  75%
+    opacity: 1
+
+  100%
+    width: 120%
+    height: 120%
+    opacity: 0
+
+.page-rubric
+  width: 100%
+  padding: 4.5rem 3rem 4.5rem 3.6rem
+  background: #FBFBFB
+  border-radius: 0.6rem
+  position: sticky
+  top: 15rem
+  left: 0
+  color: rgba(#000, .82)
+  &.w-border
+    border: .14rem solid rgba(26, 137, 255, 0.2)
+    background: #fff
+    .page-rubric__bottom
+      border-color: rgba(26, 137, 255, 0.2)
+  &__title
+    font-size: 1.6rem
+    font-weight: 600
+    margin-bottom: 2.8rem
+  &__list
+    margin-bottom: 3.5rem
+    li
+      font-size: 1.3rem
+      line-height: 2
+      &:not(:last-child)
+        margin-bottom: 1.6rem
+      a
+        transition: color .25s
+        &:hover
+          color: #1A89FF
+        &.active
+          font-weight: 500
+          color: #1A89FF
+  &__bottom
+    padding-top: 3.4rem
+    border-top: 0.8px solid rgba(0, 0, 0, 0.1)
+    .page-rubric__list
+      margin-bottom: 0
+  &__all
+    display: inline-flex
+    align-items: center
+    font-size: 1.2rem
+    font-weight: 500
+    transition: color .25s
+    &:hover
+      color: #1A89FF
+      svg
+        path
+          fill: #1A89FF
+    svg
+      width: 1rem
+      height: auto
+      flex-shrink: 0
+      margin-left: .6rem
+      path
+        transition: fill .25s
+
+.estimate
+  display: flex
+  justify-content: center
+  align-items: center
+  line-height: 1.2
+  color: rgba(0, 0, 0, 0.82)
+  &-title
+    font-size: 2.8rem
+    span
+      font-weight: 700
+  &-btn
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 8.2rem
+    height: 8.2rem
+    border-radius: 50%
+    background: rgba(26, 137, 255, 0.08)
+    position: relative
+    z-index: 1
+    &:not(:last-child)
+      margin-right: 3rem
+    &s
+      display: flex
+      margin: 0 6.2rem
+    &::before
+      content: ''
+      position: absolute
+      inset: 1.2rem
+      border: 1px solid rgba(26, 137, 255, 0.2)
+      border-radius: inherit
+      z-index: -1
+    svg, img
+      width: 2.4rem
+      height: auto
+  &-count
+    font-size: 1.8rem
+    font-weight: 600
+    color: #1A89FF
+
+.btn
+  min-width: 21.4rem
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  height: 4.2rem
+  padding: 0 4.9rem
+  font-size: 1.2rem
+  font-weight: 500
+  line-height: 0
+  color: #519DED
+  border: .12rem solid #519DED
+  border-radius: 3rem
+  transition: all .25s
+  position: relative
+  z-index: 3
+  &:hover
+    color: #286BB2
+    border-color: #286BB2
+  &.consultation-btn
+    min-width: 25.8rem
+    border: none
+    background: #1A89FF
+    // font-size: 1.2rem
+    font-weight: 700
+    color: #fff
+    &:hover
+      background: #fff
+      color: #1A89FF
+    &-b
+      &:hover
+        background: #286BB2
+        color: #fff
+  &.team-btn
+    min-width: auto
+    padding: 0 2.6rem
+    border: none
+    background: rgba(#fff, .1)
+    border-radius: 2rem
+    // font-size: 1.2rem
+    font-weight: 400
+    color: #fff
+    svg
+      width: 1rem
+      height: auto
+      flex-shrink: 0
+      margin-left: .6rem
+      // margin-top: 0.2rem
+      path
+        transition: all .25s
+    &:hover
+      background: #fff
+      color: #000
+      svg
+        path
+          fill: rgba(#000000, .7)
+    &-w
+      font-weight: 500
+      padding: 0 3.4rem
+      border: 1px solid #1A89FF
+      color: rgba(0, 0, 0, 0.82)
+      svg
+        path
+          fill: rgba(0, 0, 0, 0.82)
+      &:hover
+        background: #1A89FF
+        color: #fff
+        svg
+          path
+            fill: #fff
+  &.more-btn
+    min-width: auto
+    padding: 0 3.5rem
+    border-radius: 2rem
+    // font-size: 1.2rem
+    border-color: #1A89FF
+    color: #000
+    svg
+      width: 1.1rem
+      height: auto
+      margin-left: .6rem
+      // margin-top: 0.2rem
+      path
+        transition: all .25s
+    &:hover
+      background: #1a89ff
+      color: #fff
+      svg
+        path
+          stroke: #fff
+      
+.title
+  font-size: 3.4rem
+  font-weight: 700
+  color: rgba(#000, .9rem)
+
+.section-heading
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 6.3rem
+
+.slider
+  &-button
+    &-prev, &-next
+      width: 3.4rem
+      height: 3.4rem
+      border-radius: 50%
+      outline: none
+      margin: 0
+      z-index: 10
+      border: .1rem solid rgba(255, 255, 255, 0.14)
+      transition: all .25s
+      &.other-slider-button
+        width: 4.2rem
+        height: 4.2rem
+        border: none
+        background: #fff
+        box-shadow: 0 0 4rem rgba(0, 0, 0, 0.24), 0 0 1.8rem rgba(0, 0, 0, 0.14)
+        svg
+          width: 1rem
+        &:hover
+          background: #1A89FF
+          svg
+            path
+              fill: #fff
+              stroke: unset
+      &::after
+        content: none
+      svg
+        width: .6rem
+        height: auto
+        path
+          transition: all .25s
+      &:hover
+        background: #fff
+        box-shadow: 0 1.4rem 5rem rgba(255, 255, 255, 0.2), 0 .4rem 2rem rgba(255, 255, 255, 0.16)
+        svg
+          path
+            stroke: #184185
+      // &.swiper-button-disabled
+      //   opacity: 0.5
+    &-prev
+      left: 0
+    &-next
+      right: 0
+  &-pagination.swiper-pagination
+    display: flex
+    width: auto
+    align-items: center
+    bottom: 0
+    .swiper-pagination-bullet
+      width: 2.6rem
+      height: 2.6rem
+      background: none
+      margin: 0 .6rem
+      opacity: 1
+      position: relative
+      outline: none
+      svg
+        width: 2.6rem
+        height: auto
+        opacity: 0
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: .8rem
+        height: 0.8rem
+        border-radius: 50%
+        background: #fff
+        opacity: .2
+        transition: opacity .25s
+      &-active
+        svg
+          opacity: 1
+          stroke-dasharray: 100
+          stroke-dashoffset: 0
+          animation: paginationAnimation 8s linear
+        &::before
+          opacity: 1
+
+@keyframes paginationAnimation
+  from
+    stroke-dashoffset: 100
+  to
+    stroke-dashoffset: 0
+        
+.link
+  display: inline-block
+  font-size: 1.3rem
+  font-weight: 500
+  letter-spacing: .02em
+  color: #fff
+  position: relative
+  padding-right: 3.5rem
+  &::after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    width: 2rem
+    height: 2rem
+    border-radius: 50%
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    background: url(../img/link-arrow.svg) 50% no-repeat
+    background-size: .5rem
+  // &.link-other
+  //   &::before
+  //     width: 1.8rem
+  //     height: 1.8rem
+  //     background: url(../img/link-other.svg) 50% no-repeat
+  //     background-size: contain
+
+.form
+  &-content
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+  label
+    display: inline-flex
+    // flex-direction: column
+    width: 24rem
+    position: relative
+    z-index: 1
+    // margin-bottom: 6.7rem
+    &.wide
+      width: 100%
+    input, textarea
+      width: 100%
+      height: 4.2rem
+      background: rgba(255, 255, 255, 0.06)
+      padding: 0 2.5rem
+      border: 1px solid #1A89FF
+      border-radius: 2rem
+      appearance: none
+      font-size: 1.4rem
+      color: #000
+      position: relative
+      &::placeholder
+        color: rgba(0, 0, 0, 0.5)
+      &.visually-hidden
+        position: absolute
+        width: 1px
+        height: 1px
+        margin: -1px
+        border: 0
+        padding: 0
+        clip: rect(0 0 0 0)
+        overflow: hidden
+    textarea
+      height: 13.2rem
+      padding-top: 2.3rem
+      padding-bottom: 2.3rem
+      resize: none
+      // &::placeholder
+      //   color: #fff
+    span
+      position: absolute
+      top: -3.5rem
+      left: 0
+      display: inline-block
+      font-size: 1.4rem
+      color: rgba(0, 0, 0, 0.82)
+    &.label-checkbox
+      width: auto
+      height: auto
+      background: none
+      padding: 0
+      // flex-direction: row
+      // justify-content: flex-start
+      align-items: center
+      cursor: pointer
+      input:checked ~ span::after
+        content: ''
+      > span
+        position: relative
+        top: 0
+        width: 1.6rem
+        height: 1.6rem
+        flex-shrink: 0
+        border-radius: .2rem
+        background: rgba(26, 137, 255, 0.08)
+        position: relative
+        z-index: 1
+        margin-right: 1.2rem
+        &::after
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          width: .94rem
+          height: .94rem
+          background: url(../img/check.svg) 50% / contain no-repeat
+      .checkbox
+        &-title
+          font-size: 1.2rem
+          color: rgba(0, 0, 0, 0.82)
+          a
+            font-weight: 500
+            color: #70B5FF
+    &.label-file
+      max-width: 12rem
+      width: auto !important
+      margin: auto 0
+      padding-left: 3rem
+      position: relative
+      cursor: pointer
+      span
+        position: static
+        font-weight: 600
+        color: #1A89FF
+        text-decoration: underline
+        &::before
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 0
+          width: 1.8rem
+          height: 2rem
+          background: url(../img/file-icon-2.svg) 50% no-repeat
+          background-size: contain
+  &-privacy
+    margin-top: 3rem
+  &.form-w
+    label
+      input, textarea
+        background: rgba(255, 255, 255, 0.1)
+        backdrop-filter: blur(1rem)
+        font-size: 1.4rem
+        color: #fff
+        &::placeholder
+          color: #fff
+      span
+        font-size: 1.2rem
+        color: #fff
+      &.label-checkbox
+        > span
+          background: rgba(255, 255, 255, 0.1)
+          &::after
+            background: url(../img/check-w.svg) 50% / contain no-repeat
+        .checkbox
+          &-title
+            color: #fff
+
+.path
+  // margin-bottom: 5rem
+  ul
+    display: flex
+    align-items: center
+    font-size: 1.2rem
+    letter-spacing: .02em
+    color: #fff
+    li
+      position: relative
+      &:not(:last-child)
+        margin-right: 2.3rem
+        &::after
+          content: ''
+          position: absolute
+          top: 50%
+          right: -1.5rem
+          transform: translateY(-50%)
+          width: 0.5rem
+          height: 0.8rem
+          background: url(../img/path-arrow.svg) 50% no-repeat
+          background-size: contain
+      &:last-child
+        font-weight: 300
+        opacity: .8
+  &.path-black
+    ul
+      color: #000
+      li
+        &:not(:last-child)
+          &::after
+            background: url(../img/path-arrow-black.svg) 50% no-repeat
+            background-size: contain
+
+.page-pagination
+  display: flex
+  align-items: center
+  margin-top: 4rem
+  color: rgba(#000, .82)
+  &__btn
+    min-width: 11rem
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    height: 3.6rem
+    padding: 0 2rem
+    border: 0.8px solid rgba(26, 137, 255, 0.3)
+    border-radius: .6rem
+    font-size: 1.3rem
+    font-weight: 500
+    &.page-pagination__btn-prev
+      svg
+        transform: rotate(-180deg)
+        margin-left: 0
+        margin-right: .8rem
+    svg
+      width: .7rem
+      height: auto
+      flex-shrink: 0
+      margin-left: .8rem
+  &__list
+    display: flex
+    align-items: center
+    border: 0.8px solid rgba(26, 137, 255, 0.3)
+    border-radius: .6rem
+    margin: 0 2.6rem
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 4.7rem
+    height: 3.6rem
+    font-size: 1.3rem
+    &:not(:last-child)
+      border-right: 0.8px solid rgba(26, 137, 255, 0.3)
+    &.active
+      background: rgba(26, 137, 255, 0.08)
+      font-weight: 600
+    
+
+
+
+
+@media (max-width: 48em)
+  .desktop
+    display: none !important
+
+  .mobile
+    display: block !important
+
+  .btn
+    min-width: auto
+    width: 100%
+    height: 8.4rem
+    padding: 0 4.9rem
+    font-size: 2.2rem
+    border-width: 1px
+    border-radius: 4rem
+    &.team-btn
+      // padding: 0 2.6rem
+      border-radius: 4rem
+      svg
+        width: 2rem
+        margin-left: 1.2rem
+      &-w
+        // padding: 0 3.4rem
+    &.more-btn
+      border-radius: 4rem
+      svg
+        width: 2.2rem
+        margin-left: 2.5rem
+
+  .title
+    font-size: 3.2rem
+
+  .section-heading
+    margin-bottom: 6.4rem
+
+  .link
+    font-size: 2rem
+    padding-right: 6rem
+    &::after
+      width: 4rem
+      height: 4rem
+      background-size: 1rem
+  
+  .slider
+    &-pagination.swiper-pagination
+      .swiper-pagination-bullet
+        width: 5.2rem
+        height: 5.2rem
+        margin: 0 1.2rem
+        svg
+          width: 5.2rem
+        &::before
+          width: 1.6rem
+          height: 1.6rem
+  
+  .form
+    label
+      width: 100%
+      &:not(:last-child)
+        margin-bottom: 4.8rem
+      input
+        height: 8.4rem
+        padding: 0 5rem
+        border-radius: 4rem
+        font-size: 2.8rem
+      span
+        display: none
+      &.label-checkbox
+        align-items: flex-start
+        > span
+          display: block
+          margin-top: 1rem
+          width: 3.2rem
+          height: 3.2rem
+          border-radius: .4rem
+          margin-right: 2.4rem
+          &::after
+            width: 1.88rem
+            height: 1.88rem
+        .checkbox
+          &-title
+            font-size: 1.8rem
+            line-height: 2.22
+    &-privacy
+      margin-top: 4.4rem
+    &.form-w
+      label
+        input
+          font-size: 2.8rem
+        &.label-checkbox
+          > span
+            background: rgba(26, 137, 255, 0.08)
+          .checkbox
+            &-title
+              color: #fff

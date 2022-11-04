@@ -1,0 +1,45 @@
+.atmosphere
+  padding: 10.5rem 0 18rem
+  &-title
+    margin-bottom: 6.3rem
+  &-content
+    position: relative
+  &-slider
+    &__item
+      width: 68.4rem
+      height: 36.9rem
+      border-radius: .6rem
+      overflow: hidden
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+      &:not(:last-child)
+        margin-right: 3.2rem
+  &-button
+    &-prev, &-next
+      transform: translateY(-50%)
+      border-color: rgba(26, 137, 255, 0.14)
+      &:hover
+        background: #1A89FF
+        svg
+          path
+            fill: #fff
+            stroke: #fff
+    &-prev
+      left: -7.5rem
+    &-next
+      right: -7.5rem
+  &-pagination.swiper-pagination
+    bottom: -8rem
+    left: 50%
+    transform: translateX(-50%)
+    .swiper-pagination-bullet
+      svg
+        path
+          stroke: #1A89FF
+      &::before
+        background: #1A89FF
+      &-active
+        svg
+          animation-duration: 8s

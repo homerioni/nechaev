@@ -1,0 +1,78 @@
+.glossary
+  // overflow: hidden
+  &-heading
+    margin-bottom: 4.2rem
+  &-content
+  &-slider
+    overflow: visible
+    // z-index: unset
+    &-wrapper
+      justify-content: space-between
+    &__item
+      width: 33.8rem
+      min-height: 21rem
+      border-radius: .6rem
+      background: #FCFBFB
+      padding: 4rem 3rem 4rem 5.1rem
+      transition: background .25s
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      // &:not(:last-child)
+      //   margin-right: 3.4rem
+      &:hover
+        background: rgba(20, 99, 197, 0.06)
+    &__title
+      font-size: 1.6rem
+      font-weight: 600
+      color: #1A89FF
+      margin-bottom: 1.8rem
+    &__description
+      display: -webkit-box
+      -webkit-line-clamp: 2
+      -webkit-box-orient: vertical
+      overflow: hidden
+      flex-grow: 1
+      font-size: 1.4rem
+      line-height: 1.86
+      color: rgba(0, 0, 0, 0.6)
+      margin-bottom: 2rem
+    &__link
+      margin-top: auto
+      display: inline-flex
+      align-items: center
+      font-size: 1.3rem
+      font-weight: 500
+      color: #1A89FF
+      svg
+        width: 1rem
+        height: auto
+        margin-left: .6rem
+      &:hover
+        text-decoration: underline
+  &.other-glossary
+    margin-bottom: 12rem
+    .glossary
+      &-heading
+        margin-bottom: 6.5rem
+      &-slider
+        &__item
+          width: 44.4rem
+          padding-right: 12rem
+
+.glossary-detail
+  margin-top: 15.15rem
+  padding: 3.5rem 0 5rem
+  .path
+    margin-bottom: 5.1rem
+  &__title
+    line-height: 1.2
+    margin-bottom: 3.1rem
+  &__content
+    font-size: 1.4rem
+    font-weight: 500
+    line-height: 1.86
+    color: rgba(#000, .82)
+    p
+      &:not(:last-child)
+        margin-bottom: 2.7rem

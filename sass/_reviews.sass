@@ -1,0 +1,108 @@
+.reviews
+  margin-bottom: 7rem
+  &-title
+    font-weight: 400
+    margin-bottom: 6.4rem
+    span
+      font-weight: 700
+  &-slider
+    overflow: visible
+    &-wrapper
+      flex-wrap: wrap
+    &__item
+      width: 44.4rem
+      min-height: 23rem
+      height: auto
+      background: #F1F5FB
+      border-radius: .6rem
+      padding: 3.4rem 3.1rem 3.4rem 3.4rem
+      position: relative
+      transition: box-shadow .25s
+      margin-bottom: 3.4rem
+      &:not(:nth-child(3n))
+        margin-right: 3.4rem
+      &:hover
+        box-shadow: 0 3.8rem 8rem rgba(#000, .07), 0 .9rem 1.8rem rgba(#000, .04), 0 .3rem .5rem rgba(#000, .03)
+    &__logo
+      position: absolute
+      top: 4.1rem
+      right: 3.1rem
+      width: 12rem
+    &__title
+      width: 60%
+      font-size: 2rem
+      line-height: 1.5
+      margin-bottom: 4.3rem
+      span
+        display: block
+        font-weight: 600
+    &__info
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &-circle
+        width: 4.8rem
+        height: 4.8rem
+        border-radius: 50%
+        background: rgba(26, 137, 255, 0.08)
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        // margin: 0 2.3rem
+        margin-left: 2.3rem
+      &-number
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        white-space: nowrap
+        font-size: 1.3rem
+        color: rgba(#000, .6)
+        span
+          font-size: 3.4rem
+          font-weight: 600
+          color: rgba(0, 0, 0, 0.9)
+          line-height: 1
+      &-title
+        font-size: 1.4rem
+        margin-bottom: .4rem
+      &-star
+        width: 2rem
+        height: 2rem
+        flex-shrink: 0
+        background: url(../img/star.svg) 50% / contain no-repeat
+        &:not(:last-child)
+          margin-right: .6rem
+        &s
+          display: flex
+          align-items: center
+      &-btn.btn
+        padding: 0 3.1rem
+        background: #E9F0F7
+        color: rgba(0, 0, 0, 0.82)
+        &:hover
+          background: #1a89ff
+          color: #fff
+          svg
+            path
+              fill: #fff
+  &-big
+    width: 82rem
+    height: 100%
+    padding: 4.4rem 3.4rem
+    &__title
+      font-size: 2.8rem
+      font-weight: 600
+      color: rgba(#000, .9)
+      margin-bottom: 2.7rem
+    &__description
+      font-size:  1.3rem
+      font-weight: 500
+      line-height: 1.85
+  
+  &.other-reviews
+    padding-top: 10.5rem
+  
+  &.all-reviews
+    padding-top: 8.3rem
+    margin-bottom: 5.1rem

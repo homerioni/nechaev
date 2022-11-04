@@ -1,0 +1,53 @@
+.publications
+  padding-bottom: 5.5rem
+  &-heading
+    margin-bottom: 3.4rem
+  &-title
+    font-size: 4.2rem
+    margin-bottom: 1.2rem
+  &-subtitle
+    font-size: 1.8rem
+    font-weight: 500
+    color: rgba(0, 0, 0, 0.82)
+  &-content
+    position: relative
+    &:hover
+      .publications
+        &-button
+          &-prev, &-next
+            opacity: 1
+            &.swiper-button-disabled
+              opacity: 0
+  &-slider
+    &__item
+      width: 15.5rem
+      &:not(:last-child)
+        margin-right: 2.95rem
+      &-img
+        width: 100%
+        height: 17rem
+        background: linear-gradient(63deg, #102E69 10.03%, #2E4B91 90.57%)
+        border: .14rem solid #1A89FF
+        border-radius: .6rem
+        margin-bottom: 2.5rem
+        // box-shadow: 0px 9px 39px rgba(0, 0, 0, 0.12), 0px 8.62233px 10.9549px rgba(0, 0, 0, 0.046221)
+        img
+          height: 100%
+          object-fit: cover
+      &-text
+        width: 90%
+        font-size: 1.4rem
+        line-height: 1.57
+        color: rgba(0, 0, 0, 0.9)
+        opacity: 0.7
+  &-button
+    &-prev, &-next
+      opacity: 0
+      top: 33%
+      z-index: 2
+      &.swiper-button-disabled
+        opacity: 0
+    &-prev
+      transform: translate(-50%, -50%)
+    &-next
+      transform: translate(50%, -50%)

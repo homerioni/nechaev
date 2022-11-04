@@ -1,0 +1,49 @@
+.distribution
+  margin-bottom: 10.6rem
+  &-content
+    display: flex
+    justify-content: space-between
+    padding: 4.6rem 6.8rem
+    background: rgba(26, 137, 255, 0.06)
+    border: .14rem solid #1A89FF
+    backdrop-filter: blur(1rem)
+    border-radius: 0.6rem
+    position: relative
+    &__img
+      position: absolute
+      top: 61%
+      right: -10.2rem
+      transform: translateY(-50%)
+      width: 31.6rem
+  &-text
+    width: 29.7%
+    flex-shrink: 0
+    padding: 2.2rem 2rem 2rem 0
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 1px
+      height: 100%
+      background: rgba(#1A89FF, .7)
+  &-title
+    font-size: 2.8rem
+    line-height: 1.36
+    color: rgba(0, 0, 0, 0.82)
+    span
+      font-weight: 700
+  &-form
+    width: 67%
+    flex-shrink: 0
+    padding: 5.2rem 14rem 0 0
+    label
+      &:not(.label-checkbox)
+        margin-right: 1.8rem
+    > label
+      &:nth-child(2)
+        width: 21.8rem
+    &__btn.btn
+      min-width: auto
+      padding: 0 5.5rem

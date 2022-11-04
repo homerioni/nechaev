@@ -1,0 +1,77 @@
+.guarantee
+  padding: 9.7rem 0 19.2rem
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 47.2%
+    height: 100%
+    background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+    z-index: -1
+  &-content
+    display: flex
+    justify-content: space-between
+  &-left
+    width: 42%
+    padding-top: 0.8rem
+  &-title
+    margin-bottom: 3.6rem
+  &-description
+    font-size: 1.4rem
+    line-height: 1.86
+    color: rgba(#000, .82)
+    margin-bottom: 4rem
+  &-subtitle
+    width: 80%
+    font-size: 2.2rem
+    font-weight: 500
+    line-height: 1.64
+    margin-bottom: 6.9rem
+    span
+      font-weight: 700
+  &-block
+    width: 80%
+    display: flex
+    align-items: center
+    .decor
+      margin-right: 2.2rem
+    &__title
+      font-size: 1.3rem
+      font-weight: 500
+      line-height: 1.69
+  &-right
+    width: 46%
+    flex-shrink: 0
+    display: flex
+  &-img
+    width: 26.5rem
+    height: 38.2rem
+    flex-shrink: 0
+    filter: drop-shadow(0 .2rem 2.5rem rgba(0, 0, 0, 0.1))
+    margin-right: 7.3rem
+    img
+      height: 100%
+      object-fit: cover
+  &-risk
+    display: flex
+    color: rgba(#000, .82)
+    margin-top: 4.7rem
+    &__decor
+      width: 1.2rem
+      height: auto
+      flex-shrink: 0
+      margin-top: 0.5rem
+      margin-right: 2.2rem
+    &__title
+      font-size: 1.6rem
+      font-weight: 600
+      margin-bottom: .7rem
+    &__description
+      font-size: 1.4rem
+      line-height: 1.86
+      span
+        font-weight: 600
+        color: rgba(#1A89FF, .82)

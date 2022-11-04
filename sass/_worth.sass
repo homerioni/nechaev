@@ -1,0 +1,83 @@
+.worth
+  height: 68.7rem
+  padding: 10.5rem 0 12.8rem
+  position: relative
+  z-index: 1
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.7) 1.08%, rgba(20, 99, 197, 0.7) 99.1%)
+    backdrop-filter: blur(1rem)
+    // backdrop-filter: blur(.5rem)
+    z-index: -1
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 36.5%
+    height: 100%
+    background: linear-gradient(87.45deg, #183775 1.08%, #1463C5 99.1%), #1D3D81
+    opacity: 0.5
+    z-index: -1
+  &-bg
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: -2
+  &-title
+    color: #fff
+    margin-bottom: 8.5rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-filter
+    width: 23%
+    flex-shrink: 0
+    &__item
+      display: inline-block
+      font-size: 1.5rem
+      color: rgba(#fff, .8)
+      transition: all .25s
+      margin-bottom: 3rem
+      &.active
+        font-size: 2rem
+        font-weight: 600
+        line-height: 1.7
+        color: #fff
+        margin-bottom: 6.8rem
+      &:hover
+        color: #fff
+  &-item
+    display: none
+    &s
+      width: 61.2%
+      flex-shrink: 0
+      margin-top: 1rem
+    &.active
+      display: block
+      align-items: center
+    &__group
+      display: flex
+      align-items: center
+      &:not(:last-child)
+        margin-bottom: 3rem
+    .decor
+      width: 4.8rem
+      height: 4.8rem
+      background: #1A89FF
+      margin-right: 3rem
+      &::before
+        border-color: rgba(255, 255, 255, 0.2)
+    &__description
+      font-size: 1.5rem
+      font-weight: 500
+      line-height: 1.73
+      color: #fff

@@ -1,0 +1,54 @@
+.mission
+  padding: 10.5rem 0 15rem
+  box-shadow: 0 .8rem 6rem rgba(0, 0, 0, 0.3), 0 0 5rem rgba(0, 0, 0, 0.1)
+  background: #fff url(../img/mission-bg.png) 50% no-repeat
+  background-size: cover
+  &-title
+    margin-bottom: 6.5rem
+  &-content
+    display: flex
+    justify-content: space-between
+    color: rgba(0, 0, 0, 0.82)
+  &-block
+    width: 44rem
+    flex-shrink: 0
+    padding: 6.1rem 5.2rem 6.6rem
+    background: #F1F3F7
+    border-radius: 0.6rem
+    border-top-left-radius: 0
+    position: relative
+    &__corner
+      position: absolute
+      bottom: 100%
+      left: 0
+      width: 1.5rem
+    &__title
+      font-size: 1.8rem
+      font-weight: 500
+      line-height: 1.89
+      span
+        font-weight: 700
+    &__img
+      position: absolute
+      left: calc(100% - 4.4rem)
+      top: -6rem
+      width: 33rem
+      &-shadow
+        position: absolute
+        top: calc(100% + 2rem)
+        left: 67%
+        transform: translateX(-50%)
+        width: 32rem
+        pointer-events: none
+  &-text
+    width: 60.6rem
+    flex-shrink: 0
+    &__item
+      display: flex
+      &:not(:last-child)
+        margin-bottom: 4.9rem
+    &__decor
+      margin-right: 1.6rem
+    &__description
+      font-size: 1.4rem
+      line-height: 1.71

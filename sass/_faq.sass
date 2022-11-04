@@ -1,0 +1,91 @@
+.faq
+  padding: 10.5rem 0 10rem
+  box-shadow: 0 .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+  &-title
+    font-weight: 400
+    margin-bottom: 6.5rem
+    span
+      font-weight: 700
+  &-content
+    display: flex
+    justify-content: space-between
+    margin-bottom: 4.6rem
+  &-group
+    width: 48.6%
+    flex-shrink: 0
+  &-item
+    // padding: 3.2rem 2.8rem 3.2rem 4.7rem
+    background: #fff
+    box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    border-radius: 0.6rem
+    color: rgba(#000, .82)
+    &:not(:last-child)
+      margin-bottom: 2.4rem
+    &__heading
+      padding: 3.2rem 2.8rem 3.2rem 4.7rem
+      display: flex
+      justify-content: space-between
+      align-items: center
+      cursor: pointer
+      &.active
+        .faq-item
+          &__title
+            color: rgba(#0E81FB, .82)
+          &__arrow
+            border-color: #1A89FF
+            img
+              opacity: 0
+              &.active
+                opacity: 1
+    &__title
+      max-width: 85%
+      font-size: 1.8rem
+      font-weight: 600
+      line-height: 1.44
+      transition: color .25s
+    &__arrow
+      width: 3.4rem
+      height: 3.4rem
+      border-radius: 50%
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-shrink: 0
+      border: .14rem solid rgba(26, 137, 255, 0.14)
+      position: relative
+      transition: all .25s
+      // cursor: pointer
+      // svg
+      //   width: 1rem
+      //   height: auto
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 1rem
+        transition: opacity .25s
+        &.active
+          opacity: 0
+    &__dropdown
+      display: none
+      margin: 0 8.3rem 0 4.7rem
+      padding: 1.9rem 0 5.5rem
+      font-size: 1.4rem
+      line-height: 1.86
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        height: .8px
+        background: rgba(0, 0, 0, 0.1)
+        opacity: 0.4
+      p
+        &:not(:last-child)
+          margin-bottom: 2.6rem
+  &-btn.btn
+    min-width: auto
+    padding: 0 5.25rem

@@ -1,0 +1,232 @@
+.team
+  margin-bottom: 6.6rem
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 6.3rem
+  &-filter
+    display: flex
+    align-items: center
+    margin-bottom: 6rem
+    &__item
+      height: 4.6rem
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 5rem
+      border-radius: 2.4rem
+      border: 1px solid rgba(#2E2E2E, .14)
+      font-size: 1.2rem
+      font-weight: 600
+      color: rgba(#000, .82)
+      transition: all .25s
+      &:not(:last-child)
+        margin-right: 2.6rem
+      &:hover
+        background: #daecff
+        border-color: #daecff
+        color: #1E1E1E
+      &.active
+        background: #1A89FF
+        text-shadow: 0 0 .1rem #fff
+        border-color: #1A89FF
+        color: #fff
+  &-slider
+    overflow: visible
+    &-wrapper
+      flex-wrap: wrap
+    &__item
+      width: 44.4rem
+      min-height: 40.8rem
+      // background: linear-gradient(99.72deg, #2B4480 6.8%, #4374DF 96.05%)
+      border-radius: .6rem
+      overflow: hidden
+      padding: 4.5rem 4.1rem 4.7rem
+      position: relative
+      z-index: 1
+      margin-bottom: 3.4rem
+      background: #fff
+      transition: box-shadow .25s
+      &:hover
+        box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.1), 0 1rem 5.5rem rgba(0, 0, 0, 0.146387), 0 1rem 3.5rem rgba(0, 0, 0, 0.100323)
+        &::after
+          width: 47%
+        .team-slider
+          &__text
+            color: #000
+          &__experience
+            &-img
+              background: rgba(26, 137, 255, 0.08)
+              &::before
+                border-color: rgba(26, 137, 255, 0.2)
+              svg
+                path
+                  fill: #1A89FF
+                  stroke: #1A89FF
+          &__description
+            li
+              &::before
+                background: #1A89FF
+      &:not(:nth-child(3n))
+        margin-right: 3.4rem
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 100%
+        height: 100%
+        background: linear-gradient(99.72deg, #2B4480 6.8%, #4374DF 96.05%)
+        z-index: -2
+        transition: all .25s
+      // &::before
+      //   content: ''
+      //   position: absolute
+      //   top: 0
+      //   left: 0
+      //   width: 35%
+      //   height: 100%
+      //   z-index: -1
+      &-vacancy
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        &:hover
+          &::after
+            width: 100%
+          .team-slider
+            &__text
+              color: #fff
+        .team-slider
+          &__text
+            display: flex
+            flex-direction: column
+            align-items: center
+          &__name
+            margin-bottom: 5.5rem
+          &__vacancy-btn
+            min-width: 20.4rem
+            border-color: #fff
+            color: #fff
+            &:hover
+              background: #fff
+              color: #1A89FF
+    &__img
+      position: absolute
+      right: 0
+      bottom: 0
+      width: 27.7rem
+      height: 36.9rem
+      z-index: -1
+      img
+        height: 100%
+        object-fit: contain
+        // filter: drop-shadow(0 2.2rem 12.1rem rgba(0, 0, 0, 0.1)) drop-shadow(0 .5rem 2.7rem rgba(0, 0, 0, 0.0289982)) drop-shadow(0 .15rem .8rem rgba(0, 0, 0, 0.0141965))
+    &__text
+      width: 45%
+      color: #fff
+      transition: color .25s
+    &__name
+      font-size: 2.2rem
+      font-weight: 500
+      line-height: 1.36
+      margin-bottom: 2rem
+      span
+        font-weight: 700
+    &__position
+      font-size: 1.4rem
+      font-weight: 500
+      line-height: 1.57
+      margin-bottom: 2rem
+    &__experience
+      display: flex
+      align-items: center
+      margin-bottom: 2rem
+      &-img
+        width: 4.2rem
+        height: 4.2rem
+        border-radius: 50%
+        background: rgba(255, 255, 255, 0.08)
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-shrink: 0
+        margin-right: 1rem
+        position: relative
+        transition: background .25s
+        z-index: 1
+        &::before
+          content: ''
+          position: absolute
+          inset: .8rem
+          border-radius: inherit
+          border: 1px solid rgba(255, 255, 255, 0.2)
+          z-index: -1
+          transition: all .25s
+        svg
+          width: 1.2rem
+          height: auto
+          path
+            transition: all .25s
+      &-text
+        font-size: 1.3rem
+        span
+          font-weight: 600
+    &__description
+      padding-left: 2.7rem
+      li
+        font-size: 1.3rem
+        line-height: 1.69
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 1rem
+          left: -2.7rem
+          width: 1.6rem
+          height: 1px
+          background: #fff
+          transition: background .25s
+  &.other-team
+    margin-bottom: 10.5rem
+    padding: 10rem 0 6.6rem
+    box-shadow: 0 .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+  &.about-team
+    margin-bottom: 0
+  &.page-team
+    padding: 6.8rem 0 0
+    .team
+      &-title
+        margin-bottom: 3.6rem
+  
+.part-team
+  color: #fff
+  margin-bottom: 10rem
+  &__content
+    padding: 9.3rem 7rem 10rem
+    background: linear-gradient(87.45deg, #183775 1.08%, #1463C5 99.1%)
+    border-radius: 0.6rem
+    position: relative
+    overflow: hidden
+  &__img
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 92.6rem
+  &__text
+    width: 43%
+    flex-shrink: 0
+  &__title
+    font-size: 3.2rem
+    color: #fff
+    margin-bottom: 3rem
+  &__description
+    width: 93%
+    font-size: 1.4rem
+    font-weight: 500
+    line-height: 1.86
+    p
+      &:not(:last-child)
+        margin-bottom: 2.6rem

@@ -1,0 +1,172 @@
+.clients
+  min-height: 59rem
+  padding: 6.6rem 0
+  background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+  box-shadow: inset 0 .4rem 6rem rgba(0, 0, 0, 0.06), inset 0 0 5rem rgba(0, 0, 0, 0.1)
+  margin-bottom: 10.4rem
+  &-title
+    position: relative
+    z-index: 1
+    margin-bottom: 8rem
+  &-content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-item
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-shrink: 0
+    width: 9.2rem
+    height: 9.2rem
+    border-radius: 50%
+    background: #fff
+    position: relative
+    z-index: 1
+    animation: clientsAnim linear infinite
+    cursor: pointer
+    &.blue
+      background: #1A89FF
+      &::before
+        content: ''
+        position: absolute
+        inset: 1rem
+        border: 1px solid rgba(255, 255, 255, 0.2)
+        border-radius: inherit
+        z-index: -1
+        pointer-events: none
+      img
+        width: calc(100% - 4rem)
+    &.blue-w
+      background: rgba(26, 137, 255, 0.08)
+      &::before
+        content: ''
+        position: absolute
+        inset: 1rem
+        border: 1px solid #1A89FF
+        border-radius: inherit
+        z-index: -1
+        pointer-events: none
+      img
+        width: calc(100% - 4.5rem)
+    &:nth-child(2)
+      width: 9.6rem
+      height: 9.6rem
+      top: -3rem
+      left: 3rem
+    &:nth-child(3)
+      width: 11.6rem
+      height: 11.6rem
+      top: 6rem
+      left: -1rem
+    &:nth-child(4)
+      width: 9.3rem
+      height: 9.3rem
+      top: -1.5rem
+      left: -2.5rem
+    &:nth-child(5)
+      width: 7.1rem
+      height: 7.1rem
+      top: 9.5rem
+      left: -9rem
+    &:nth-child(6)
+      width: 11.1rem
+      height: 11.1rem
+      top: -.5rem
+      left: -8.5rem
+    &:nth-child(7)
+      width: 12.7rem
+      height: 12.7rem
+      top: 3rem
+      left: -7.5rem
+    &:nth-child(8)
+      width: 11.9rem
+      height: 11.9rem
+      top: -1rem
+      left: -6.5rem
+    &:nth-child(9)
+      width: 10.1rem
+      height: 10.1rem
+      top: 6rem
+      left: -6.5rem
+    &:nth-child(10)
+      width: 10.6rem
+      height: 10.6rem
+      top: -1.5rem
+      left: -6.5rem
+    &:nth-child(11)
+      width: 14.6rem
+      height: 14.6rem
+      top: -1.5rem
+      left: -5.5rem
+    &:nth-child(12)
+      width: 9.8rem
+      height: 9.8rem
+      top: 2.5rem
+      left: -2.5rem
+    &:nth-child(13)
+      width: 15.2rem
+      height: 15.2rem
+      top: -3rem
+    &:nth-child(14)
+      width: 10.5rem
+      height: 10.5rem
+      top: 4.5rem
+      left: -.5rem
+    &:nth-child(15)
+      width: 11.8rem
+      height: 11.8rem
+      top: 4rem
+      left: -.5rem
+    &:nth-child(16)
+      width: 9.6rem
+      height: 9.6rem
+      top: -1rem
+      left: -1rem
+    &:nth-child(17)
+      width: 10.8rem
+      height: 10.8rem
+      top: 3rem
+      left: -2rem
+    // &:nth-child(18)
+    &:nth-child(19)
+      width: 10rem
+      height: 10rem
+      top: 4rem
+      left: -.5rem
+    &:nth-child(20)
+      width: 13rem
+      height: 13rem
+      top: -1.5rem
+      left: -.5rem
+    &:nth-child(21)
+      width: 12.3rem
+      height: 12.3rem
+      top: 1.5rem
+      left: .5rem
+    &:nth-child(22)
+      width: 10.8rem
+      height: 10.8rem
+      top: 1rem
+    img
+      width: calc(100% - 3rem)
+      transition: transform .25s
+    &:hover
+      img
+        transform: scale(.8)
+
+@keyframes clientsAnim
+    0%
+      transform: translate(0, 0)
+    10%
+      transform: translate(2.5rem, .5rem)
+    30%
+      transform: translate(.8rem, 1.5rem)
+    60%
+      transform: translate(-.7rem, -.8rem)
+    80%
+      transform: translate(1.7rem, -2.8rem)
+    90%
+      transform: translate(1rem, 1.8rem)
+    100%
+      transform: translate(0, 0)

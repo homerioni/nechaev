@@ -1,0 +1,144 @@
+.categories
+  margin-bottom: 6rem
+  &-title
+    margin-bottom: 3.6rem
+  &-filter
+    display: flex
+    align-items: center
+    margin-bottom: 6rem
+    &__item
+      height: 4.6rem
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 6.5rem
+      border-radius: 2.4rem
+      border: 1px solid rgba(#2E2E2E, .14)
+      font-size: 1.2rem
+      font-weight: 600
+      color: rgba(#000, .82)
+      transition: all .25s
+      &:not(:last-child)
+        margin-right: 2.6rem
+      &:hover
+        background: #daecff
+        border-color: #daecff
+        color: #1E1E1E
+      &.active
+        background: #1A89FF
+        text-shadow: 0 0 .1rem #fff
+        border-color: #1A89FF
+        color: #fff
+  &-slider
+    overflow: visible
+    margin-bottom: 4.4rem
+    &-wrapper
+      justify-content: space-between
+    &__item
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: flex-start
+      width: 44.4rem
+      min-height: 33.4rem
+      padding: 4.5rem 4rem 4rem
+      background: linear-gradient(92.91deg, #102E69 3.61%, #183A7A 96.2%, #2E4B91 97.09%)
+      border-radius: .6rem
+      position: relative
+      z-index: 1
+      overflow: hidden
+      cursor: pointer
+      // box-shadow: 0 0 0 rgba(0, 0, 0, 0.36), 0 0 0 rgba(0, 0, 0, 0.18)
+      transition: all .25s
+      &:nth-child(2n)
+        background: linear-gradient(99.72deg, #446CD0 6.8%, #1463C5 96.05%)
+      &:nth-child(3n)
+        background: linear-gradient(84.15deg, #457DF3 1.23%, #C4DEFF 98.04%)
+      &:hover
+        transform: translateY(-.4rem)
+        box-shadow: 0 1.7rem 8rem rgba(0, 0, 0, 0.36), 0 0.9rem 1.6rem rgba(0, 0, 0, 0.18)
+    &__bg
+      position: absolute
+      inset: 0
+      z-index: -1
+      +cover
+    &__title
+      width: 50%
+      font-size: 2.2rem
+      line-height: 1.36
+      color: #fff
+      span
+        font-weight: 600
+  &-card
+    width: 44.4rem
+    min-height: 16.6rem
+    display: flex
+    padding: 2.7rem 2.8rem
+    border: .14rem solid #1A89FF
+    border-radius: 0.6rem
+    transition: background .25s, box-shadow .25s, transform .25s
+    margin-bottom: 3.4rem
+    &__img
+      width: 8rem
+      flex-shrink: 0
+      margin-top: 0.5rem
+      margin-right: 2.9rem
+    &__text
+      color: rgba(0, 0, 0, 0.9)
+    &__title
+      width: 70%
+      font-size: 1.9rem
+      font-weight: 600
+      line-height: 1.37
+      letter-spacing: .02em
+      margin-bottom: 1rem
+    &__description
+      font-size: 1.4rem
+      line-height: 1.71
+    &:hover
+      background: #fff
+      box-shadow: 0 3.8rem 8rem rgba(0, 0, 0, 0.07), 0 .9rem 1.8rem rgba(0, 0, 0, 0.0417275), 0 .3rem .5rem rgba(0, 0, 0, 0.0282725)
+      transform: translateY(-.4rem)
+    &:not(:nth-child(3n))
+      margin-right: 3.4rem
+    &s
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: .5rem
+  &-more
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
+
+.other-categories
+  margin-bottom: 6.5rem
+  &__content
+    display: flex
+    flex-wrap: wrap
+    .categories-card
+      min-height: auto
+      align-items: center
+      padding: 1.3rem 2.8rem
+      &__img
+        margin-top: 0
+      &__title
+        margin-bottom: 0
+
+.popular-categories
+  margin-bottom: 8rem
+  position: relative
+  &.popular-categories-bottom
+    margin: -1.5rem 0 10rem
+  &::before
+    content: ''
+    position: absolute
+    bottom: 17.6rem
+    left: 0
+    right: 0
+    height: 72rem
+    background: url(../img/popular-categories-bg.png) 50% no-repeat
+    background-size: cover
+    z-index: -1
+    pointer-events: none
+  &__title
+    margin-bottom: 6.5rem

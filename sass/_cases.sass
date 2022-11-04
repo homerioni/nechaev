@@ -1,0 +1,136 @@
+.cases
+  padding: 8.2rem 0 7.4rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-side
+    width: 19.3%
+  &-body
+    width: 77%
+  .victories
+    padding: 0
+    overflow: visible
+    &-heading
+      margin-bottom: 3.6rem
+    &-content
+      &::after
+        content: none
+    &-slider
+      &-wrapper
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 3.8rem 3.2rem
+      &__item
+        width: 100%
+        min-height: 46.2rem
+        min-height: auto
+        &.wide
+          grid-column: span 2
+          .victories-slider
+            &__title
+              width: 75%
+              margin-bottom: 3.5rem
+            &__group
+              justify-content: flex-start
+        &:not(:last-child)
+          margin-right: 0
+        &:not(.wide)
+          .victories-slider
+            &__title
+              font-size: 1.4rem
+              line-height: 1.71
+              margin-bottom: 2.5rem
+            &__group
+              width: 100%
+              &-item
+                align-items: center
+                &:not(:nth-child(2n))
+                  margin-right: 1rem
+              &-circle
+                width: 4.2rem
+                height: 4.2rem
+                margin-right: 1rem
+                font-size: 1rem
+                span
+                  font-size: 2rem
+                &-number
+                  left: 31%
+                  span
+                    font-size: 2.2rem
+              &-title
+                font-size: 1.4rem
+              &-subtitle
+                font-size: 1.1rem
+      &__img
+        height: 24.4rem
+      &__label
+        left: 4rem
+      &__text
+        padding: 4rem 3rem 3.7rem 3.9rem
+
+.case
+  padding: 13.2rem 0 8rem
+  &-content
+    margin-bottom: 8rem
+    font-size: 1.4rem
+    line-height: 1.86
+    color: rgba(#000, .82)
+    p
+      width: 93%
+      &:not(:last-child)
+        margin-bottom: 2.4rem
+  &-group
+    &:not(:last-child)
+      margin-bottom: 5.5rem
+  &-title
+    margin-bottom: 2rem
+  &-info
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 2.8rem 2.5rem
+    margin-bottom: -.5rem
+    &__item
+      display: flex
+      align-items: center
+      justify-content: space-between
+      padding: 4rem 4rem 4rem 3rem
+      border: .14rem solid #1A89FF
+      border-radius: .6rem
+      &-number
+        width: 12%
+        flex-shrink: 0
+        font-size: 3.6rem
+        font-weight: 600
+        line-height: 1
+        color: #1A89FF
+        text-align: right
+      &-description
+        width: 82%
+        font-size: 1.3rem
+        line-height: 1.85
+        flex-shrink: 0
+  &-result
+    background: #fff
+    padding: 4.8rem 8rem 6.2rem
+    box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    border-radius: 0.6rem
+    &__list
+      counter-reset: num
+      li
+        color: #000
+        position: relative
+        &:not(:last-child)
+          margin-bottom: 1.4rem
+        &::before
+          counter-increment: num
+          content: counter(num) '.'
+          position: absolute
+          left: -3rem
+          top: .6rem
+          width: auto
+          height: auto
+          background: none
+          font-size: 1.4rem
+          font-weight: 600
+          color: #1A89FF
+          line-height: 1

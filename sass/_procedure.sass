@@ -1,0 +1,107 @@
+.procedure
+  margin-bottom: 10rem
+  &-title
+    font-weight: 400
+    margin-bottom: 4.3rem
+    span
+      font-weight: 700
+  &-content
+    padding: 1.5rem 4.8rem 6rem
+    background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+    border-radius: 0.6rem
+  &-heading
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+    margin-bottom: 4.8rem
+    &::after
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 1px
+      background: rgba(46, 46, 46, 0.14)
+    &__item
+      display: inline-flex
+      align-items: baseline
+      padding: 2.9rem .7rem
+      font-size: 1.4rem
+      font-weight: 500
+      color: rgba(#000, .3)
+      position: relative
+      cursor: pointer
+      z-index: 1
+      &-text
+        transition: color .25s, text-shadow .25s
+        pointer-events: none
+      span
+        font-size: 3.4rem
+        font-weight: 600
+        line-height: 1
+        transition: color .25s
+        margin-right: 0.5rem
+        pointer-events: none
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: .4rem
+        border-radius: .3rem .3rem 0 0
+        background: #1A89FF
+        opacity: 0
+        transition: opacity .25s
+      &.active
+        span
+          color: #1A89FF
+        .procedure-heading__item-text
+          text-shadow: 0 0 .1rem rgba(#000, .82)
+          color: rgba(#000, .82)
+        &::after
+          opacity: 1
+      &:hover
+        span
+          color: #1A89FF
+        .procedure-heading__item-text
+          text-shadow: 0 0 .1rem rgba(#000, .82)
+          color: rgba(#000, .82)
+        &::after
+          opacity: 1
+  &-body
+    position: relative
+  &-item
+    min-height: 21.7rem
+    display: none
+    position: relative
+    padding-bottom: 6rem
+    &.active
+      display: block
+    &__title
+      font-size: 1.8rem
+      font-weight: 600
+      color: rgba(0, 0, 0, 0.9)
+      letter-spacing: .02em
+      margin-bottom: 2.3rem
+    &__description
+      width: 95%
+      font-size: 1.4rem
+      line-height: 1.86
+  &-btn
+    position: absolute
+    bottom: 0
+    left: 0
+    &__next
+      position: absolute
+      bottom: 1.3rem
+      right: 1.7rem
+      display: inline-block
+      font-size: 1.3rem
+      font-weight: 500
+      color: #1A89FF
+      svg
+        width: 1rem
+        height: auto
+        margin-left: .3rem

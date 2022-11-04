@@ -1,0 +1,258 @@
+.career
+  margin: 15.15rem 0 0
+  padding: 3.5rem 0 10rem
+  .path
+    margin-bottom: 5.1rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-body
+    width: 77%
+  &-heading
+    margin-bottom: 3.5rem
+  &-title
+    margin-bottom: 1.6rem
+  &-price
+    font-size: 1.3rem
+    font-weight: 600
+    color: rgba(#000, .6)
+    margin-bottom: 3rem
+  &-btn.btn
+    min-width: auto
+    padding: 0 5.7rem
+  &-info
+    margin-bottom: 3.8rem
+    &__group
+      &s
+        min-width: 56.5%
+        display: inline-flex
+        padding-right: 3rem
+        padding-bottom: 3rem
+        border-bottom: 0.8px solid rgba(26, 137, 255, 0.2)
+        margin-bottom: 2.2rem
+      &:not(:last-child)
+        margin-right: 8.4rem
+      &-suptitle
+        font-size: 1.3rem
+        color: rgba(0, 0, 0, 0.4)
+        text-transform: uppercase
+        margin-bottom: .5rem
+      &-title
+        font-size: 1.6rem
+        font-weight: 600
+        color: rgba(0, 0, 0, 0.82)
+    &__experience
+      font-size: 1.4rem
+      font-weight: 500
+      line-height: 1.57
+      color: rgba(0, 0, 0, 0.82)
+  &-block
+    background: #fff
+    box-shadow: 0 3rem 8rem rgba(0, 0, 0, 0.12)
+    border-radius: 0.6rem
+    overflow: hidden
+    margin-bottom: 8.1rem
+    &__heading
+      height: 31rem
+      background: linear-gradient(87.45deg, #183775 1.08%, #1463C5 99.1%), #1D3D81
+    &__text
+      padding: 6.8rem 30rem 7.1rem 6.2rem
+      font-size: 1.4rem
+      font-weight: 500
+      line-height: 1.71
+      color: rgba(0, 0, 0, 0.82)
+      p
+        &:not(:last-child)
+          margin-bottom: 2.7rem
+    &__title
+      margin-bottom: 3.3rem
+    &__list
+      padding-left: 3rem
+      &-group
+        &:not(:last-child)
+          margin-bottom: 2.9rem
+      &-title
+        font-size: 1.6rem
+        font-weight: 600
+        letter-spacing: .02em
+        color: rgba(0, 0, 0, 0.9)
+        margin-bottom: 2rem
+      li
+        font-size: 1.4rem
+        font-weight: 400
+        line-height: 1.86
+        color: #000
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 1.3rem
+          left: -3rem
+          width: 1.6rem
+          height: 1px
+          background: #1A89FF
+    &__bottom
+      padding: 7.6rem 6.2rem 5.7rem
+      background: rgba(26, 137, 255, 0.04)
+      &-item
+        width: 56%
+        display: flex
+        color: rgba(#000, .82)
+        &:not(:last-child)
+          margin-bottom: 3.2rem
+        &-img
+          width: 1.2rem
+          flex-shrink: 0
+          margin-top: .4rem
+          margin-right: 2.2rem
+          svg
+            width: 100%
+            height: auto
+        &-title
+          font-size: 1.6rem
+          font-weight: 600
+          margin-bottom: .7rem
+        &-description
+          font-size: 1.3rem
+          line-height: 1.85
+      &-logo
+        display: inline-block
+        width: 11rem
+        margin-top: 1.1rem
+  &-skills
+    margin-bottom: 4rem
+    &__title
+      font-size: 1.8rem
+      font-weight: 700
+      color: rgba(#000, .82)
+      margin-bottom: 2.7rem
+    &__item
+      min-width: auto
+      padding: 0 3.1rem
+      background: rgba(26, 137, 255, 0.1)
+      border: none
+      color: #1A89FF
+      margin-bottom: 1.8rem
+      &:not(:last-child)
+        margin-right: 1.8rem
+      &s
+        display: flex
+        flex-wrap: wrap
+      &:hover
+        background: #1A89FF
+        color: #fff
+  &-contacts
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    font-size: 1.6rem
+    font-weight: 500
+    letter-spacing: .01em
+    color: rgba(#000, .8)
+    margin-bottom: 7.4rem
+    &__title
+      font-size: 1.8rem
+      font-weight: 700
+      letter-spacing: normal
+      color: rgba(#000, .82)
+      margin-bottom: 2.7rem
+    &__name
+      margin-bottom: 1.1rem
+    &__phone
+      color: #1A89FF
+      margin-bottom: 1.1rem
+
+
+  &-side
+    width: 19.3%
+    padding-top: 3rem
+    &__social
+      padding: 4.2rem 3.6rem 4.6rem
+      background: rgba(26, 137, 255, 0.06)
+      backdrop-filter: blur(1rem)
+      border-radius: 0.6rem
+      &:not(:last-child)
+        margin-bottom: 3.6rem
+      &-title
+        font-size: 1.5rem
+        font-weight: 600
+        line-height: 1.2
+        margin-bottom: 2.7rem
+      &-item
+        &s
+          display: flex
+          margin-left: .8rem
+        &:not(:last-child)
+          margin-right: 2.4rem
+        &:hover
+          .career-side__social
+            &-img
+              border-color: rgba(255, 255, 255, 0.2)
+              background: #1A89FF
+              &::after
+                background: #1A89FF
+              img
+                opacity: 0
+                &.social-item__hover
+                  opacity: 1
+      &-img
+        width: 2.8rem
+        height: 2.8rem
+        border-radius: 50%
+        border: 1px solid rgba(26, 137, 255, 0.2)
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        flex-shrink: 0
+        transition: all .25s
+        &::after
+          content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          width: 100%
+          height: 100%
+          border-radius: inherit
+          background: rgba(26, 137, 255, 0.08)
+          transition: background .25s
+          animation: blogPulse 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+          z-index: -1
+        img
+          width: 1.2rem
+          transition: opacity .25s
+          transition: all .25s
+          &.social-item__hover
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0
+    &__vacancies
+      position: sticky
+      top: 15rem
+      right: 0
+      background: #fff
+      padding: 4.5rem 3rem 4.5rem 3.6rem
+      border-radius: 0.6rem
+      border: .14rem solid rgba(26, 137, 255, 0.2)
+      color: rgba(#000, .82)
+      &-title
+        font-size: 1.4rem
+        font-weight: 600
+        margin-bottom: 3rem
+      &-item
+        display: inline-block
+        &:not(:last-child)
+          margin-bottom: 1.8rem
+        &s
+          margin-bottom: 3.5rem
+        &-title
+          font-size: 1.3rem
+          font-weight: 500
+          color: #1A89FF
+          margin-bottom: 1.2rem
+        &-description
+          font-size: 1.3rem
+          line-height: 1.54

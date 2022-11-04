@@ -1,0 +1,79 @@
+.documents
+  margin-bottom: 10rem
+  &-title
+    font-weight: 400
+    margin-bottom: 3.6rem
+    span
+      font-weight: 700
+  &-filter
+    display: flex
+    align-items: center
+    margin-bottom: 6rem
+    &__item
+      height: 4.6rem
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 0 5.5rem
+      border-radius: 2.4rem
+      border: 1px solid rgba(#2E2E2E, .14)
+      font-size: 1.2rem
+      font-weight: 600
+      color: rgba(#000, .82)
+      transition: all .25s
+      &:not(:last-child)
+        margin-right: 2.6rem
+      &:hover
+        background: #daecff
+        border-color: #daecff
+        color: #1E1E1E
+      &.active
+        background: #1A89FF
+        text-shadow: 0 0 .1rem #fff
+        border-color: #1A89FF
+        color: #fff
+  &-content
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 3rem 3.4rem
+  &-item
+    // width: 31.7%
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 2.6rem 3.1rem 2.6rem 2.6rem
+    background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+    border-radius: 0.6rem
+    &__icon
+      width: 5.1rem
+      height: 5.1rem
+      border-radius: 50%
+      background: rgba(26, 137, 255, 0.1)
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-shrink: 0
+      margin-right: 2.2rem
+      img
+        width: 2.1rem
+    &__title
+      font-size: 1.4rem
+      font-weight: 600
+      line-height: 1.86
+      color: rgba(#000, .82)
+      margin-right: auto
+    &__download
+      display: flex
+      flex-direction: column
+      align-items: center
+      font-size: 1.3rem
+      font-weight: 600
+      line-height: 1
+      color: #1A89FF
+      text-transform: uppercase
+      margin-left: 2rem
+      &-icon
+        width: 1.5rem
+        margin-bottom: 1rem

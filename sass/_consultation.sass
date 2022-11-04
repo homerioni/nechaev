@@ -1,0 +1,176 @@
+.consultation
+  position: relative
+  z-index: 1
+  padding: 11rem 0 10.3rem
+  margin-bottom: 10.5rem
+  &-bg
+    position: absolute
+    inset: 0
+    +cover
+    z-index: -1
+    pointer-events: none
+  &-content
+    color: #fff
+    display: flex
+    justify-content: space-between
+  &-text
+    width: 55%
+  &-title
+    line-height: 1.47
+    color: #fff
+    margin-bottom: 7.7rem
+  &-description
+    width: 90%
+    margin-bottom: 10.8rem
+    &__item
+      display: inline-flex
+      align-items: center
+      &:hover
+        .consultation-description__number
+          background: #1A89FF
+          box-shadow: 0 1.1rem 5rem rgba(255, 255, 255, 0.2), 0 .4rem 2rem rgba(255, 255, 255, 0.16)
+      &:not(:last-child)
+        margin-bottom: 2.2rem
+    &__number
+      width: 4.8rem
+      height: 4.8rem
+      border-radius: 50%
+      background: rgba(255, 255, 255, 0.04)
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-shrink: 0
+      margin-right: 1.8rem
+      font-size: 1.6rem
+      font-weight: 600
+      transition: all .25s
+    &__text
+      font-size: 1.4rem
+      text-transform: lowercase
+      span
+        display: block
+        font-size: 1.6rem
+        font-weight: 600
+        margin-bottom: 0.5rem
+        text-transform: none
+  &-form
+    label
+      width: 22.2rem
+      margin-right: 1.8rem
+      &.label-checkbox
+        margin-right: 0
+    &__btn.btn
+      min-width: auto
+      padding: 0 4.2rem
+    .form-privacy
+      margin-top: 2.3rem
+  &-author
+    width: 29.4rem
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    margin: 15.4rem -14rem 0 0
+    &__photo
+      position: absolute
+      bottom: 0
+      right: 20.5rem
+      width: 74.8rem
+      z-index: -1
+    &__name
+      margin-right: auto
+      font-size: 2.6rem
+      font-weight: 500
+      line-height: 1.23
+      color: #fff
+      margin-bottom: 2.5rem
+    &__position
+      width: 21.5rem
+      font-size: 1.3rem
+      font-weight: 500
+      line-height: 1.86
+      color: #fff
+      margin-bottom: 5.4rem
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 1.2rem
+        left: -3rem
+        width: 1.6rem
+        height: 1px
+        background: #fff
+
+.consultation-banner
+  padding: 0 0 10rem
+  margin-bottom: 0
+  &-about
+    box-shadow: 0 .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+    .consultation-content
+      display: inline-block
+      margin-top: -10.8rem
+  .consultation
+    &-content
+      border-radius: 3rem
+      position: relative
+      box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.1), 0 1rem 5.5rem rgba(0, 0, 0, 0.146387), 0 1rem 3.5rem rgba(0, 0, 0, 0.100323)
+      overflow: hidden
+    &-text
+      width: 65%
+      padding: 7.6rem 7rem 7.8rem
+    &-title
+      font-size: 3rem
+      margin-bottom: 7.4rem
+    &-form
+      .form
+        &-content
+          justify-content: space-between
+        &-privacy
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin-top: 2.7rem
+      label
+        margin-right: 0
+        &:not(.label-checkbox)
+          width: 31.7%
+        &.wide
+          width: 100%
+          margin-top: 5.5rem
+        &.label-checkbox
+          width: auto
+          max-width: 59%
+          .checkbox-title
+            line-height: 1.83
+    &-author
+      width: auto
+      position: absolute
+      bottom: 0
+      right: 1rem
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+      &__photo
+        position: static
+        width: 51.4rem
+      &__text
+        width: 21.5rem
+        transform: translate(-17.2rem, 11.7rem)
+      &__position
+        width: 64%
+        margin-left: auto
+  &-contacts
+    .consultation-content
+      display: inline-block
+      margin-top: -29rem
+  &-w-bg
+    z-index: unset
+    &::before
+      content: ''
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 108.6rem
+      background: url(../img/banner-decor-big.png) 50% no-repeat
+      background-size: cover
+      z-index: -1

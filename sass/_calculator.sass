@@ -1,0 +1,133 @@
+.calculator
+  padding: 10rem 0
+  // margin-bottom: 10rem
+  &-content
+    display: flex
+    justify-content: space-between
+    background: #fff
+    border-radius: 3rem
+    overflow: hidden
+    box-shadow: 0 .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+  &-img
+    width: 36.2%
+    // height: 100%
+    flex-shrink: 0
+    img
+      height: 100%
+      object-fit: cover
+  &-text
+    width: 55.5%
+    min-height: 64.6rem
+    padding: 5.7rem 13.3rem 11.1rem 0
+    flex-shrink: 0
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      bottom: 11.2rem
+      left: 0
+      width: 85.5%
+      height: 1px
+      background: rgba(0, 0, 0, 0.1)
+      opacity: .4
+  &-title
+    font-size: 3.4rem
+    font-weight: 700
+    line-height: 1.47
+    color: rgba(#000, .9)
+    margin-bottom: 3rem
+  &-heading
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 3.2rem
+  &-steps
+    position: relative
+    font-size: 1.4rem
+    color: rgba(#000, .6)
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0.7rem
+      width: 4.8rem
+      height: 4.8rem
+      border-radius: 50%
+      background: rgba(26, 137, 255, 0.08)
+      z-index: -1
+    span
+      font-size: 4.2rem
+      font-weight: 600
+      color: #1A89FF
+  &-progress
+    width: 53rem
+    height: 1.6rem
+    padding: 0.5rem
+    background: rgba(26, 137, 255, 0.1)
+    border-radius: 1rem
+    margin-top: 1.5rem
+    span
+      display: block
+      width: 20%
+      height: 100%
+      border-radius: inherit
+      background: #1A89FF
+      transition: width .25s linear
+  &-item
+    min-height: 26.6rem
+    display: none
+    flex-direction: column
+    padding-bottom: 3.8rem
+    &.active
+      display: flex
+    &__title
+      font-size: 1.8rem
+      font-weight: 600
+      color: rgba(#000, .82)
+      margin-bottom: 4.4rem
+    &__block
+      width: 40%
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      margin-bottom: 2rem
+    label.label-checkbox
+      margin-right: 1rem
+      margin-bottom: 2.6rem
+      span
+        width: 2.4rem
+        height: 2.4rem
+        border: .2rem solid #1A89FF
+        background: none
+        &::after
+          width: 1.2rem
+          height: 1.2rem
+      .checkbox-title
+        font-size: 1.4rem
+    &__back
+      margin-right: 2rem
+    &__btn
+      &s
+        margin-top: auto
+      &.btn
+        min-width: 21rem
+        padding: 0
+        svg
+          width: 1rem
+          flex-shrink: 0
+          height: auto
+          margin-right: .6rem
+    &__back
+      // color: rgba(0, 0, 0, 0.82)
+      // border-color: #1A89FF
+    &__next
+      svg
+        margin: 0
+        margin-left: 0.6rem
+  &-small
+    position: absolute
+    bottom: 5.6rem
+    left: 0
+    font-size: 1.4rem
+    color: rgba(#000, .82)

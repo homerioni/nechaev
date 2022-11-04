@@ -1,0 +1,112 @@
+.about
+  padding: 6rem 0 20.8rem
+  &-content
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 3.4rem 2.6rem
+  &-item
+    padding: 4rem 6rem 4rem 4.6rem
+    background: linear-gradient(92.35deg, #102E69 2.95%, #183A7A 111.96%, #2E4B91 113.01%)
+    border-radius: 0.6rem
+    // box-shadow: 0 1.7rem 8rem rgba(0, 0, 0, 0.36), 0 1px 1.6rem rgba(0, 0, 0, 0.18)
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.24), 0 0 1.8rem rgba(0, 0, 0, 0.14)
+    transition: transform .25s
+    &:hover
+      transform: translateY(-0.4rem)
+    &:not(.white)
+      color: #fff
+      .decor
+        background: rgba(255, 255, 255, 0.08)
+        &::before
+          border-color: rgba(255, 255, 255, 0.4)
+    &:first-child
+      // box-shadow: 0 1.7rem 8rem rgba(0, 0, 0, 0.36), 0 1px 1.6rem rgba(0, 0, 0, 0.18)
+    &:nth-child(2)
+      background: linear-gradient(90deg, #163877 -2.42%, #436CD0 103.33%)
+    &:nth-child(3)
+      background: linear-gradient(99.72deg, #446CD0 6.8%, #1463C5 96.05%)
+    &:nth-child(4)
+      background: linear-gradient(84.15deg, #1E65C7 1.23%, #89BDFF 98.04%)
+    &.white
+      background: #fff
+      box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    &__heading
+      display: flex
+      align-items: center
+      margin-bottom: 1.9rem
+      .decor
+        margin-right: 1.4rem
+    &__title
+      font-size: 2.6rem
+      +futura
+    &__description
+      font-size: 1.4rem
+      font-weight: 500
+      line-height: 1.57
+  &-body
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &-title
+    line-height: 2
+    margin-bottom: 1.2rem
+  &-text
+    width: 45%
+    font-size: 1.4rem
+    line-height: 1.86
+    color: rgba(#000, .82)
+    p
+      &:not(:last-child)
+        margin-bottom: 3rem
+  &-group
+    &:not(:last-child)
+      margin-bottom: 2.8rem
+  &-list
+    padding-left: 3rem
+    &__title
+      font-size: 1.6rem
+      font-weight: 600
+      line-height: 1.62
+      letter-spacing: .02em
+      color: rgba(0, 0, 0, 0.9)
+      margin-bottom: 2.2rem
+    li
+      font-size: 1.4rem
+      line-height: 1.86
+      color: #000
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 50%
+        left: -3rem
+        width: 1.6rem
+        height: 1px
+        background: #1A89FF
+  &-bottom
+    width: 100%
+    display: flex
+    justify-content: space-between
+    margin-top: 10rem
+    .about
+      &-text
+        width: 49%
+      &-title
+        font-weight: 400
+        line-height: 1.47
+        margin-bottom: 3.8rem
+        span
+          display: block
+          font-weight: 700
+  &-img
+    width: 42.6%
+    height: 100%
+    img
+      height: 100%
+      object-fit: cover
+  &.other-about
+    padding: 0 0 10rem
+    .about
+      &-content
+        width: 49%
+        grid-template-columns: repeat(2, 1fr)

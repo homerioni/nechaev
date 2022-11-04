@@ -1,0 +1,126 @@
+.geography
+  // padding: 10.5rem 0 1.6rem
+  padding: 10.5rem 0 2.4rem
+  box-shadow: 0 -.4rem 6rem rgba(0, 0, 0, 0.2), 0 0 5rem rgba(0, 0, 0, 0.1)
+  &-heading
+    width: 40%
+  &-title
+    margin-bottom: 2.5rem
+  &-description
+    font-size: 1.4rem
+    line-height: 1.86
+    color: rgba(#000, .82)
+  &-content
+    display: flex
+    justify-content: flex-end
+    margin-top: -9rem
+    // margin-right: 1.5rem
+    margin-right: 5.3rem
+    position: relative
+  &-map
+    // width: 137.2rem
+    // height: 71.7rem
+    width: 133.5rem
+    height: 70.9rem
+    position: relative
+    .spot
+      display: flex
+      width: 1.8rem
+      height: 1.8rem
+      border-radius: 50%
+      // background: #1A89FF
+      background: #fff
+      // border: .5rem solid #fff
+      box-shadow: 0 -4.7rem 20rem rgba(0, 0, 0, 0.29), 0 -.8rem 16.5rem rgba(0, 0, 0, 0.22), 0 .9rem 12rem rgba(0, 0, 0, 0.19), 0px 1.5rem 7.9rem rgba(0, 0, 0, 0.17), 0 1.4rem 4.4rem rgba(0, 0, 0, 0.15), 0px .9rem 1.8rem rgba(0, 0, 0, 0.11)
+      position: absolute
+      z-index: 1
+      &::before
+        content: ''
+        position: absolute
+        inset: .5rem
+        border-radius: inherit
+        background: #1A89FF
+        z-index: -1
+      &::after
+        content: ''
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 100%
+        height: 100%
+        border-radius: inherit
+        background: rgba(255, 255, 255, 0.14)
+        z-index: -2
+        animation: mapSpotAnimate 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+      &-1
+        top: 28.4rem
+        left: 36.2rem
+      &-2
+        top: 39.7rem
+        left: 27.8rem
+      &-3
+        top: 35.5rem
+        left: 43.8rem
+      &-4
+        top: 45.5rem
+        left: 46.4rem
+      &-5
+        top: 35.9rem
+        left: 62rem
+      &-6
+        top: 54rem
+        left: 73.1rem
+      &-7
+        top: 44.5rem
+        left: 83.6rem
+      &-8
+        top: 52.5rem
+        left: 90.5rem
+      &-9
+        top: 33.5rem
+        left: 94.3rem
+      &-10
+        top: 33rem
+        left: 108.7rem
+      &-11
+        top: 49.4rem
+        left: 114.8rem
+  &-info
+    position: absolute
+    // bottom: 10.8rem
+    bottom: 10rem
+    left: 0
+    z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: -.5rem
+      width: 4.8rem
+      height: 4.8rem
+      border-radius: 50%
+      background: rgba(26, 137, 255, 0.08)
+      z-index: -1
+    &__number
+      font-size: 3.4rem
+      font-weight: 600
+      line-height: 1
+      color: #1A89FF
+    &__title
+      font-size: 1.3rem
+      color: rgba(#000, .6)
+
+@keyframes mapSpotAnimate
+  0%
+    width: 0
+    height: 0
+    opacity: 0
+
+  75%
+    opacity: 1
+
+  100%
+    width: 280%
+    height: 280%
+    opacity: 0

@@ -1,0 +1,64 @@
+.mass-media
+  padding-bottom: 10rem
+  overflow: hidden
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%) matrix(-1, 0, 0, 1, 0, 0)
+    width: 26.2rem
+    // height: 22.5rem
+    height: 32rem
+    background: linear-gradient(269.77deg, #FBFBFB 0.19%, #FFFFFF 0.2%, rgba(255, 255, 255, 0.16) 27.17%, rgba(255, 255, 255, 0) 99.79%), linear-gradient(269.77deg, #FBFBFB 0.19%, #FFFFFF 0.2%, rgba(255, 255, 255, 0.16) 66.59%, rgba(255, 255, 255, 0) 99.79%)
+    z-index: 2
+    pointer-events: none
+  &::after
+    content: ''
+    position: absolute
+    top: 50%
+    right: 0
+    transform: translateY(-50%)
+    width: 26.2rem
+    height: 22.5rem
+    background: linear-gradient(269.77deg, #FBFBFB 0.19%, #FFFFFF 0.2%, rgba(255, 255, 255, 0.16) 27.17%, rgba(255, 255, 255, 0) 99.79%), linear-gradient(269.77deg, #FBFBFB 0.19%, #FFFFFF 0.2%, rgba(255, 255, 255, 0.16) 66.59%, rgba(255, 255, 255, 0) 99.79%)
+    z-index: 2
+    pointer-events: none
+  &__title
+    font-weight: 400
+    margin-bottom: 6.4rem
+    span
+      font-weight: 700
+  &__slider
+    overflow: visible
+    &-wrapper
+      transition-timing-function: linear
+    &-item
+      width: 27.3rem
+      height: 14.1rem
+      border-radius: .6rem
+      background: #fff
+      box-shadow: 0 .4rem 5rem rgba(0, 0, 0, 0.1)
+      position: relative
+      overflow: hidden
+      &:not(:last-child)
+        margin-right: 3.8rem
+      img
+        position: absolute
+        inset: 0
+        +cover
+  &-pagination.swiper-pagination
+    bottom: auto
+    left: auto
+    right: -.6rem
+    top: -9.8rem
+    .swiper-pagination-bullet
+      svg
+        path
+          stroke: #1A89FF
+      &::before
+        background: #1A89FF
+      &-active
+        svg
+          animation-duration: 6.3s

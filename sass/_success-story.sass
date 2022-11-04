@@ -1,0 +1,100 @@
+.success-story
+  padding: 10.5rem 0 18rem
+  background: #fff
+  box-shadow: 0 .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+  overflow: hidden
+  &__title
+    margin-bottom: 6.3rem
+  &__content
+    position: relative
+  &__slider
+    overflow: visible
+    &-item
+      min-height: 54.4rem
+      background: #fff
+      padding: 6.4rem 7.6rem
+      // padding: 6.4rem 7.6rem 11.8rem
+      border-radius: .6rem
+      box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1)
+      position: relative
+      overflow: hidden
+      z-index: 1
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 35.8%
+        height: 100%
+        background: linear-gradient(99.72deg, #162F62 6.8%, #4368C6 96.05%)
+        z-index: -2
+    &-photo
+      position: absolute
+      bottom: 0
+      right: 6.5rem
+      width: 61rem
+      z-index: -1
+    &-text
+      width: 55%
+    &-specialist
+      position: relative
+      padding-right: 20rem
+      margin-bottom: 4.2rem
+      &-name
+        font-size: 3.4rem
+        font-weight: 500
+        margin-bottom: 2.3rem
+        span
+          font-weight: 700
+      &-position
+        font-size: 1.4rem
+        font-weight: 500
+        line-height: 1.57
+        color: rgba(0, 0, 0, 0.82)
+      &-experience
+        position: absolute
+        top: .3rem
+        right: 3.2rem
+        display: flex
+        align-items: center
+        .decor
+          margin-right: 1rem
+        &-text
+          font-size: 1.3rem
+          span
+            font-weight: 600
+    &-quote
+      margin-bottom: 4rem
+      &-img
+        width: 2.1rem
+        margin-bottom: 1.85rem
+      &-description
+        font-size: 1.6rem
+        font-weight: 500
+        font-style: italic
+        line-height: 1.88
+        color: #1A89FF
+    &-description
+      font-size: 1.4rem
+      line-height: 1.86
+      color: rgba(#000, .82)
+      span
+        display: block
+  &-button
+    &-prev
+      transform: translate(-50%, -50%)
+    &-next
+      transform: translate(50%, -50%)
+  &-pagination.swiper-pagination
+    bottom: -8rem
+    left: 50%
+    transform: translateX(-50%)
+    .swiper-pagination-bullet
+      svg
+        path
+          stroke: #1A89FF
+      &::before
+        background: #1A89FF
+      &-active
+        svg
+          animation-duration: 8s

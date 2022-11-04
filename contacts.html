@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+	<!-- <meta name="description" content="another website"> -->
+	<!-- <link rel="icon" href="img/favicon.png"> -->
+	<title>Нечаев и партнеры</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="header-content">
+					<a href="index.html" class="header-logo">
+						<img src="img/logo.svg" alt="">
+					</a>
+
+					<div class="header-group header-place desktop">
+						<div class="header-group__title">Ваш город:</div>
+						<!-- <a href="#" class="header-city">Санкт-Петербург</a> -->
+
+						<div class="header-select select">
+							<input type="hidden" class="select-input" value="Санкт-Петербург">
+							<div class="select-block">
+								<div class="select-text">
+									Санкт-Петербург
+								</div>
+								<ul class="select-dropdown">
+									<li class="select-dropdown__option active" data-select="Санкт-Петербург">Санкт-Петербург</li>
+									<li class="select-dropdown__option" data-select="Москва">Москва</li>
+									<li class="select-dropdown__option" data-select="Краснодар">Краснодар</li>
+									<li class="select-dropdown__option" data-select="Саратов">Саратов</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="header-group header-consultation desktop">
+						<div class="header-group__title">Консультация:</div>
+						<div class="header-social">
+							<a href="#" class="header-social__item">
+								<img src="img/whatsapp.svg" alt="">
+							</a>
+							<a href="#" class="header-social__item">
+								<img src="img/viber.svg" alt="">
+							</a>
+							<a href="#" class="header-social__item">
+								<img src="img/telegram.svg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<a href="mailto:msk@nechaev-partners.ru" class="header-email desktop">msk@nechaev-partners.ru</a>
+
+					<div class="header-social desktop">
+						<a href="#" class="header-social__item">
+							<img src="img/vk.svg" alt="">
+						</a>
+						<a href="#" class="header-social__item">
+							<img src="img/telegram.svg" alt="">
+						</a>
+						<a href="#" class="header-social__item">
+							<img src="img/ok.svg" alt="">
+						</a>
+						<a href="#" class="header-social__item">
+							<img src="img/yandexzen.svg" alt="">
+						</a>
+					</div>
+
+					<div class="header-contacts">
+						<a href="tel:84993903967" class="header-phone">8 (499) 390-39-67</a>
+						<div class="header-info">ПН-ПТ с 10:00 до 19:00</div>
+					</div>
+
+					<a href="#" class="header-btn btn desktop">Заказать услугу</a>
+
+					<div class="header-burger mobile">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom__content">
+					<div class="header-group header-place mobile">
+						<div class="header-group__title">Ваш город:</div>
+						<!-- <a href="#" class="header-city">Санкт-Петербург</a> -->
+						<div class="header-select select">
+							<input type="hidden" class="select-input" value="Санкт-Петербург">
+							<div class="select-block">
+								<div class="select-text">
+									Санкт-Петербург
+								</div>
+								<ul class="select-dropdown">
+									<li class="select-dropdown__option active" data-select="Санкт-Петербург">Санкт-Петербург</li>
+									<li class="select-dropdown__option" data-select="Москва">Москва</li>
+									<li class="select-dropdown__option" data-select="Краснодар">Краснодар</li>
+									<li class="select-dropdown__option" data-select="Саратов">Саратов</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<nav class="header-nav">
+						<ul class="header-list">
+							<li class="sublist">
+								<a href="#">Частным клиентам</a>
+								<div class="header-dropdown">
+									<div class="container">
+										<div class="header-dropdown__title">Услуги для частных клиентов</div>
+										<div class="header-dropdown__body">
+											<div class="header-dropdown__content">
+												<div class="header-dropdown__left">
+													<ul class="header-dropdown__list">
+														<li class="active" data-sublist="1"><a href="#">Представительство в арбитражном суде</a></li>
+														<li data-sublist="2"><a href="#">Абонентское юридическое обслуживание</a></li>
+														<li data-sublist="3"><a href="#">Налоговые споры</a></li>
+														<li data-sublist="4"><a href="#">Корпоративные споры</a></li>
+														<li data-sublist="5"><a href="#">Юридические услуги 223 ФЗ и 44 ФЗ</a></li>
+														<li data-sublist="6"><a href="#">Антимонопольные споры</a></li>
+														<li data-sublist="7"><a href="#">Таможенные споры</a></li>
+														<li data-sublist="8"><a href="#">Трудовые споры</a></li>
+														<li data-sublist="9"><a href="#">Сфера недвижемости</a></li>
+														<li data-sublist="10"><a href="#">Юридические услуги по договору</a></li>
+														<li data-sublist="11"><a href="#">Юридические услуги по договору</a></li>
+														<li data-sublist="12"><a href="#">Юридические услуги по договору</a></li>
+													</ul>
+
+													<div class="header-dropdown__sublist-wrap desktop">
+														<ul class="header-dropdown__sublist active" data-sublist="1">
+															<li><a href="#">Защита в арбитражном суде</a></li>
+															<li><a href="#">Юрист в арбитражном суде</a></li>
+															<li><a href="#">Адвокат в арбитражном суде</a></li>
+															<li><a href="#">Арбитражные споры</a></li>
+															<li><a href="#">Ведение арбитражных дел</a></li>
+															<li><a href="#">Обжаловать решение арбитражного суда</a></li>
+														</ul>
+
+														<ul class="header-dropdown__sublist" data-sublist="2">
+															<li><a href="#">Абонентское юридическое обслуживание</a></li>
+															<li><a href="#">Арбитражные споры</a></li>
+															<li><a href="#">Ведение арбитражных дел</a></li>
+														</ul>
+													</div>
+												</div>
+												
+												<div class="header-dropdown__banner desktop">
+													<img src="img/banner-specialist.png" alt="" class="header-dropdown__banner-img">
+													<div class="header-dropdown__banner-title">Представительство в&nbsp;арбитражном суде</div>
+													<div class="header-dropdown__banner-description">Представительство в&nbsp;арбитражном суде, 40 услуг</div>
+													<a href="#" class="header-dropdown__banner-link link">Перейти</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="sublist">
+								<a href="#">Бизнесу</a>
+								<div class="header-dropdown">
+									<div class="container">
+										<div class="header-dropdown__title">Услуги для бизнеса</div>
+										<div class="header-dropdown__body">
+											<div class="header-dropdown__content">
+												<div class="header-dropdown__left">
+													<ul class="header-dropdown__list">
+														<li class="active" data-sublist="1"><a href="#">Представительство в суде</a></li>
+														<li data-sublist="2"><a href="#">Банкротство</a></li>
+														<li data-sublist="3"><a href="#">Реструкторизация долгов</a></li>
+														<li data-sublist="4"><a href="#">Семейные споры</a></li>
+														<li data-sublist="5"><a href="#">Наследственные споры</a></li>
+														<li data-sublist="6"><a href="#">Представительство в суде</a></li>
+														<li data-sublist="7"><a href="#">Банкротство</a></li>
+														<li data-sublist="8"><a href="#">Реструкторизация долгов</a></li>
+														<li data-sublist="9"><a href="#">Семейные споры</a></li>
+														<li data-sublist="10"><a href="#">Наследственные споры</a></li>
+														<li data-sublist="11"><a href="#">Представительство в суде</a></li>
+													</ul>
+
+													<div class="header-dropdown__sublist-wrap desktop">
+														<ul class="header-dropdown__sublist active" data-sublist="1">
+															<li><a href="#">Защита в арбитражном суде</a></li>
+															<li><a href="#">Юрист в арбитражном суде</a></li>
+															<li><a href="#">Адвокат в арбитражном суде</a></li>
+															<li><a href="#">Арбитражные споры</a></li>
+															<li><a href="#">Ведение арбитражных дел</a></li>
+															<li><a href="#">Обжаловать решение арбитражного суда</a></li>
+														</ul>
+
+														<ul class="header-dropdown__sublist" data-sublist="2">
+															<li><a href="#">Абонентское юридическое обслуживание</a></li>
+															<li><a href="#">Арбитражные споры</a></li>
+															<li><a href="#">Ведение арбитражных дел</a></li>
+														</ul>
+
+														<ul class="header-dropdown__sublist" data-sublist="3">
+															<li><a href="#">Арбитражные споры</a></li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="header-dropdown__banner desktop">
+													<img src="img/banner-specialist.png" alt="" class="header-dropdown__banner-img">
+													<div class="header-dropdown__banner-title">Представительство в&nbsp;арбитражном суде</div>
+													<div class="header-dropdown__banner-description">Представительство в&nbsp;арбитражном суде, 40 услуг
+													</div>
+													<a href="#" class="header-dropdown__banner-link link">Перейти</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Команда</a></li>
+							<li><a href="#">Кейсы</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Пресс-центр</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
+
+					<form action="#" class="form header-search">
+						<label class="header-search__label">
+							<input type="search" name="header-search" id="header-search" placeholder="Поиск">
+							<button class="header-search__btn">
+								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M10.0377 2.53833C5.90282 2.53833 2.53857 5.90257 2.53857 10.0375C2.53857 14.1727 5.90282 17.5367 10.0377 17.5367C14.1729 17.5367 17.5369 14.1727 17.5369 10.0375C17.5369 5.90257 14.1729 2.53833 10.0377 2.53833ZM10.0377 16.1522C6.66612 16.1522 3.92304 13.4092 3.92304 10.0375C3.92304 6.66591 6.66612 3.92279 10.0377 3.92279C13.4094 3.92279 16.1525 6.66588 16.1525 10.0375C16.1525 13.4091 13.4094 16.1522 10.0377 16.1522Z"
+										fill="#2E2E2E" fill-opacity="0.7" />
+									<path
+										d="M19.3643 18.3855L15.3955 14.4167C15.1251 14.1463 14.6871 14.1463 14.4167 14.4167C14.1463 14.6869 14.1463 15.1253 14.4167 15.3955L18.3855 19.3643C18.5207 19.4995 18.6977 19.5671 18.8749 19.5671C19.0519 19.5671 19.2291 19.4995 19.3643 19.3643C19.6348 19.0941 19.6348 18.6557 19.3643 18.3855Z"
+										fill="#2E2E2E" fill-opacity="0.7" />
+								</svg>
+							</button>
+						</label>
+
+						<a href="#" class="header-search-btn">
+							<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.0377 2.53833C5.90282 2.53833 2.53857 5.90257 2.53857 10.0375C2.53857 14.1727 5.90282 17.5367 10.0377 17.5367C14.1729 17.5367 17.5369 14.1727 17.5369 10.0375C17.5369 5.90257 14.1729 2.53833 10.0377 2.53833ZM10.0377 16.1522C6.66612 16.1522 3.92304 13.4092 3.92304 10.0375C3.92304 6.66591 6.66612 3.92279 10.0377 3.92279C13.4094 3.92279 16.1525 6.66588 16.1525 10.0375C16.1525 13.4091 13.4094 16.1522 10.0377 16.1522Z"
+									fill="#2E2E2E" fill-opacity="0.7" />
+								<path
+									d="M19.3643 18.3855L15.3955 14.4167C15.1251 14.1463 14.6871 14.1463 14.4167 14.4167C14.1463 14.6869 14.1463 15.1253 14.4167 15.3955L18.3855 19.3643C18.5207 19.4995 18.6977 19.5671 18.8749 19.5671C19.0519 19.5671 19.2291 19.4995 19.3643 19.3643C19.6348 19.0941 19.6348 18.6557 19.3643 18.3855Z"
+									fill="#2E2E2E" fill-opacity="0.7" />
+							</svg>
+						</a>
+					</form>
+
+					<div class="header-block mobile">
+						<img src="img/header-block-bg.png" alt="" class="header-block-bg">
+						<div class="header-group header-consultation">
+							<div class="header-group__title">Консультация:</div>
+							<div class="header-social">
+								<a href="#" class="header-social__item">
+									<img src="img/whatsapp-w.svg" alt="">
+								</a>
+								<a href="#" class="header-social__item">
+									<img src="img/viber-w.svg" alt="">
+								</a>
+								<a href="#" class="header-social__item">
+									<img src="img/telegram-w.svg" alt="">
+								</a>
+							</div>
+						</div>
+
+						<div class="header-group">
+							<a href="mailto:msk@nechaev-partners.ru" class="header-email">msk@nechaev-partners.ru</a>
+
+							<div class="header-social">
+								<a href="#" class="header-social__item">
+									<img src="img/vk-w.svg" alt="">
+								</a>
+								<a href="#" class="header-social__item">
+									<img src="img/telegram-w.svg" alt="">
+								</a>
+								<a href="#" class="header-social__item">
+									<img src="img/ok-w.svg" alt="">
+								</a>
+								<a href="#" class="header-social__item">
+									<img src="img/yandexzen-w.svg" alt="">
+								</a>
+							</div>
+						</div>
+
+						<a href="#" class="header-btn btn">Заказать звонок</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="banner banner-template banner-contacts">
+			<img src="img/banner-contacts-bg.png" alt="" class="banner-template__bg">
+			<div class="container">
+				<div class="banner-template__content">
+					<div class="path">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="banner-template__text">
+						<div class="banner-template__title">Контакты</div>
+						<div class="banner-template__description">
+							Мы дорожим своей репутацией, не прячемся за&nbsp;безликими названиями и <span>не даем пустых обещаний.</span> Работаем честно и не скрываем свои лица. 
+						</div>
+						<a href="#" class="banner-template__btn btn consultation-btn">Получить консультацию</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="page-navigation">
+			<div class="page-navigation__content">
+				<a href="#" class="page-navigation__item active">Москва</a>
+				<a href="#" class="page-navigation__item">Санкт-Петерпубрг</a>
+				<a href="#" class="page-navigation__item">Краснодар</a>
+				<a href="#" class="page-navigation__item">Саратов</a>
+			</div>
+		</section>
+
+		<section class="contacts">
+			<div class="container">
+				<div class="contacts-content">
+					<div class="contacts-info">
+						<div class="contacts-title title"><span>Адрес и график</span> работы</div>
+
+						<div class="contacts-group">
+							<div class="contacts-info__block">
+								<div class="contacts-info__block-img">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF"></path>
+									</svg>
+								</div>
+								<div class="contacts-info__block-text">
+									<span>Адрес офиса:</span> Варшавское шоссе, д. 1, стр. 1 БЦ “W Plaza” (м. Тульская), офис B207
+								</div>
+							</div>
+
+							<div class="contacts-info__block">
+								<div class="contacts-info__block-img">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF"></path>
+									</svg>
+								</div>
+								<div class="contacts-info__block-text">
+									<span>График работы:</span> ПН-ПТ с 10:00 до 19:00
+								</div>
+							</div>
+
+							<a href="#" class="contacts-info__btn btn consultation-btn consultation-btn-b">
+								Как добраться
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.82" d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="black"
+										stroke="#fff" stroke-width="1.4" stroke-linejoin="round" />
+								</svg>
+							</a>
+
+							<div class="contacts-info__more">
+								<div class="contacts-info__more-group">
+									<div class="contacts-info__more-title">Пешком <span>от М. «Рязанский проспект»</span></div>
+									<div class="contacts-info__more-description">
+										Выйти на станции метро «Рязанский проспект» — первый вагон из центра, выход из метро по указателю — ул.
+										Паперника. При выходе на улицу, вы сразу попадаете на Рязанский проспект, по нему необходимо пройти до
+										пересечения с ул. Паперника, перейти через дорогу, далее мимо магазина «Пятёрочка» до 3-й Институтской улицы,
+										выходите на 1-й Институтский пр-д к д. 3 стр. 10. Завод «ВИМ», 4-этажное серое здание с синим забором,
+										табличка «Московский пекарь». Примерное время в пути: 20 минут, расстояние: 1,7 км.
+									</div>
+								</div>
+
+								<div class="contacts-info__more-group">
+									<div class="contacts-info__more-title">На транспорте <span>от <br> М. «Рязанский проспект»</span></div>
+									<div class="contacts-info__more-description">
+										Выйти на станции метро «Рязанский проспект» — первый вагон из центра, выход из метро по указателю — ул.
+										Паперника. При выходе на улицу, вы сразу попадаете на Рязанский проспект, по нему необходимо пройти до
+										пересечения с ул. Паперника, перейти через дорогу, далее мимо магазина «Пятёрочка» до 3-й Институтской улицы,
+										выходите на 1-й Институтский пр-д к д. 3 стр. 10. Завод «ВИМ», 4-этажное серое здание с синим забором,
+										табличка «Московский пекарь». Примерное время в пути: 20 минут, расстояние: 1,7 км.
+									</div>
+								</div>
+
+								<div class="contacts-info__more-group">
+									<div class="contacts-info__more-title">На автомобиле</span></div>
+									<div class="contacts-info__more-subtitle">Координаты GPS-навигатора</span></div>
+									<div class="contacts-info__more-coordinates">
+										<div class="contacts-info__more-coordinates-item">
+											<div class="contacts-info__more-coordinates-title">Широта</div>
+											<div class="contacts-info__more-coordinates-number">55.638020</div>
+										</div>
+
+										<div class="contacts-info__more-coordinates-item">
+											<div class="contacts-info__more-coordinates-title">Долгота</div>
+											<div class="contacts-info__more-coordinates-number">55.660329</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="contacts-info__links">
+								<a href="tel:84993903967" class="contacts-info__phone">8 (499) 390-39-67</a>
+								<a href="mailto:msk@nechaev-partners.ru" class="contacts-info__email">msk@nechaev-partners.ru</a>
+							</div>
+						</div>
+
+						<div class="contacts-group">
+							<div class="contacts-info__block">
+								<div class="contacts-info__block-img">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF"></path>
+									</svg>
+								</div>
+								<div class="contacts-info__block-text">
+									<span>HR-отдел</span>
+								</div>
+							</div>
+
+							<div class="contacts-info__links">
+								<a href="tel:84993903967" class="contacts-info__phone">8 (499) 390-39-67</a>
+								<a href="mailto:hr@nechaev-partners.ru" class="contacts-info__email">hr@nechaev-partners.ru</a>
+							</div>
+
+							<div class="contacts-info__social">
+								<a href="#" class="contacts-info__social-item">
+									<img src="img/social-icon-3.svg" alt="">
+									<img src="img/social-icon-3-h.svg" alt="" class="social-item__hover">
+								</a>
+
+								<a href="#" class="contacts-info__social-item">
+									<img src="img/social-icon-4.svg" alt="">
+									<img src="img/social-icon-4-h.svg" alt="" class="social-item__hover">
+								</a>
+
+								<a href="#" class="contacts-info__social-item">
+									<img src="img/social-icon-5.svg" alt="">
+									<img src="img/social-icon-5-h.svg" alt="" class="social-item__hover">
+								</a>
+							</div>
+						</div>
+
+						<div class="contacts-info__bottom">
+							<div class="contacts-info__bottom-text">Мы в социальных сетях:</div>
+							<div class="contacts-info__bottom-social">
+								<a href="#" class="contacts-info__bottom-social-item"><img src="img/vk-b.svg" alt=""></a>
+								<a href="#" class="contacts-info__bottom-social-item"><img src="img/telegram-b.svg" alt=""></a>
+								<a href="#" class="contacts-info__bottom-social-item"><img src="img/ok-b.svg" alt=""></a>
+								<a href="#" class="contacts-info__bottom-social-item"><img src="img/yandexzen-b.svg" alt=""></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="contacts-map" id="contacts-map"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="details">
+			<div class="container">
+				<div class="details-filter">
+					<a href="#" class="details-filter__item active" data-details="requisites">Реквизиты</a>
+					<a href="#" class="details-filter__item" data-details="documents">Документы</a>
+				</div>
+
+				<div class="details-content">
+					<div class="details-item active" data-details="requisites">
+						<div class="details-requisites">
+							<div class="details-requisites__left">
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">Наименование</div>
+									<div class="details-requisites__description">
+										Общество с ограниченной ответственностью «Юридическая фирма «Нечаев и Партнеры
+									</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">Юридический адрес</div>
+									<div class="details-requisites__description">
+										117105, Россия, г. Москва, Варшавское шоссе, д. 1 стр. 1-2, офисВ207
+									</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">Почтовый адрес</div>
+									<div class="details-requisites__description">
+										115093, г. Москва, а/я 99 (для ООО «Юридическая фирма «Нечаев и Партнеры»)
+									</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">Банк</div>
+									<div class="details-requisites__description">
+										АО «АЛЬФА-БАНК»г. Москва
+									</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+							</div>
+
+							<div class="details-requisites__right">
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">ИНН</div>
+									<div class="details-requisites__description">7707852309</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">Р/счет</div>
+									<div class="details-requisites__description">40702810502860005696</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">ОГРН</div>
+									<div class="details-requisites__description">1147748030209</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">Корр/счет</div>
+									<div class="details-requisites__description">30101810200000000593</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">КПП</div>
+									<div class="details-requisites__description">772601001</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+
+								<div class="details-requisites__item">
+									<div class="details-requisites__title">БИК</div>
+									<div class="details-requisites__description">044525593</div>
+									<div class="details-requisites__copy">
+										<img src="img/copy-icon.svg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="details-item" data-details="documents">
+						<div class="details-documents">
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Заявление на регистрацию ООО&nbsp;Р11001</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">DOC</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Заявление на УСН*</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">PDF</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Решение единственного учредителя</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">PDF</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Инструкция по регистрации ООО</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">DOC</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Квитанция для оплаты госпошлины</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">DOC</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Устав ООН</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">PDF</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Заявление на регистрацию ООО&nbsp;Р11001</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">DOC</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Заявление на УСН*</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">PDF</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Решение единственного учредителя</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">PDF</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Инструкция по регистрации ООО</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">DOC</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Квитанция для оплаты госпошлины</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">DOC</div>
+								</div>
+							</a>
+
+							<a href="#" class="details-documents__item">
+								<div class="details-documents__item-icon">
+									<img src="img/file-icon.svg" alt="">
+								</div>
+								<div class="details-documents__item-title">Устав ООН</div>
+								<div class="details-documents__item-download">
+									<div class="details-documents__item-download-icon">
+										<img src="img/download-icon.svg" alt="">
+									</div>
+									<div class="details-documents__item-download-text">PDF</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="consultation consultation-banner consultation-banner-contacts">
+			<div class="container">
+				<div class="consultation-content">
+					<img src="img/consultation-banner-bg.png" alt="" class="consultation-bg desktop">
+					<img src="img/consultation-bg-mobile.png" alt="" class="consultation-bg mobile">
+					<div class="consultation-text">
+						<div class="consultation-title title">Получите юридическую консультацию</div>
+						
+						<form action="#" class="consultation-form form form-w">
+							<div class="form-content">
+								<label>
+									<input type="text" required placeholder="ФИО">
+									<span>Ваше имя</span>
+								</label>
+
+								<label>
+									<input type="text" required class="form-phone" placeholder="+ 7 (___) ___ - __ - __">
+									<span>Введите телефон</span>
+								</label>
+
+								<label>
+									<input type="email" required placeholder="example@yandex.ru">
+									<span>Введите E-mail</span>
+								</label>
+
+								<label class="wide">
+									<textarea placeholder="Опишите свою проблему или задайте свой вопрос"></textarea>
+									<span>Ваше сообщение</span>
+								</label>
+
+								<div class="form-privacy">
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden" checked>
+										<span></span>
+										<div class="checkbox-title">
+											При нажатии на кнопку “Получить консультацию” вы&nbsp;соглашаетесь с <a href="#">политикой
+												конфиденциальности</a>
+										</div>
+									</label>
+
+									<button class="consultation-form__btn btn consultation-btn">Получить консультацию</button>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="consultation-author">
+						<img src="img/specialist.png" alt="" class="consultation-author__photo">
+						<div class="consultation-author__text">
+							<div class="consultation-author__name">Павел <br> Нечаев</div>
+							<div class="consultation-author__position">партнер, адвокат, арбитражный управляющий</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<img src="img/footer-bg.png" alt="" class="footer-bg desktop">
+		<img src="img/footer-bg-mobile.png" alt="" class="footer-bg mobile">
+		<div class="container">
+			<div class="footer-logo__wrap">
+				<a href="#" class="footer-logo">
+					<img src="img/logo-f.svg" alt="">
+				</a>
+			</div>
+
+			<div class="footer-content">
+				<div class="footer-left">
+					<div class="footer-info">
+						<div class="footer-contacts">
+							<a href="tel:84993903967" class="footer-phone">
+								<div class="footer-phone__img">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white"></path>
+									</svg>
+								</div>
+								8 (499) 390-39-67
+							</a>
+							<div class="footer-work">ПН-ПТ с 10:00 до 19:00</div>
+							<div class="footer-address">Москва, Варшавское ш., д.1 стр.1</div>
+							<a href="mailto:msk@nechaev-partners.ru" class="footer-email">msk@nechaev-partners.ru</a>
+						</div>
+						<div class="footer-info__bottom">
+							<div class="footer-payment">
+								<a href="#" class="footer-payment__btn btn">Оплата онлайн</a>
+								<div class="footer-payment__items">
+									<!-- <a href="#" class="footer-payment__item"></a> -->
+									<div class="footer-payment__item">
+										<img src="img/payment-1.svg" alt="">
+									</div>
+									<div class="footer-payment__item">
+										<img src="img/payment-2.png" alt="">
+									</div>
+									<div class="footer-payment__item">
+										<img src="img/payment-3.png" alt="">
+									</div>
+									<div class="footer-payment__item">
+										<img src="img/payment-4.svg" alt="">
+									</div>
+								</div>
+							</div>
+
+							<ul class="footer-info__list">
+								<li><a href="#">Политика</a></li>
+								<li><a href="#">Карта сайта</a></li>
+								<li><a href="#">Пользовательское соглашение</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer-group">
+						<div class="footer-group__title">
+							<a href="#">Частным клиентам</a>
+						</div>
+						<ul class="footer-list">
+							<li><a href="#">Представительство в суде</a></li>
+							<li><a href="#">Банкротство</a></li>
+							<li><a href="#">Реструкторизация долгов</a></li>
+							<li><a href="#">Семейные споры</a></li>
+							<li><a href="#">Наследственные споры</a></li>
+							<li><a href="#">Представительство в суде</a></li>
+							<li><a href="#">Банкротство</a></li>
+							<li><a href="#">Реструкторизация долгов</a></li>
+							<li><a href="#">Семейные споры</a></li>
+							<li><a href="#">Наследственные споры</a></li>
+							<li><a href="#">Представительство в суде</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-group">
+						<div class="footer-group__title">
+							<a href="#">Бизнесу</a>
+						</div>
+						<ul class="footer-list">
+							<li><a href="#">Представительство в суде</a></li>
+							<li><a href="#">Банкротство</a></li>
+							<li><a href="#">Реструкторизация долгов</a></li>
+							<li><a href="#">Семейные споры</a></li>
+							<li><a href="#">Наследственные споры</a></li>
+							<li><a href="#">Представительство в суде</a></li>
+							<li><a href="#">Банкротство</a></li>
+							<li><a href="#">Реструкторизация долгов</a></li>
+							<li><a href="#">Семейные споры</a></li>
+							<li><a href="#">Наследственные споры</a></li>
+							<li><a href="#">Представительство в суде</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-group">
+						<div class="footer-group__title">
+							<a href="about.html">О компании</a>
+						</div>
+						<ul class="footer-list">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Команда</a></li>
+							<li><a href="#">Победы</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Цены</a></li>
+							<li><a href="#">Вопрос-ответ</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<form action="#" class="footer-form form form-w">
+					<div class="footer-form__title">Задай вопрос!</div>
+					<div class="footer-form__subtitle">
+						Оставьте номер телефона,
+						<span>мы перезвоним в течении 10 минут</span>
+					</div>
+
+					<div class="form-content">
+						<label>
+							<input type="text" required placeholder="ФИО">
+							<span>Ваше имя</span>
+						</label>
+
+						<label>
+							<input type="text" required class="form-phone" placeholder="+ 7 (___) ___ - __ - __">
+							<span>Введите телефон</span>
+						</label>
+
+						<button class="footer-form__btn btn consultation-btn">Получить консультацию</button>
+
+						<div class="form-privacy">
+							<label class="label-checkbox">
+								<input type="checkbox" class="visually-hidden" checked>
+								<span></span>
+								<div class="checkbox-title">
+									При нажатии на кнопку “Получить&nbsp;консультацию” вы соглашаетесь
+									с&nbsp;<a href="#">политикой конфиденциальности</a> и <a href="#">пользовательским соглашением</a>
+								</div>
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="footer-copy">&copy; 2012-2021 Юридическая фирма Нечаев и&nbsp;Партнеры. <span>Все права
+						защищены</span></div>
+
+				<div class="footer-social">
+					<a href="#" class="footer-social__item">
+						<div class="footer-social__img">
+							<img src="img/vk-w.svg" alt="">
+						</div>
+					</a>
+
+					<a href="#" class="footer-social__item">
+						<div class="footer-social__img">
+							<img src="img/telegram-w.svg" alt="">
+						</div>
+					</a>
+
+					<a href="#" class="footer-social__item">
+						<div class="footer-social__img">
+							<img src="img/ok-w.svg" alt="">
+						</div>
+					</a>
+
+					<a href="#" class="footer-social__item">
+						<div class="footer-social__img">
+							<img src="img/yandexzen-w.svg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/jquery.maskedinput.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/main.js"></script>
+	
+	<script>
+		ymaps.ready(init);
+
+		function init () {
+			var myMap = new ymaps.Map('contacts-map', {
+				center: [55.703992, 37.625909],
+				zoom: 16,
+				controls: []
+			}),
+
+			MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+				'<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+			),
+
+			myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+				// balloonContent: `
+				// 	<div class="hint">
+				// 		<div class="hint-suptitle">Юридическая фирма</div>
+				// 		<div class="hint-title">“Нечаев и Партнеры”</div>
+				// 	</div>
+				// `,
+				hintContent: `
+					<div class="hint">
+						<div class="hint-suptitle">Юридическая фирма</div>
+						<div class="hint-title">“Нечаев и Партнеры”</div>
+					</div>
+				`,
+			}, {
+				iconLayout: 'default#image',
+				iconImageHref: 'img/mark.svg',
+				iconImageSize: [52, 52],
+				iconImageOffset: [-26, -26]
+			});
+
+			// myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+			// 	hintContent: `
+					// <div class="hint">
+					// 	<div class="hint-suptitle">Юридическая фирма</div>
+					// 	<div class="hint-title">“Нечаев и Партнеры”</div>
+					// </div>
+			// 	`
+			// }, {
+			// 	iconImageHref: 'img/mark.svg',
+			// 	iconImageSize: [52, 52],
+			// 	iconImageOffset: [-26, -26]
+			// });
+
+			myMap.geoObjects.add(myPlacemark),
+			myMap.behaviors.disable('scrollZoom');
+		}
+	</script>
+
+</body>
+</html>

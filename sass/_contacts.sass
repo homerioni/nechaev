@@ -1,0 +1,188 @@
+.contacts
+  padding: 8.5rem 0 10rem
+  &-content
+    display: flex
+    justify-content: space-between
+  &-title
+    font-weight: 400
+    margin-bottom: 4.3rem
+    span
+      font-weight: 700
+  &-group
+    border-bottom: 0.8px solid rgba(0, 0, 0, 0.1)
+    &:not(:last-child)
+      margin-bottom: 2.5rem
+  &-info
+    width: 31.4%
+    flex-shrink: 0
+    color: rgba(#000, .8)
+    &__block
+      width: 82%
+      display: flex
+      margin-bottom: 1.7rem
+      &-img
+        width: 1.2rem
+        flex-shrink: 0
+        margin-top: 0.6rem
+        margin-right: 2.2rem
+        svg
+          width: 100%
+          height: auto
+      &-text
+        font-size: 1.4rem
+        line-height: 1.71
+        color: #000
+        span
+          font-weight: 500
+    &__btn.btn
+      min-width: auto
+      padding: 0 5.8rem
+      margin: 1.3rem 0 3.2rem
+      &.active
+        background: #286BB2
+        color: #fff
+        svg
+          transform: rotate(-180deg)
+      svg
+        width: 1rem
+        height: auto
+        margin-left: 1rem
+        transition: transform .25s
+    &__more
+      display: none
+      margin-bottom: 8rem
+      &-group
+        &:not(:last-of-type)
+          margin-bottom: 5rem
+      &-title
+        font-size: 2.2rem
+        font-weight: 500
+        line-height: 1.36
+        margin-bottom: 2.2rem
+        span
+          font-weight: 700
+      &-subtitle
+        font-size: 2rem
+        +futura
+        font-weight: 450
+        margin: 3rem 0 2rem
+      &-description
+        width: 78%
+        font-size: 1.4rem
+        line-height: 1.86
+        color: rgba(#000, .82)
+      &-coordinates
+        display: flex
+        &-item
+          font-size: 1.4rem
+          color: rgba(0, 0, 0, 0.4)
+          &:not(:last-child)
+            margin-right: 4.8rem
+        &-title
+          margin-bottom: .6rem
+        &-number
+          color: rgba(0, 0, 0, 0.82)
+    &__links
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      font-size: 1.6rem
+      font-weight: 500
+      letter-spacing: .01em
+      margin-bottom: 3rem
+    &__phone
+      color: #1A89FF
+      margin-bottom: 1.2rem
+    &__email
+      color: rgba(#000, .8)
+      transition: color .25s
+      &:hover
+        color: #1A89FF
+    &__social
+      display: flex
+      align-items: center
+      margin: 4rem 1.2rem
+      &-item
+        width: 3.8rem
+        height: 3.8rem
+        border-radius: 50%
+        border: 1px solid rgba(26, 137, 255, 0.2)
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        flex-shrink: 0
+        transition: all .25s
+        &:hover
+          border-color: rgba(255, 255, 255, 0.2)
+          background: #1A89FF
+          &::after
+            background: #1A89FF
+          img
+            opacity: 0
+            &.social-item__hover
+              opacity: 1
+        &:not(:last-child)
+          margin-right: 3.7rem
+        &::after
+          content: ''
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          width: 100%
+          height: 100%
+          border-radius: inherit
+          background: rgba(26, 137, 255, 0.08)
+          transition: background .25s
+          animation: pulse 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite
+          z-index: -1
+        img
+          width: 1.8rem
+          transition: opacity .25s
+          transition: all .25s
+          &.social-item__hover
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            opacity: 0
+    &__bottom
+      display: flex
+      align-items: center
+      &-text
+        font-size: 1.4rem
+        font-weight: 500
+        margin-right: 2.8rem
+      &-social
+        display: flex
+        align-items: center
+        &-item
+          width: 1.8rem
+          &:not(:last-child)
+            margin-right: 2.6rem
+  &-map
+    width: 63%
+    height: 65.8rem
+    flex-shrink: 0
+    .ymaps-2-1-79
+      &-ground-pane
+        filter: grayscale(1)
+      &-hint
+        padding: 0
+        box-shadow: none
+        &__text
+          padding: 0
+          background: none
+    .hint
+      padding: 3.2rem 3rem
+      background: #fff
+      border-radius: 0.6rem
+      box-shadow: 0 .4rem 5rem rgba(0, 0, 0, 0.1)
+      font-size: 1.4rem
+      letter-spacing: .02em
+      color: #1E1E1E
+      &-suptitle
+        margin-bottom: 1rem
+      &-title
+        font-weight: 600
