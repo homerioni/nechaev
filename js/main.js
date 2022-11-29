@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $('body').toggleClass('o-hidden');
   });
 
-  if ($(window).width() >= 769) {
+  if ($(window).width() > 1200) {
     window.addEventListener('scroll', function () {
       let header = document.querySelector('header');
       header.classList.toggle('scroll', window.scrollY > 150);
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $('.header-search').removeClass('active');
       }
     });
-  } else {
+  } else if ($(window).width() <= 768) {
     $('.sublist').click(function () {
       $('.sublist').not(this).removeClass('active').find('.header-dropdown').slideUp();
       $(this).toggleClass('active').find('.header-dropdown').slideToggle();
@@ -94,13 +94,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // autoplay: {
     //   delay: 4000,
     // },
+    breakpoints: {
+      769: {
+        enabled: false,
+      }
+    },
   });
 
-  if ($('#banner-advantages-slider').length > 0) {
-    if ($(window).width() >= 769) {
-      bannerAdvantagesSlider.destroy();
-    }
-  }
+  // if ($('#banner-advantages-slider').length > 0) {
+  //   if ($(window).width() >= 769) {
+  //     bannerAdvantagesSlider.destroy();
+  //   }
+  // }
 
   $('.categories-filter__item').click(function (e) {
     e.preventDefault();
@@ -114,13 +119,41 @@ document.addEventListener("DOMContentLoaded", function () {
     // autoplay: {
     //   delay: 4000,
     // },
+    breakpoints: {
+      769: {
+        enabled: false,
+      }
+    },
   });
 
-  if ($('#categories-slider').length > 0) {
-    if ($(window).width() >= 769) {
-      categoriesSlider.destroy();
-    }
-  }
+  const popularCategoriesSlider = new Swiper('#popular-categories-slider', {
+    slidesPerView: 'auto',
+    speed: 1200,
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.popular-categories-pagination',
+    },
+    navigation: {
+      nextEl: '.popular-categories-button-next',
+      prevEl: '.popular-categories-button-prev',
+    },
+  });
 
   jQuery(function ($) {
     $('.form-phone').mask('+ 7 (999) 999 - 99 - 99');
@@ -129,16 +162,36 @@ document.addEventListener("DOMContentLoaded", function () {
   const teamSlider = new Swiper('#team-slider', {
     slidesPerView: 'auto',
     speed: 1200,
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      769: {
+        enabled: false,
+      }
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.team-pagination',
+    },
+    navigation: {
+      nextEl: '.team-button-next',
+      prevEl: '.team-button-prev',
+    },
   });
-
-  if ($('#team-slider').length > 0) {
-    if ($(window).width() >= 769) {
-      teamSlider.destroy();
-    }
-  }
 
   const advantagesSlider = new Swiper('#advantages-slider', {
     slidesPerView: 'auto',
@@ -146,20 +199,46 @@ document.addEventListener("DOMContentLoaded", function () {
     // autoplay: {
     //   delay: 4000,
     // },
+    breakpoints: {
+      769: {
+        enabled: false,
+      }
+    },
   });
-
-  if ($('#advantages-slider').length > 0) {
-    if ($(window).width() >= 769) {
-      advantagesSlider.destroy();
-    }
-  }
 
   const victoriesSlider = new Swiper('#victories-slider', {
     slidesPerView: 'auto',
     speed: 1200,
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      769: {
+        pagination: {
+          dynamicBullets: false,
+        }
+      },
+      1201: {
+        autoplay: false,
+      }
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.victories-pagination',
+    },
     navigation: {
       nextEl: '.victories-button-next',
       prevEl: '.victories-button-prev',
@@ -169,23 +248,70 @@ document.addEventListener("DOMContentLoaded", function () {
   const reviewsSlider = new Swiper('#reviews-slider', {
     slidesPerView: 'auto',
     speed: 1200,
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      769: {
+        enabled: false,
+      }
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.reviews-pagination',
+    },
+    navigation: {
+      nextEl: '.reviews-button-next',
+      prevEl: '.reviews-button-prev',
+    },
   });
-
-  if ($('#reviews-slider').length > 0) {
-    if ($(window).width() >= 769) {
-      reviewsSlider.destroy();
-    }
-  }
 
   const recommendationsSlider = new Swiper('#recommendations-slider', {
     slidesPerView: 'auto',
     speed: 1200,
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      769: {
+        pagination: {
+          dynamicBullets: false,
+        }
+      },
+      1201: {
+        autoplay: false,
+      }
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.recommendations-pagination',
+    },
     navigation: {
       nextEl: '.recommendations-button-next',
       prevEl: '.recommendations-button-prev',
@@ -201,8 +327,16 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 1,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      769: {
+        pagination: {
+          dynamicBullets: false,
+        }
+      }
+    },
     pagination: {
-      // clickable: true,
+      clickable: true,
+      dynamicBullets: true,
       renderBullet: function (index, className) {
         return `
           <span class="${className}">
@@ -216,6 +350,10 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       el: '.mass-media-pagination',
     },
+    navigation: {
+      nextEl: '.mass-media-button-next',
+      prevEl: '.mass-media-button-prev',
+    },
   });
 
   const blogSlider = new Swiper('#blog-slider', {
@@ -225,8 +363,17 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 6000,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      769: {
+        pagination: {
+          // clickable: false,
+          dynamicBullets: false,
+        }
+      }
+    },
     pagination: {
-      // clickable: true,
+      clickable: true,
+      dynamicBullets: true,
       renderBullet: function (index, className) {
         return `
           <span class="${className}">
@@ -249,14 +396,45 @@ document.addEventListener("DOMContentLoaded", function () {
   const newsSlider = new Swiper('#news-slider', {
     slidesPerView: 'auto',
     speed: 1200,
-    // autoplay: {
-    //   delay: 4000,
-    // },
+    autoplay: {
+      delay: 6000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      769: {
+        pagination: {
+          dynamicBullets: false,
+        }
+      },
+      1201: {
+        autoplay: false,
+      }
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.news-pagination',
+    },
     navigation: {
       nextEl: '.news-button-next',
       prevEl: '.news-button-prev',
     },
   });
+
+  if ($('.news-slider').hasClass('news-slider-press-center') && $(window).width() >= 769) {
+    newsSlider.disable();
+  }
 
   if ($(window).width() <= 768) {
     $('.footer-group__title').click(function () {
@@ -332,6 +510,10 @@ document.addEventListener("DOMContentLoaded", function () {
       $('.calculator-item[data-calculator=' + data + ']').toggleClass('active');
       progress.style.width = (20 * i) + '%';
       count.text(i);
+
+      if (i === 5) {
+        $('.calculator-content').addClass('last-step');
+      }
     });
 
     $('.calculator-item__back').click(function (e) {
@@ -478,28 +660,106 @@ document.addEventListener("DOMContentLoaded", function () {
   var publicationsSlider = new Swiper('#publications-slider', {
     slidesPerView: 'auto',
     speed: 1200,
-    // autoplay: {
-    //   delay: 4000,
-    // },
-    navigation: {
-      nextEl: '.publications-button-next',
-      prevEl: '.publications-button-prev',
-    },
-  });
-
-  const pageBlogSlider = new Swiper('.page-blog-slider', {
-    slidesPerView: 'auto',
-    speed: 1200,
     autoplay: {
       delay: 6000,
       disableOnInteraction: false,
     },
     breakpoints: {
       769: {
-        enabled: false,
+        autoplay: false,
       }
-    }
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.publications-pagination',
+    },
+    navigation: {
+      nextEl: '.publications-button-next',
+      prevEl: '.publications-button-prev',
+    },
   });
+
+  // const pageBlogSlider = new Swiper('.page-blog-slider', {
+  //   slidesPerView: 'auto',
+  //   speed: 1200,
+  //   autoplay: {
+  //     delay: 6000,
+  //     disableOnInteraction: false,
+  //   },
+  //   breakpoints: {
+  //     769: {
+  //       enabled: false,
+  //     }
+  //   },
+  //   pagination: {
+  //     clickable: true,
+  //     dynamicBullets: true,
+  //     renderBullet: function (index, className) {
+  //       return `
+  //         <span class="${className}">
+  //           <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  //             <path opacity="0.2"
+  //               d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+  //               stroke="white" stroke-width="1.4" />
+  //           </svg>
+  //         </span>
+  //       `;
+  //     },
+  //     el: '.blog-pagination',
+  //   },
+  //   navigation: {
+  //     nextEl: '.page-blog-button-next',
+  //     prevEl: '.page-blog-button-prev',
+  //   },
+  // });
+
+  if (!$('.page-blog-slider').hasClass('page-blog-slider_category')) {
+    const pageBlogSlider = new Swiper('.page-blog-slider', {
+      slidesPerView: 'auto',
+      speed: 1200,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        769: {
+          enabled: false,
+        }
+      },
+      pagination: {
+        clickable: true,
+        dynamicBullets: true,
+        renderBullet: function (index, className) {
+          return `
+            <span class="${className}">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.2"
+                  d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                  stroke="white" stroke-width="1.4" />
+              </svg>
+            </span>
+          `;
+        },
+        el: '.blog-pagination',
+      },
+      navigation: {
+        nextEl: '.page-blog-button-next',
+        prevEl: '.page-blog-button-prev',
+      },
+    });
+  }
 
   $('.page-pagination__item').click(function (e) {
     e.preventDefault();
@@ -517,7 +777,27 @@ document.addEventListener("DOMContentLoaded", function () {
       769: {
         enabled: false,
       }
-    }
+    },
+    pagination: {
+      clickable: true,
+      dynamicBullets: true,
+      renderBullet: function (index, className) {
+        return `
+          <span class="${className}">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.2"
+                d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+                stroke="white" stroke-width="1.4" />
+            </svg>
+          </span>
+        `;
+      },
+      el: '.glossary-pagination',
+    },
+    navigation: {
+      nextEl: '.glossary-button-next',
+      prevEl: '.glossary-button-prev',
+    },
   });
 
   const atmosphereSlider = new Swiper('#atmosphere-slider', {
@@ -532,8 +812,16 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 6000,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      769: {
+        pagination: {
+          dynamicBullets: false,
+        }
+      },
+    },
     pagination: {
       // clickable: true,
+      dynamicBullets: true,
       renderBullet: function (index, className) {
         return `
           <span class="${className}">
@@ -565,8 +853,16 @@ document.addEventListener("DOMContentLoaded", function () {
       delay: 6000,
       disableOnInteraction: false,
     },
+    breakpoints: {
+      769: {
+        pagination: {
+          dynamicBullets: false,
+        }
+      },
+    },
     pagination: {
       // clickable: true,
+      dynamicBullets: true,
       renderBullet: function (index, className) {
         return `
           <span class="${className}">
@@ -633,6 +929,27 @@ document.addEventListener("DOMContentLoaded", function () {
     $('.popup').removeClass('active');
     $('#popup-sent').addClass('active');
   }
+
+  $('.glossary-all__filter-item').click(function (e) {
+    e.preventDefault();
+    $('.glossary-all__filter-item').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $('.info-description__more').click(function (e) {
+    e.preventDefault();
+    $(this).addClass('d-none').prev().addClass('all-text');
+  });
+
+  $('.page-rubric__heading').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active').next().slideToggle();
+  });
+
+  $('.part-team__description-more').click(function (e) {
+    e.preventDefault();
+    $(this).addClass('d-none').prev().addClass('all-text');
+  });
 
 
   

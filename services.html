@@ -8,7 +8,7 @@
 	<title>Нечаев и партнеры</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- <link rel="stylesheet" href="css/jquery.fancybox.min.css"> -->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -87,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="header-bottom">
 			<div class="container">
 				<div class="header-bottom__content">
@@ -152,11 +152,12 @@
 														</ul>
 													</div>
 												</div>
-												
+
 												<div class="header-dropdown__banner desktop">
 													<img src="img/banner-specialist.png" alt="" class="header-dropdown__banner-img">
 													<div class="header-dropdown__banner-title">Представительство в&nbsp;арбитражном суде</div>
-													<div class="header-dropdown__banner-description">Представительство в&nbsp;арбитражном суде, 40 услуг</div>
+													<div class="header-dropdown__banner-description">Представительство в&nbsp;арбитражном суде, 40
+														услуг</div>
 													<a href="#" class="header-dropdown__banner-link link">Перейти</a>
 												</div>
 											</div>
@@ -211,7 +212,8 @@
 												<div class="header-dropdown__banner desktop">
 													<img src="img/banner-specialist.png" alt="" class="header-dropdown__banner-img">
 													<div class="header-dropdown__banner-title">Представительство в&nbsp;арбитражном суде</div>
-													<div class="header-dropdown__banner-description">Представительство в&nbsp;арбитражном суде, 40 услуг
+													<div class="header-dropdown__banner-description">Представительство в&nbsp;арбитражном суде, 40
+														услуг
 													</div>
 													<a href="#" class="header-dropdown__banner-link link">Перейти</a>
 												</div>
@@ -301,17 +303,23 @@
 	</header>
 
 	<main>
-		<section class="banner">
-			<div class="swiper banner-slider" id="banner-slider">
+		<section class="banner banner-services">
+			<div class="swiper banner-slider">
 				<div class="swiper-wrapper banner-slider-wrapper">
 					<div class="swiper-slide banner-slider__item">
 						<div class="container">
 							<div class="banner-slider__content">
-								<img src="img/specialist.png" alt="" class="banner-slider__photo desktop">
-								<img src="img/specialist-mobile.png" alt="" class="banner-slider__photo mobile">
+								<div class="path">
+									<ul>
+										<li><a href="#">Главная</a></li>
+										<li><a href="#">Юридические услуги частным клиентам</a></li>
+										<li><a href="#">Юрист по наследственным делам</a></li>
+									</ul>
+								</div>
+								<img src="img/specialist.png" alt="" class="banner-slider__photo">
 								<img src="img/logo-decor.png" alt="" class="banner-slider__decor">
 								<div class="banner-slider__text">
-									<div class="banner-slider__title title">Юридические услуги от&nbsp;профессионалов</div>
+									<div class="banner-slider__title title">Юридические услуги для бизнеса</div>
 									<div class="banner-slider__group">
 										<div class="banner-slider__group-item">
 											<div class="banner-slider__group-img">
@@ -358,13 +366,13 @@
 										</div>
 									</div>
 									<div class="banner-slider__btns">
-										<a href="#" class="banner-slider__btn btn consultation-btn modal-up" data-modal="1">Получить консультацию</a>
+										<a href="#" class="banner-slider__btn btn consultation-btn">Получить консультацию</a>
 										<!-- <a href="#" class="banner-slider__btn-more">Подробнее</a> -->
 									</div>
 								</div>
 
 								<div class="banner-slider__about">
-									<div class="banner-slider__name">Павел <br> Нечаев</div>
+									<div class="banner-slider__name">Иван <br> Иванович</div>
 									<div class="banner-slider__position">партнер, адвокат, арбитражный управляющий</div>
 									<a href="#" class="banner-slider__team btn team-btn">
 										Вся команда
@@ -378,170 +386,6 @@
 							</div>
 						</div>
 					</div>
-
-					<div class="swiper-slide banner-slider__item">
-						<div class="container">
-							<div class="banner-slider__content">
-								<img src="img/specialist.png" alt="" class="banner-slider__photo desktop">
-								<img src="img/specialist-mobile.png" alt="" class="banner-slider__photo mobile">
-								<img src="img/logo-decor.png" alt="" class="banner-slider__decor">
-								<div class="banner-slider__text">
-									<div class="banner-slider__title title">Юридические услуги от&nbsp;профессионалов2</div>
-									<div class="banner-slider__group">
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Вернем деньги,</span> если не выиграем дело
-											</div>
-										</div>
-
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Оплата в рассрочку</span> на период процедуры
-											</div>
-										</div>
-
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Более 10 профессионалов</span> управляющих в команде
-											</div>
-										</div>
-
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Оплата в рассрочку</span> на период процедуры
-											</div>
-										</div>
-									</div>
-									<div class="banner-slider__btns">
-										<a href="#" class="banner-slider__btn btn consultation-btn modal-up" data-modal="2">Получить консультацию</a>
-										<a href="#" class="banner-slider__btn-more btn">Подробнее</a>
-									</div>
-								</div>
-
-								<div class="banner-slider__about">
-									<div class="banner-slider__name">Павел <br> Нечаев</div>
-									<div class="banner-slider__position">партнер, адвокат, арбитражный управляющий</div>
-									<a href="#" class="banner-slider__team btn team-btn">
-										Вся команда
-										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path opacity="0.7"
-												d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-												fill="white" />
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="swiper-slide banner-slider__item">
-						<div class="container">
-							<div class="banner-slider__content">
-								<img src="img/specialist.png" alt="" class="banner-slider__photo desktop">
-								<img src="img/specialist-mobile.png" alt="" class="banner-slider__photo mobile">
-								<img src="img/logo-decor.png" alt="" class="banner-slider__decor">
-								<div class="banner-slider__text">
-									<div class="banner-slider__title title">Юридические услуги от&nbsp;профессионалов3</div>
-									<div class="banner-slider__group">
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Вернем деньги,</span> если не выиграем дело
-											</div>
-										</div>
-
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Оплата в рассрочку</span> на период процедуры
-											</div>
-										</div>
-
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Более 10 профессионалов</span> управляющих в команде
-											</div>
-										</div>
-
-										<div class="banner-slider__group-item">
-											<div class="banner-slider__group-img">
-												<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-													<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white" />
-												</svg>
-											</div>
-											<div class="banner-slider__group-text">
-												<span>Оплата в рассрочку</span> на период процедуры
-											</div>
-										</div>
-									</div>
-									<div class="banner-slider__btns">
-										<a href="#" class="banner-slider__btn btn consultation-btn modal-up" data-modal="3">Получить консультацию</a>
-										<a href="#" class="banner-slider__btn-more btn">Подробнее</a>
-									</div>
-								</div>
-
-								<div class="banner-slider__about">
-									<div class="banner-slider__name">Павел <br> Нечаев</div>
-									<div class="banner-slider__position">партнер, адвокат, арбитражный управляющий</div>
-									<a href="#" class="banner-slider__team btn team-btn">
-										Вся команда
-										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path opacity="0.7"
-												d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-												fill="white" />
-										</svg>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="swiper-pagination slider-pagination banner-pagination"></div>
-				<div class="swiper-button-prev slider-button-prev banner-button-prev">
-					<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M4.81814 9L5 8.80961L1.3636 5L5 1.19039L4.81814 1L1 5L4.81814 9Z" fill="white" stroke="white"
-							stroke-width="1.4" stroke-linejoin="round" />
-					</svg>
-				</div>
-				<div class="swiper-button-next slider-button-next banner-button-next">
-					<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M1.18186 1L1 1.19039L4.6364 5L1 8.80961L1.18186 9L5 5L1.18186 1Z" fill="white" stroke="white"
-							stroke-width="1.4" stroke-linejoin="round" />
-					</svg>
 				</div>
 			</div>
 
@@ -606,18 +450,143 @@
 			</a>
 		</section>
 
-		<section class="categories">
+		<section class="page-navigation" id="page-navigation">
+			<div class="page-navigation__content">
+				<a href="#info" class="page-navigation__item anchor active">Об услугах</a>
+				<a href="#prices" class="page-navigation__item anchor">Цены на услуги</a>
+				<a href="#team" class="page-navigation__item anchor">Команда</a>
+				<a href="#advantages" class="page-navigation__item anchor">Преимущества</a>
+				<a href="#faq" class="page-navigation__item anchor">Вопрос-ответ</a>
+				<a href="#recommendations" class="page-navigation__item anchor">Рекомендации</a>
+			</div>
+		</section>
+
+		<section class="info section-anchor info-services" id="info">
+			<div class="container">
+				<div class="info-content">
+					<div class="info-text">
+						<div class="info-title">Факторы, влияющие на <span>стоимость услуг</span></div>
+						<div class="info-description">
+							<p>
+								Стоимость юридических услуг окупается за счет достижения результата: будь это восстановление на работе или
+								компенсация при увольнении, взыскание дебиторской задолженности по суду или через мировое соглашение, и много
+								другое.
+							</p>
+						</div>
+
+						<div class="info-list__group">
+							<div class="info-list__title">При этом стоимость услуг зависит от ряда факторов:</div>
+							<ul class="info-list">
+								<li>Времени обращения;</li>
+								<li>Сложности вопроса;</li>
+								<li>Необходимости обращения в суд;</li>
+								<li>Числа сотрудников, которых необходимо привлечь к работе;</li>
+								<li>Объема документов.</li>
+							</ul>
+						</div>
+
+						<div class="info-bottom">Вопросы, касающиеся цены, оговариваются индивидуально после изучения дела и его
+							перспектив.</div>
+					</div>
+
+					<div class="info-items">
+						<div class="info-item">
+							<div class="info-item__heading">
+								<div class="info-item__decor">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF"></path>
+									</svg>
+								</div>
+								<div class="info-item__title">Фиксированная оплата</div>
+								<div class="info-item__arrow">
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF" stroke="#1A89FF"
+											stroke-width="1.4" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="info-item__body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit sed maxime distinctio dolorem neque, error, excepturi similique illum delectus facilis tempore recusandae quaerat repellat assumenda soluta est facere saepe nesciunt amet dolorum, minima sapiente! Expedita temporibus aspernatur quam aut ratione officiis, sed, provident rem voluptatem rerum deleniti repellendus libero?</p>
+
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit sed maxime distinctio dolorem neque, error, excepturi similique illum delectus facilis tempore recusandae quaerat repellat assumenda soluta est facere saepe nesciunt amet dolorum, minima sapiente! Expedita temporibus aspernatur quam aut ratione officiis, sed, provident rem voluptatem rerum deleniti repellendus libero?</p>
+							</div>
+						</div>
+
+						<div class="info-item">
+							<div class="info-item__heading">
+								<div class="info-item__decor">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF"></path>
+									</svg>
+								</div>
+								<div class="info-item__title">Почасовая либо ежемесячная оплата</div>
+								<div class="info-item__arrow">
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF" stroke="#1A89FF"
+											stroke-width="1.4" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="info-item__body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit sed maxime distinctio dolorem neque, error, excepturi similique illum delectus facilis tempore recusandae quaerat repellat assumenda soluta est facere saepe nesciunt amet dolorum, minima sapiente! Expedita temporibus aspernatur quam aut ratione officiis, sed, provident rem voluptatem rerum deleniti repellendus libero?</p>
+							</div>
+						</div>
+
+						<div class="info-item">
+							<div class="info-item__heading">
+								<div class="info-item__decor">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF"></path>
+									</svg>
+								</div>
+								<div class="info-item__title">Процент от суммы</div>
+								<div class="info-item__arrow">
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF" stroke="#1A89FF"
+											stroke-width="1.4" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="info-item__body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit sed maxime distinctio dolorem neque, error, excepturi similique illum delectus facilis tempore recusandae quaerat repellat assumenda soluta est facere saepe nesciunt amet dolorum, minima sapiente! Expedita temporibus aspernatur quam aut ratione officiis, sed, provident rem voluptatem rerum deleniti repellendus libero?</p>
+							</div>
+						</div>
+
+						<div class="info-item">
+							<div class="info-item__heading">
+								<div class="info-item__decor">
+									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF"></path>
+									</svg>
+								</div>
+								<div class="info-item__title">Смешанная форма</div>
+								<div class="info-item__arrow">
+									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF" stroke="#1A89FF"
+											stroke-width="1.4" stroke-linejoin="round" />
+									</svg>
+								</div>
+							</div>
+							<div class="info-item__body">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sit sed maxime distinctio dolorem neque, error, excepturi similique illum delectus facilis tempore recusandae quaerat repellat assumenda soluta est facere saepe nesciunt amet dolorum, minima sapiente! Expedita temporibus aspernatur quam aut ratione officiis, sed, provident rem voluptatem rerum deleniti repellendus libero?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="categories categories-services">
 			<div class="container">
 				<div class="categories-title title">Категории услуг</div>
 				<div class="categories-content">
 					<div class="categories-filter">
-						<a href="#" class="categories-filter__item active">Услуги для граждан</a>
-						<a href="#" class="categories-filter__item">Услуги для бизнеса</a>
+						<a href="#" class="categories-filter__item active">Услуги для бизнеса</a>
 						<a href="#" class="categories-filter__item">Услуги адвоката</a>
 						<a href="#" class="categories-filter__item">Консультация</a>
 						<a href="#" class="categories-filter__item">Документы</a>
 					</div>
-					
+
 					<div class="swiper categories-slider" id="categories-slider">
 						<div class="swiper-wrapper categories-slider-wrapper">
 							<div class="swiper-slide categories-slider__item">
@@ -716,107 +685,529 @@
 			</div>
 		</section>
 
-		<section class="section-banner">
+		<section class="prices section-anchor prices-services" id="prices">
 			<div class="container">
-				<div class="section-banner__content">
-					<div class="section-banner__info">
-						<div class="section-banner__info-title">
-							Ваш персональный <span>юрист всегда на связи</span>
-						</div>
-						<div class="section-banner__info-description">
-							Задавайте вопросы по удобному каналу связи: почте, телефону или мессенджеры
-						</div>
-						<div class="section-banner__social">
-							<a href="#" class="section-banner__social-item">
-								<div class="section-banner__social-title">Позвонить юристу</div>
-								<div class="section-banner__social-img">
-									<img src="img/social-icon-1.svg" alt="">
-									<img src="img/social-icon-1-h.svg" alt="" class="social-item__hover">
-								</div>
-							</a>
+				<div class="prices-title title"><span>Цены</span> на услуги</div>
 
-							<a href="#" class="section-banner__social-item">
-								<div class="section-banner__social-title">Написать юристу</div>
-								<div class="section-banner__social-img">
-									<img src="img/social-icon-2.svg" alt="">
-									<img src="img/social-icon-2-h.svg" alt="" class="social-item__hover">
+				<div class="prices-inner">
+					<div class="prices-side">
+						<div class="page-rubric">
+							<div class="page-rubric__heading mobile">
+								<div class="page-rubric__heading-title">Выбрать услугу</div>
+								<div class="page-rubric__heading-arrow">
+									<img src="img/arrow-dropdown-b.svg" alt="">
 								</div>
-							</a>
+							</div>
 
-							<a href="#" class="section-banner__social-item">
-								<div class="section-banner__social-title">Написать в WhatsApp</div>
-								<div class="section-banner__social-img">
-									<img src="img/social-icon-3.svg" alt="">
-									<img src="img/social-icon-3-h.svg" alt="" class="social-item__hover">
-								</div>
-							</a>
-
-							<a href="#" class="section-banner__social-item">
-								<div class="section-banner__social-title">Написать в Telegram</div>
-								<div class="section-banner__social-img">
-									<img src="img/social-icon-4.svg" alt="">
-									<img src="img/social-icon-4-h.svg" alt="" class="social-item__hover">
-								</div>
-							</a>
+							<div class="page-rubric__content">
+								<div class="page-rubric__title">Стоимость услуг для&nbsp;бизнеса</div>
+								<ul class="page-rubric__list">
+									<li><a href="#" class="active">Представительство в арбитражном суде</a></li>
+									<li><a href="#">Абонентское юридическое обслуживание</a></li>
+									<li><a href="#">Банкротство юридических лиц</a></li>
+									<li><a href="#">Защита от субсидиарной ответственности</a></li>
+									<li><a href="#">Корпоративные споры</a></li>
+								</ul>
+								<a href="#" class="page-rubric__list-all">
+									Показать все услуги
+									<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+										<path opacity="0.82" d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="black"
+											stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+									</svg>
+								</a>
+							</div>
 						</div>
 					</div>
 
-					<div class="section-banner__right">
-						<div class="section-banner__right-title">Обсудим задачу?</div>
-						<div class="section-banner__right-subtitle">Оставьте номер телефона и мы перезвоним в течении 10 минут</div>
-						<form action="#" class="section-banner__form form">
-							<div class="form-content">
-								<label>
-									<input type="text" required placeholder="ФИО">
-									<span>Ваше имя</span>
-								</label>
+					<div class="prices-right">
+						<div class="prices-right__title">Представительство в суде</div>
+						<div class="prices-content">
+							<div class="prices-heading">
+								<div class="prices-item">
+									<div class="prices-item__left">
+										<div class="decor">
+											<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="#1A89FF" stroke="#1A89FF">
+												</path>
+											</svg>
+										</div>
+										<div class="prices-item__title">Основные услуги</div>
+									</div>
 
-								<label>
-									<input type="text" required class="form-phone" placeholder="+ 7 (___) ___ - __ - __">
-									<span>Введите телефон</span>
-								</label>
+									<div class="prices-item__name">Стоимость</div>
+								</div>
+							</div>
 
-								<button class="section-banner__form-btn btn consultation-btn consultation-btn-b">Получить консультацию</button>
+							<div class="prices-body form">
+								<div class="prices-item">
+									<div class="prices-item__heading">
+										<div class="prices-item__left">
+											<label class="label-checkbox">
+												<input type="checkbox" class="visually-hidden" checked>
+												<span></span>
+												<div class="checkbox-title">
+													Консультация устная (по телефону) по корпоративному спору, не требующая изучения материалов и
+													обстоятельств
+													дела
+												</div>
+											</label>
+										</div>
 
-								<div class="form-privacy">
+										<div class="prices-item__cost">от 10 000 ₽</div>
+
+										<div class="prices-item__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF"
+													stroke="#1A89FF" stroke-width="1.4" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="prices-item__dropdown">
+										<div class="prices-item__group">
+											<div class="prices-item__group-title">Что входит в услугу:</div>
+											<ul class="prices-item__list">
+												<li>первичное анкетирование Клиента</li>
+												<li>предварительную оценку перспектив по делу</li>
+												<li>согласование с Клиентом времени встречи с экспертом-консультантом</li>
+											</ul>
+										</div>
+
+										<div class="prices-item__time">
+											<div class="prices-item__time-icon">
+												<img src="img/clock.svg" alt="">
+											</div>
+											<div class="prices-item__time-text">Продолжительность консультации: <span>до 20 минут</span></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="prices-item">
+									<div class="prices-item__heading">
+										<div class="prices-item__left">
+											<label class="label-checkbox">
+												<input type="checkbox" class="visually-hidden" checked>
+												<span></span>
+												<div class="checkbox-title">
+													Консультация устная (в офисе) по корпоративному спору, требующая изучения материалов и обстоятельств
+													дела
+												</div>
+											</label>
+										</div>
+
+										<div class="prices-item__cost">от 15 000 ₽</div>
+
+										<div class="prices-item__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF"
+													stroke="#1A89FF" stroke-width="1.4" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="prices-item__dropdown">
+										<div class="prices-item__group">
+											<div class="prices-item__group-title">Что входит в услугу:</div>
+											<ul class="prices-item__list">
+												<li>первичное анкетирование Клиента</li>
+												<li>предварительную оценку перспектив по делу</li>
+												<li>согласование с Клиентом времени встречи с экспертом-консультантом</li>
+											</ul>
+										</div>
+
+										<div class="prices-item__time">
+											<div class="prices-item__time-icon">
+												<img src="img/clock.svg" alt="">
+											</div>
+											<div class="prices-item__time-text">Продолжительность консультации: <span>до 20 минут</span></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="prices-item">
+									<div class="prices-item__heading">
+										<div class="prices-item__left">
+											<label class="label-checkbox">
+												<input type="checkbox" class="visually-hidden">
+												<span></span>
+												<div class="checkbox-title">
+													Консультация письменная по корпоративному спору, требующая изучения материалов и обстоятельств дела
+												</div>
+											</label>
+										</div>
+
+										<div class="prices-item__cost">от 20 000 ₽</div>
+
+										<div class="prices-item__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF"
+													stroke="#1A89FF" stroke-width="1.4" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="prices-item__dropdown">
+										<div class="prices-item__group">
+											<div class="prices-item__group-title">Что входит в услугу:</div>
+											<ul class="prices-item__list">
+												<li>первичное анкетирование Клиента</li>
+												<li>предварительную оценку перспектив по делу</li>
+												<li>согласование с Клиентом времени встречи с экспертом-консультантом</li>
+											</ul>
+										</div>
+
+										<div class="prices-item__time">
+											<div class="prices-item__time-icon">
+												<img src="img/clock.svg" alt="">
+											</div>
+											<div class="prices-item__time-text">Продолжительность консультации: <span>до 20 минут</span></div>
+										</div>
+									</div>
+								</div>
+
+								<div class="prices-item">
+									<div class="prices-item__heading">
+										<div class="prices-item__left">
+											<label class="label-checkbox">
+												<input type="checkbox" class="visually-hidden">
+												<span></span>
+												<div class="checkbox-title">
+													Подготовка досудебной претензии (возражений на досудебную претензию) по корпоративному спору
+												</div>
+											</label>
+										</div>
+
+										<div class="prices-item__cost">от 25 000 ₽</div>
+
+										<div class="prices-item__arrow">
+											<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="#1A89FF"
+													stroke="#1A89FF" stroke-width="1.4" stroke-linejoin="round"></path>
+											</svg>
+										</div>
+									</div>
+									<div class="prices-item__dropdown">
+										<div class="prices-item__group">
+											<div class="prices-item__group-title">Что входит в услугу:</div>
+											<ul class="prices-item__list">
+												<li>первичное анкетирование Клиента</li>
+												<li>предварительную оценку перспектив по делу</li>
+												<li>согласование с Клиентом времени встречи с экспертом-консультантом</li>
+											</ul>
+										</div>
+
+										<div class="prices-item__time">
+											<div class="prices-item__time-icon">
+												<img src="img/clock.svg" alt="">
+											</div>
+											<div class="prices-item__time-text">Продолжительность консультации: <span>до 20 минут</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="prices-bottom">
+							<a href="#" class="prices-btn__more btn team-btn team-btn-w">
+								Подробнее об услуге
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path opacity="0.82" d="M9 1.18186L8.80961 1L5 4.6364L1.19039 1L1 1.18186L5 5L9 1.18186Z" fill="black"
+										stroke="black" stroke-width="1.4" stroke-linejoin="round" />
+								</svg>
+							</a>
+							<div class="prices-total">Стоимость услуг от <span>25 000 ₽</span></div>
+							<a href="#" class="prices-btn__order btn consultation-btn consultation-btn-b">Заказать услугу</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="calculator calculator-services">
+			<div class="container">
+				<div class="calculator-content">
+					<div class="calculator-img desktop">
+						<img src="img/calculator-bg.png" alt="">
+					</div>
+
+					<div class="calculator-text">
+						<div class="calculator-title">Рассчитать стоимость услуг по наследственным делам</div>
+
+						<div class="calculator-img mobile">
+							<img src="img/calculator-bg.png" alt="">
+						</div>
+
+						<div class="calculator-heading">
+							<div class="calculator-steps">
+								<span>1</span> / 5 шагов
+							</div>
+							<div class="calculator-progress">
+								<span></span>
+							</div>
+						</div>
+
+						<div class="calculator-body">
+							<div class="calculator-item active" data-calculator="1">
+								<div class="calculator-item__title">На какой системе налогооблажения находится ваша компания?</div>
+								<div class="calculator-item__block form">
 									<label class="label-checkbox">
 										<input type="checkbox" class="visually-hidden" checked>
 										<span></span>
-										<div class="checkbox-title">
-											При нажатии на кнопку “Получить консультацию” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
-										</div>
+										<div class="checkbox-title">ОСНО (НДС)</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">ЕНВД</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">УСН</div>
 									</label>
 								</div>
+
+								<div class="calculator-item__btns">
+									<a href="#" class="calculator-item__btn calculator-item__next btn consultation-btn consultation-btn-b"
+										data-calculator="2">
+										Следующий шаг
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.78284 3.28284C9.93905 3.12663 9.93905 2.87337 9.78284 2.71716L7.23726 0.171573C7.08105 0.0153632 6.82778 0.0153632 6.67157 0.171573C6.51536 0.327783 6.51536 0.581048 6.67157 0.737258L8.93431 3L6.67157 5.26274C6.51536 5.41895 6.51536 5.67222 6.67157 5.82843C6.82778 5.98464 7.08105 5.98464 7.23726 5.82843L9.78284 3.28284ZM0.5 3.4H9.5V2.6H0.5V3.4Z"
+												fill="white" />
+										</svg>
+									</a>
+								</div>
 							</div>
-						</form>
+
+							<div class="calculator-item" data-calculator="2">
+								<div class="calculator-item__title">На какой системе налогооблажения находится ваша компания2?</div>
+								<div class="calculator-item__block form">
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden" checked>
+										<span></span>
+										<div class="checkbox-title">ОСНО (НДС)</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">ЕНВД</div>
+									</label>
+								</div>
+
+								<div class="calculator-item__btns">
+									<a href="#" class="calculator-item__btn calculator-item__back btn team-btn team-btn-w"
+										data-calculator="1">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.717157 2.71716C0.560947 2.87337 0.560947 3.12663 0.717157 3.28284L3.26274 5.82843C3.41895 5.98464 3.67222 5.98464 3.82843 5.82843C3.98464 5.67222 3.98464 5.41895 3.82843 5.26274L1.56569 3L3.82843 0.737258C3.98464 0.581048 3.98464 0.327783 3.82843 0.171573C3.67222 0.0153632 3.41895 0.0153632 3.26274 0.171573L0.717157 2.71716ZM10 2.6L1 2.6V3.4L10 3.4V2.6Z"
+												fill="black" fill-opacity="0.82" />
+										</svg>
+										<span>Предыдуший шаг</span>
+									</a>
+									<a href="#" class="calculator-item__btn calculator-item__next btn consultation-btn consultation-btn-b"
+										data-calculator="3">
+										Следующий шаг
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.78284 3.28284C9.93905 3.12663 9.93905 2.87337 9.78284 2.71716L7.23726 0.171573C7.08105 0.0153632 6.82778 0.0153632 6.67157 0.171573C6.51536 0.327783 6.51536 0.581048 6.67157 0.737258L8.93431 3L6.67157 5.26274C6.51536 5.41895 6.51536 5.67222 6.67157 5.82843C6.82778 5.98464 7.08105 5.98464 7.23726 5.82843L9.78284 3.28284ZM0.5 3.4H9.5V2.6H0.5V3.4Z"
+												fill="white" />
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="calculator-item" data-calculator="3">
+								<div class="calculator-item__title">На какой системе налогооблажения находится ваша компания3?</div>
+								<div class="calculator-item__block form">
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden" checked>
+										<span></span>
+										<div class="checkbox-title">ОСНО (НДС)</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">ЕНВД</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">УСН</div>
+									</label>
+								</div>
+
+								<div class="calculator-item__btns">
+									<a href="#" class="calculator-item__btn calculator-item__back btn team-btn team-btn-w"
+										data-calculator="2">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.717157 2.71716C0.560947 2.87337 0.560947 3.12663 0.717157 3.28284L3.26274 5.82843C3.41895 5.98464 3.67222 5.98464 3.82843 5.82843C3.98464 5.67222 3.98464 5.41895 3.82843 5.26274L1.56569 3L3.82843 0.737258C3.98464 0.581048 3.98464 0.327783 3.82843 0.171573C3.67222 0.0153632 3.41895 0.0153632 3.26274 0.171573L0.717157 2.71716ZM10 2.6L1 2.6V3.4L10 3.4V2.6Z"
+												fill="black" fill-opacity="0.82" />
+										</svg>
+										<span>Предыдуший шаг</span>
+									</a>
+									<a href="#" class="calculator-item__btn calculator-item__next btn consultation-btn consultation-btn-b"
+										data-calculator="4">
+										Следующий шаг
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.78284 3.28284C9.93905 3.12663 9.93905 2.87337 9.78284 2.71716L7.23726 0.171573C7.08105 0.0153632 6.82778 0.0153632 6.67157 0.171573C6.51536 0.327783 6.51536 0.581048 6.67157 0.737258L8.93431 3L6.67157 5.26274C6.51536 5.41895 6.51536 5.67222 6.67157 5.82843C6.82778 5.98464 7.08105 5.98464 7.23726 5.82843L9.78284 3.28284ZM0.5 3.4H9.5V2.6H0.5V3.4Z"
+												fill="white" />
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="calculator-item" data-calculator="4">
+								<div class="calculator-item__title">На какой системе налогооблажения находится ваша компания4?</div>
+								<div class="calculator-item__block form">
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden" checked>
+										<span></span>
+										<div class="checkbox-title">ОСНО (НДС)</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">ЕНВД</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">УСН</div>
+									</label>
+								</div>
+
+								<div class="calculator-item__btns">
+									<a href="#" class="calculator-item__btn calculator-item__back btn team-btn team-btn-w"
+										data-calculator="3">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.717157 2.71716C0.560947 2.87337 0.560947 3.12663 0.717157 3.28284L3.26274 5.82843C3.41895 5.98464 3.67222 5.98464 3.82843 5.82843C3.98464 5.67222 3.98464 5.41895 3.82843 5.26274L1.56569 3L3.82843 0.737258C3.98464 0.581048 3.98464 0.327783 3.82843 0.171573C3.67222 0.0153632 3.41895 0.0153632 3.26274 0.171573L0.717157 2.71716ZM10 2.6L1 2.6V3.4L10 3.4V2.6Z"
+												fill="black" fill-opacity="0.82" />
+										</svg>
+										<span>Предыдуший шаг</span>
+									</a>
+									<a href="#" class="calculator-item__btn calculator-item__next btn consultation-btn consultation-btn-b"
+										data-calculator="5">
+										Следующий шаг
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.78284 3.28284C9.93905 3.12663 9.93905 2.87337 9.78284 2.71716L7.23726 0.171573C7.08105 0.0153632 6.82778 0.0153632 6.67157 0.171573C6.51536 0.327783 6.51536 0.581048 6.67157 0.737258L8.93431 3L6.67157 5.26274C6.51536 5.41895 6.51536 5.67222 6.67157 5.82843C6.82778 5.98464 7.08105 5.98464 7.23726 5.82843L9.78284 3.28284ZM0.5 3.4H9.5V2.6H0.5V3.4Z"
+												fill="white" />
+										</svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="calculator-item" data-calculator="5">
+								<div class="calculator-item__title">На какой системе налогооблажения находится ваша компания5?</div>
+								<div class="calculator-item__block form">
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden" checked>
+										<span></span>
+										<div class="checkbox-title">ОСНО (НДС)</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">ЕНВД</div>
+									</label>
+
+									<label class="label-checkbox">
+										<input type="checkbox" class="visually-hidden">
+										<span></span>
+										<div class="checkbox-title">УСН</div>
+									</label>
+								</div>
+
+								<div class="calculator-item__btns">
+									<a href="#" class="calculator-item__btn calculator-item__back btn team-btn team-btn-w"
+										data-calculator="4">
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M0.717157 2.71716C0.560947 2.87337 0.560947 3.12663 0.717157 3.28284L3.26274 5.82843C3.41895 5.98464 3.67222 5.98464 3.82843 5.82843C3.98464 5.67222 3.98464 5.41895 3.82843 5.26274L1.56569 3L3.82843 0.737258C3.98464 0.581048 3.98464 0.327783 3.82843 0.171573C3.67222 0.0153632 3.41895 0.0153632 3.26274 0.171573L0.717157 2.71716ZM10 2.6L1 2.6V3.4L10 3.4V2.6Z"
+												fill="black" fill-opacity="0.82" />
+										</svg>
+										<span>Предыдуший шаг</span>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="calculator-small">* Расчет является не итоговой стоимостью и данное предложение не является
+							офертой</div>
+					</div>
+
+					<div class="calculator-text five-step">
+						<div class="calculator-title">Отлично! Остался последний ШАГ!</div>
+						<div class="calculator-subtitle">
+							Оставьте свои данные, и мы подберем 1-3 варианта решения Вашей проблемы и поможем решить Ваш наследственный
+							спор!
+						</div>
+
+						<div class="calculator-img mobile">
+							<img src="img/calculator-bg.png" alt="">
+						</div>
+
+						<div class="calculator-body">
+							<form action="#" class="calculator-form form">
+								<div class="form-content">
+									<label>
+										<input type="text" required placeholder="ФИО">
+										<span>Ваше имя</span>
+									</label>
+
+									<label>
+										<input type="text" required class="form-phone" placeholder="+ 7 (___) ___ - __ - __">
+										<span>Ваш телефон</span>
+									</label>
+
+									<button class="calculator-form__btn btn consultation-btn consultation-btn-b">Получить
+										результаты</button>
+								</div>
+							</form>
+
+							<div class="calculator-info">
+								<div class="calculator-info__author">
+									<div class="calculator-info__author-photo">
+										<img src="img/author.png" alt="">
+									</div>
+									<div class="calculator-info__author-text">
+										<div class="calculator-info__author-name">Юлия Миронова</div>
+										<div class="calculator-info__author-position">Менеджер</div>
+									</div>
+								</div>
+
+								<div class="calculator-info__block">
+									<div class="calculator-info__description">
+										Вы можете позвонить, написать письмо или оставить свои контактные данные и мы вам перезвоним
+									</div>
+									<div class="calculator-info__group">
+										<a href="tel:84993903967" class="calculator-info__link calculator-info__phone">8 (499) 390-39-67</a>
+										<a href="mailto:hr@nechaev-partners.ru"
+											class="calculator-info__link calculator-info__email">hr@nechaev-partners.ru</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="calculator-small">
+							* Отправляя заявку, я соглашаюсь на обработку персональных данных, в соответствии с
+							<a href="#">политикой конфиденциальности</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="comment">
-			<div class="container">
-				<div class="comment-content">
-					<img src="img/comment-bg.png" alt="" class="comment-bg desktop">
-					<img src="img/comment-bg-mobile.png" alt="" class="comment-bg mobile">
-					<img src="img/specialist.png" alt="" class="comment-author__img">
-					<div class="comment-text">
-						<div class="comment-title">
-							Мы любим своих клиентов <span class="desktop">и стараемся каждый день делать их счастливыми</span>
-						</div>
-						<div class="comment-description">
-							Честность и искренняя забота о&nbsp;клиенте – ключевые принципы работы абсолютно любого сотрудника в нашей компании. Только такое отношение к&nbsp;клиенту создает основу для взаимовыгодного сотрудничества – доверие, позволяющее быстро и&nbsp;качественно решить любую проблему нашего доверителя
-						</div>
-						<div class="comment-author">
-							<div class="comment-author__name">Павел Нечаев</div>
-							<div class="comment-author__position">партнер, адвокат, арбитражный управляющий</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="team">
+		<section class="team other-team section-anchor" id="team">
 			<div class="container">
 				<div class="team-heading">
 					<div class="team-title title">Наша команда</div>
@@ -844,7 +1235,8 @@
 									<div class="team-slider__experience">
 										<div class="team-slider__experience-img">
 											<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white"></path>
+												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white">
+												</path>
 											</svg>
 										</div>
 										<div class="team-slider__experience-text">Опыт: <span>20 лет</span></div>
@@ -869,7 +1261,8 @@
 									<div class="team-slider__experience">
 										<div class="team-slider__experience-img">
 											<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white"></path>
+												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white">
+												</path>
 											</svg>
 										</div>
 										<div class="team-slider__experience-text">Опыт: <span>20 лет</span></div>
@@ -894,7 +1287,8 @@
 									<div class="team-slider__experience">
 										<div class="team-slider__experience-img">
 											<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white"></path>
+												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white">
+												</path>
 											</svg>
 										</div>
 										<div class="team-slider__experience-text">Опыт: <span>20 лет</span></div>
@@ -919,7 +1313,8 @@
 									<div class="team-slider__experience">
 										<div class="team-slider__experience-img">
 											<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white"></path>
+												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white">
+												</path>
 											</svg>
 										</div>
 										<div class="team-slider__experience-text">Опыт: <span>20 лет</span></div>
@@ -944,7 +1339,8 @@
 									<div class="team-slider__experience">
 										<div class="team-slider__experience-img">
 											<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white"></path>
+												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white">
+												</path>
 											</svg>
 										</div>
 										<div class="team-slider__experience-text">Опыт: <span>20 лет</span></div>
@@ -969,7 +1365,8 @@
 									<div class="team-slider__experience">
 										<div class="team-slider__experience-img">
 											<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white"></path>
+												<path d="M0.848585 9.5L5.83438 0.5H10.9696L5.9838 9.5H0.848585Z" fill="white" stroke="white">
+												</path>
 											</svg>
 										</div>
 										<div class="team-slider__experience-text">Опыт: <span>20 лет</span></div>
@@ -1007,7 +1404,231 @@
 			</div>
 		</section>
 
-		<section class="advantages">
+		<section class="procedure">
+			<div class="container">
+				<div class="procedure-title title"><span>Как происходит</span> процедура</div>
+
+				<div class="procedure-content">
+					<div class="procedure-heading__wrap">
+						<div class="procedure-heading">
+							<div class="procedure-heading__item active" data-procedure="1">
+								<span>01</span>
+								<div class="procedure-heading__item-text">/ Свяжитесь с нами</div>
+							</div>
+
+							<div class="procedure-heading__item" data-procedure="2">
+								<span>02</span>
+								<div class="procedure-heading__item-text">/ Проводим встречу</div>
+							</div>
+
+							<div class="procedure-heading__item" data-procedure="3">
+								<span>03</span>
+								<div class="procedure-heading__item-text">/ Обсуждаем решения</div>
+							</div>
+
+							<div class="procedure-heading__item" data-procedure="4">
+								<span>04</span>
+								<div class="procedure-heading__item-text">/ Подписываем договор</div>
+							</div>
+
+							<div class="procedure-heading__item" data-procedure="5">
+								<span>05</span>
+								<div class="procedure-heading__item-text">/ Реализуем проект</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="procedure-body">
+						<div class="procedure-item active" data-procedure="1">
+							<div class="procedure-item__title">Оставьте заявку любым удобным способом</div>
+							<div class="procedure-item__description">Связаться с нами можно любым удобным способом, позвонить, заказать
+								обратный звонок, написать на электронную почту, в WhatsApp или Telegram. Вы можете&nbsp;написать нам даже
+								в выходной или праздничный день, а мы свяжемся с вами на следующий рабочий день в удобное для вас время.
+								Мы согласовываем диагностическую встречу с нашими специалистами, а так же сообщаем какая информация
+								потребуется от вас для максимальной продуктивности.</div>
+							<a href="#" class="procedure-btn__next" data-procedure="2">
+								Следующий этап
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
+										fill="#1A89FF" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="procedure-item" data-procedure="2">
+							<div class="procedure-item__title">Оставьте заявку любым удобным</div>
+							<div class="procedure-item__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis,
+								est repudiandae, error ipsa itaque architecto laborum, sequi dignissimos amet magnam corrupti rerum sunt
+								eaque natus placeat sapiente! Nemo placeat, debitis rem reiciendis amet officiis praesentium doloremque
+								laudantium non adipisci, beatae autem perspiciatis quod. Cumque, veritatis! Praesentium, est accusamus in
+								nam dolor cum omnis tenetur nostrum quidem veniam neque unde? Nulla tempora provident maxime quia
+								aspernatur! Amet ipsa sit ab aut?</div>
+							<a href="#" class="procedure-btn__next" data-procedure="3">
+								Следующий этап
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
+										fill="#1A89FF" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="procedure-item" data-procedure="3">
+							<div class="procedure-item__title">Оставьте заявку любым</div>
+							<div class="procedure-item__description">Связаться с нами можно любым удобным способом, позвонить, заказать
+								обратный звонок, написать на электронную почту, в WhatsApp или Telegram.</div>
+							<a href="#" class="procedure-btn__next" data-procedure="4">
+								Следующий этап
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
+										fill="#1A89FF" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="procedure-item" data-procedure="4">
+							<div class="procedure-item__title">Оставьте заявку</div>
+							<div class="procedure-item__description">Связаться с нами можно любым удобным способом, позвонить, заказать
+								обратный звонок, написать на электронную почту, в WhatsApp или Telegram. Вы можете&nbsp;написать нам даже
+								в выходной или праздничный день, а мы свяжемся с вами на следующий рабочий день в удобное для вас время.
+							</div>
+							<a href="#" class="procedure-btn__next" data-procedure="5">
+								Следующий этап
+								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
+										fill="#1A89FF" />
+								</svg>
+							</a>
+						</div>
+
+						<div class="procedure-item" data-procedure="5">
+							<div class="procedure-item__title">Оставьте</div>
+							<div class="procedure-item__description">Связаться с нами можно любым удобным способом, позвонить, заказать
+								обратный звонок, написать на электронную почту, в WhatsApp или Telegram.</div>
+						</div>
+
+						<a href="#" class="procedure-btn btn consultation-btn consultation-btn-b">Начать сотрудничество</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq section-anchor" id="faq">
+			<div class="container">
+				<div class="faq-title title"><span>Вопрос-ответ</span> по теме</div>
+				<div class="faq-content">
+					<div class="faq-group">
+						<div class="faq-item">
+							<div class="faq-item__heading">
+								<div class="faq-item__title">Как развестись без согласия супруги/супруга?</div>
+								<div class="faq-item__arrow">
+									<img src="img/arrow-dropdown-b.svg" alt="">
+									<img src="img/close-dropdown.svg" alt="" class="active">
+								</div>
+							</div>
+							<div class="faq-item__dropdown">
+								<p>Расторгнуть брак путем обращения в орган записи актов гражданского состояния возможно при совокуптом стечении
+									нескольких обстоятельств.</p>
+
+								<p>Для расторжения брака через ЗАГС необходимо подать заявление установленного образца. К заявлению должен быть
+									приложен определенный пакет документов.</p>
+							</div>
+						</div>
+						
+						<div class="faq-item">
+							<div class="faq-item__heading">
+								<div class="faq-item__title">Как быстро развестись по обоюдному согласию?</div>
+								<div class="faq-item__arrow">
+									<img src="img/arrow-dropdown-b.svg" alt="">
+									<img src="img/close-dropdown.svg" alt="" class="active">
+								</div>
+							</div>
+							<div class="faq-item__dropdown">
+								<p>Расторгнуть брак путем обращения в орган записи актов гражданского состояния возможно при совокуптом стечении
+									нескольких обстоятельств.</p>
+
+								<p>Для расторжения брака через ЗАГС необходимо подать заявление установленного образца. К заявлению должен быть
+									приложен определенный пакет документов.</p>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<div class="faq-item__heading">
+								<div class="faq-item__title">Как разделить долги при разводе?</div>
+								<div class="faq-item__arrow">
+									<img src="img/arrow-dropdown-b.svg" alt="">
+									<img src="img/close-dropdown.svg" alt="" class="active">
+								</div>
+							</div>
+							<div class="faq-item__dropdown">
+								<p>Расторгнуть брак путем обращения в орган записи актов гражданского состояния возможно при совокуптом стечении
+									нескольких обстоятельств.</p>
+
+								<p>Для расторжения брака через ЗАГС необходимо подать заявление установленного образца. К заявлению должен быть
+									приложен определенный пакет документов.</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="faq-group">
+						<div class="faq-item">
+							<div class="faq-item__heading">
+								<div class="faq-item__title">Можно ли признать брачный договор недействительным?</div>
+								<div class="faq-item__arrow">
+									<img src="img/arrow-dropdown-b.svg" alt="">
+									<img src="img/close-dropdown.svg" alt="" class="active">
+								</div>
+							</div>
+							<div class="faq-item__dropdown">
+								<p>Расторгнуть брак путем обращения в орган записи актов гражданского состояния возможно при совокуптом стечении
+									нескольких обстоятельств.</p>
+							</div>
+						</div>
+						
+						<div class="faq-item">
+							<div class="faq-item__heading">
+								<div class="faq-item__title">Бывший муж/жена не дает выезд ребенка за границу, что делать?</div>
+								<div class="faq-item__arrow">
+									<img src="img/arrow-dropdown-b.svg" alt="">
+									<img src="img/close-dropdown.svg" alt="" class="active">
+								</div>
+							</div>
+							<div class="faq-item__dropdown">
+								<p>Расторгнуть брак путем обращения в орган записи актов гражданского состояния возможно при совокуптом стечении
+									нескольких обстоятельств.</p>
+
+								<p>Для расторжения брака через ЗАГС необходимо подать заявление установленного образца. К заявлению должен быть
+									приложен определенный пакет документов.</p>
+							</div>
+						</div>
+
+						<div class="faq-item">
+							<div class="faq-item__heading">
+								<div class="faq-item__title">Как увеличить размер алиментов?</div>
+								<div class="faq-item__arrow">
+									<img src="img/arrow-dropdown-b.svg" alt="">
+									<img src="img/close-dropdown.svg" alt="" class="active">
+								</div>
+							</div>
+							<div class="faq-item__dropdown">
+								<p>Расторгнуть брак путем обращения в орган записи актов гражданского состояния возможно при совокуптом стечении
+									нескольких обстоятельств.</p>
+
+								<p>Для расторжения брака через ЗАГС необходимо подать заявление установленного образца. К заявлению должен быть
+									приложен определенный пакет документов.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<a href="#" class="faq-btn btn consultation-btn consultation-btn-b">Задать вопрос</a>
+			</div>
+		</section>
+
+		<section class="advantages section-anchor" id="advantages">
 			<img src="img/advantages-bg.png" alt="" class="advantages-bg desktop">
 			<img src="img/advantages-bg-mobile.png" alt="" class="advantages-bg mobile">
 			<div class="container">
@@ -1015,7 +1636,8 @@
 					<div class="advantages-heading">
 						<div class="advantages-title title">Надежная и честная работа с 2012 года</div>
 						<div class="advantages-description">
-							Мы дорожим своей репутацией, не прячемся за безликими названиями и не даем пустых обещаний. Работаем честно и
+							Мы дорожим своей репутацией, не прячемся за безликими названиями и не даем пустых обещаний. Работаем честно
+							и
 							не
 							скрываем свои лица.
 						</div>
@@ -1031,10 +1653,11 @@
 								</div>
 								<div class="advantages-slider__text">
 									<div class="advantages-slider__text-title">Бесплатная консультация</div>
-									<div class="advantages-slider__text-description">Отвечаем на все вопросы, <br class="desktop"> проводим предварительные бесплатные консультации и делаем правовой анализ вашей ситуации бесплатно.</div>
+									<div class="advantages-slider__text-description">Отвечаем на все вопросы, <br class="desktop"> проводим
+										предварительные бесплатные консультации и делаем правовой анализ вашей ситуации бесплатно.</div>
 								</div>
 							</div>
-							
+
 							<div class="swiper-slide advantages-slider__item">
 								<div class="advantages-slider__img">
 									<svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1043,7 +1666,8 @@
 								</div>
 								<div class="advantages-slider__text">
 									<div class="advantages-slider__text-title">Без риска</div>
-									<div class="advantages-slider__text-description">Мы гарантируем результат и&nbsp;прописываем свои обязательства
+									<div class="advantages-slider__text-description">Мы гарантируем результат и&nbsp;прописываем свои
+										обязательства
 										в&nbsp;договоре. Всегда делаем то, что&nbsp;обещали.</div>
 								</div>
 							</div>
@@ -1056,7 +1680,8 @@
 								</div>
 								<div class="advantages-slider__text">
 									<div class="advantages-slider__text-title">Справедливая цена</div>
-									<div class="advantages-slider__text-description">Мы гарантируем результат, прописываем свои обязательства
+									<div class="advantages-slider__text-description">Мы гарантируем результат, прописываем свои
+										обязательства
 										в договоре. Всегда делаем то, что обещали.</div>
 								</div>
 							</div>
@@ -1069,7 +1694,8 @@
 								</div>
 								<div class="advantages-slider__text">
 									<div class="advantages-slider__text-title">Понятная цена</div>
-									<div class="advantages-slider__text-description">Не делаем из работы тайны. Четко составляем план работы по этапам 
+									<div class="advantages-slider__text-description">Не делаем из работы тайны. Четко составляем план работы
+										по этапам
 										и&nbsp;объясняем, что мы делаем. Вы всегда будете знать, как идет дело.</div>
 								</div>
 							</div>
@@ -1082,7 +1708,8 @@
 								</div>
 								<div class="advantages-slider__text">
 									<div class="advantages-slider__text-title">Конфиденциальность</div>
-									<div class="advantages-slider__text-description">Строго храним данные клиентов. <br class="desktop"> Без вашего согласия, никто не <br class="desktop"> узнает, что вы обращались к нам.</div>
+									<div class="advantages-slider__text-description">Строго храним данные клиентов. <br class="desktop"> Без
+										вашего согласия, никто не <br class="desktop"> узнает, что вы обращались к нам.</div>
 								</div>
 							</div>
 
@@ -1094,7 +1721,8 @@
 								</div>
 								<div class="advantages-slider__text">
 									<div class="advantages-slider__text-title">Всегда на связи</div>
-									<div class="advantages-slider__text-description">Юрист всегда готов ответить на <br class="desktop"> вопросы. Получайте
+									<div class="advantages-slider__text-description">Юрист всегда готов ответить на <br class="desktop">
+										вопросы. Получайте
 										информацию удобным способом: в личном кабинете, в&nbsp;мессенджерах, по телефону.</div>
 								</div>
 							</div>
@@ -1357,41 +1985,6 @@
 									</a>
 								</div>
 							</div>
-							
-							<div class="swiper-slide reviews-slider__item">
-								<div class="reviews-slider__logo">
-									<img src="img/reviews-logo.png" alt="">
-								</div>
-								<div class="reviews-slider__title">
-									Отзывы на <span>Альфа Срахование</span>
-								</div>
-								<div class="reviews-slider__info">
-									<div class="reviews-slider__info-circle">
-										<div class="reviews-slider__info-number">
-											<span>4,8</span> / 5
-										</div>
-									</div>
-
-									<div class="reviews-slider__info-group">
-										<div class="reviews-slider__info-title">14 отзывов</div>
-										<div class="reviews-slider__info-stars">
-											<div class="reviews-slider__info-star"></div>
-											<div class="reviews-slider__info-star"></div>
-											<div class="reviews-slider__info-star"></div>
-											<div class="reviews-slider__info-star"></div>
-											<div class="reviews-slider__info-star"></div>
-										</div>
-									</div>
-									<a href="#" class="reviews-slider__info-btn btn team-btn">
-										Перейти
-										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path
-												d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-												fill="black" fill-opacity="0.82" />
-										</svg>
-									</a>
-								</div>
-							</div>
 
 							<div class="swiper-slide reviews-slider__item">
 								<div class="reviews-slider__logo">
@@ -1462,12 +2055,49 @@
 									</a>
 								</div>
 							</div>
-							
+
+							<div class="swiper-slide reviews-slider__item">
+								<div class="reviews-slider__logo">
+									<img src="img/reviews-logo.png" alt="">
+								</div>
+								<div class="reviews-slider__title">
+									Отзывы на <span>Альфа Срахование</span>
+								</div>
+								<div class="reviews-slider__info">
+									<div class="reviews-slider__info-circle">
+										<div class="reviews-slider__info-number">
+											<span>4,8</span> / 5
+										</div>
+									</div>
+
+									<div class="reviews-slider__info-group">
+										<div class="reviews-slider__info-title">14 отзывов</div>
+										<div class="reviews-slider__info-stars">
+											<div class="reviews-slider__info-star"></div>
+											<div class="reviews-slider__info-star"></div>
+											<div class="reviews-slider__info-star"></div>
+											<div class="reviews-slider__info-star"></div>
+											<div class="reviews-slider__info-star"></div>
+										</div>
+									</div>
+									<a href="#" class="reviews-slider__info-btn btn team-btn">
+										Перейти
+										<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
+												fill="black" fill-opacity="0.82" />
+										</svg>
+									</a>
+								</div>
+							</div>
+
 							<div class="reviews-big desktop">
 								<div class="reviews-big__title">Современная защита - признанный лидер рынка</div>
 								<div class="reviews-big__description">
-									Все сроки этапов были соблюдены. Быстро решались все возникающие вопросы. Сайт получился просто супер, теперь
-									конкуренты остались далеко позади! Сайт получился просто супер, теперь конкуренты остались далеко позади!
+									Все сроки этапов были соблюдены. Быстро решались все возникающие вопросы. Сайт получился просто супер,
+									теперь
+									конкуренты остались далеко позади! Сайт получился просто супер, теперь конкуренты остались далеко
+									позади!
 								</div>
 							</div>
 						</div>
@@ -1496,18 +2126,21 @@
 					<div class="reviews-big mobile">
 						<div class="reviews-big__title">Современная защита - признанный лидер рынка</div>
 						<div class="reviews-big__description">
-							Все сроки этапов были соблюдены. Быстро&nbsp;решались все возникающие вопросы. Сайт получился просто супер, теперь
-							конкуренты&nbsp;остались далеко позади! Сайт получился просто супер, теперь конкуренты остались далеко позади!
+							Все сроки этапов были соблюдены. Быстро&nbsp;решались все возникающие вопросы. Сайт получился просто супер,
+							теперь
+							конкуренты&nbsp;остались далеко позади! Сайт получился просто супер, теперь конкуренты остались далеко
+							позади!
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="recommendations">
+		<section class="recommendations recommendations-services section-anchor" id="recommendations">
 			<div class="container">
 				<div class="recommendations-heading section-heading">
-					<div class="recommendations-title title section-title desktop"><span>Рекомендации</span> юридических клиентов</div>
+					<div class="recommendations-title title section-title desktop"><span>Рекомендации</span> юридических клиентов
+					</div>
 					<div class="recommendations-title title section-title mobile">Нас рекомендуют</div>
 					<a href="#" class="recommendations-more btn team-btn team-btn-w">
 						Все отзывы
@@ -1721,7 +2354,7 @@
 			</div>
 		</section>
 
-		<section class="mass-media">
+		<section class="mass-media mass-media-services">
 			<div class="container">
 				<div class="mass-media__title title"><span>СМИ</span> пишут о нас</div>
 				<div class="mass-media__content">
@@ -1776,38 +2409,13 @@
 			</div>
 		</section>
 
-		<section class="consultation">
-			<img src="img/consultation-bg.png" alt="" class="consultation-bg desktop">
-			<img src="img/consultation-bg-mobile.png" alt="" class="consultation-bg mobile">
+		<section class="consultation consultation-banner">
 			<div class="container">
-				<img src="img/specialist.png" alt="" class="consultation-author__photo">
-
 				<div class="consultation-content">
+					<img src="img/consultation-banner-bg.png" alt="" class="consultation-bg desktop">
+					<img src="img/consultation-bg-mobile.png" alt="" class="consultation-bg mobile">
 					<div class="consultation-text">
-						<div class="consultation-title title desktop">Получите юридическую&nbsp;консультацию по&nbsp;наследственным спорам</div>
-						<div class="consultation-title title mobile">Мы поможем решить Вашу проблему!</div>
-						<div class="consultation-description">
-							<div class="consultation-description__item">
-								<div class="consultation-description__number">01</div>
-								<div class="consultation-description__text">
-									<span>Поговорим о деятельности вашей компании,</span> возможных причинах и рисках ее банкротства, а также обсудим имеющиеся активы
-								</div>
-							</div>
-
-							<div class="consultation-description__item">
-								<div class="consultation-description__number">02</div>
-								<div class="consultation-description__text">
-									<span>Проанализируем ваши действия,</span> чтобы понять, к чему кредиторы могут придраться
-								</div>
-							</div>
-
-							<div class="consultation-description__item">
-								<div class="consultation-description__number">03</div>
-								<div class="consultation-description__text">
-									<span>Получите детальный расчет</span> стоимости ведения дела
-								</div>
-							</div>
-						</div>
+						<div class="consultation-title title">Получите юридическую консультацию</div>
 
 						<form action="#" class="consultation-form form form-w">
 							<div class="form-content">
@@ -1821,8 +2429,15 @@
 									<span>Введите телефон</span>
 								</label>
 
-								<button class="consultation-form__btn btn consultation-btn">Получить
-									консультацию</button>
+								<label>
+									<input type="email" required placeholder="example@yandex.ru">
+									<span>Введите E-mail</span>
+								</label>
+
+								<label class="wide">
+									<textarea placeholder="Опишите свою проблему или задайте свой вопрос"></textarea>
+									<span>Ваше сообщение</span>
+								</label>
 
 								<div class="form-privacy">
 									<label class="label-checkbox">
@@ -1833,277 +2448,18 @@
 												конфиденциальности</a>
 										</div>
 									</label>
+
+									<button class="consultation-form__btn btn consultation-btn">Получить консультацию</button>
 								</div>
 							</div>
 						</form>
 					</div>
 
 					<div class="consultation-author">
-						<div class="consultation-author__name">Павел <br> Нечаев</div>
-						<div class="consultation-author__position">партнер, адвокат, арбитражный управляющий</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="blog">
-			<div class="container">
-				<div class="blog-heading section-heading">
-					<div class="blog-title title section-title">Блог</div>
-					<a href="#" class="blog-more btn team-btn team-btn-w">
-						Все статьи
-						<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.7"
-								d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-								fill="white" />
-						</svg>
-					</a>
-				</div>
-			</div>
-
-			<div class="blog-content">
-				<div class="container">
-					<div class="swiper blog-slider" id="blog-slider">
-						<div class="swiper-wrapper blog-slider-wrapper">
-							<a href="#" class="swiper-slide blog-slider__item">
-								<img src="img/blog-img.png" alt="" class="blog-slider__img">
-								<div class="blog-slider__label">Банкротство</div>
-								<div class="blog-slider__title">Как правильно подать исковое заявление</div>
-								
-								<div class="blog-slider__info">
-									<div class="blog-slider__left">
-										<div class="blog-slider__author">
-											Автор: <span>Иван Иванов</span>
-										</div>
-									</div>
-
-									<div class="blog-slider__right">
-										<div class="blog-slider__views">
-											<div class="blog-slider__views-img">
-												<img src="img/views.svg" alt="">
-											</div>
-											<div class="blog-slider__views-text">86 <span>просмотров</span></div>
-										</div>
-										<div class="blog-slider__date">12 янв. 2020</div>
-									</div>
-								</div>
-							</a>
-							
-							<a href="#" class="swiper-slide blog-slider__item">
-								<img src="img/blog-img.png" alt="" class="blog-slider__img">
-								<div class="blog-slider__label">Банкротство</div>
-								<div class="blog-slider__title">Как правильно подать исковое заявление</div>
-								
-								<div class="blog-slider__info">
-									<div class="blog-slider__left">
-										<div class="blog-slider__author">
-											Автор: <span>Иван Иванов</span>
-										</div>
-									</div>
-
-									<div class="blog-slider__right">
-										<div class="blog-slider__views">
-											<div class="blog-slider__views-img">
-												<img src="img/views.svg" alt="">
-											</div>
-											<div class="blog-slider__views-text">86 <span>просмотров</span></div>
-										</div>
-										<div class="blog-slider__date">12 янв. 2020</div>
-									</div>
-								</div>
-							</a>
-
-							<a href="#" class="swiper-slide blog-slider__item">
-								<img src="img/blog-img.png" alt="" class="blog-slider__img">
-								<div class="blog-slider__label">Банкротство</div>
-								<div class="blog-slider__title">Как правильно подать исковое заявление</div>
-								
-								<div class="blog-slider__info">
-									<div class="blog-slider__left">
-										<div class="blog-slider__author">
-											Автор: <span>Иван Иванов</span>
-										</div>
-									</div>
-
-									<div class="blog-slider__right">
-										<div class="blog-slider__views">
-											<div class="blog-slider__views-img">
-												<img src="img/views.svg" alt="">
-											</div>
-											<div class="blog-slider__views-text">86 <span>просмотров</span></div>
-										</div>
-										<div class="blog-slider__date">12 янв. 2020</div>
-									</div>
-								</div>
-							</a>
-
-							<a href="#" class="swiper-slide blog-slider__item">
-								<img src="img/blog-img.png" alt="" class="blog-slider__img">
-								<div class="blog-slider__label">Банкротство</div>
-								<div class="blog-slider__title">Как правильно подать исковое заявление</div>
-								
-								<div class="blog-slider__info">
-									<div class="blog-slider__left">
-										<div class="blog-slider__author">
-											Автор: <span>Иван Иванов</span>
-										</div>
-									</div>
-
-									<div class="blog-slider__right">
-										<div class="blog-slider__views">
-											<div class="blog-slider__views-img">
-												<img src="img/views.svg" alt="">
-											</div>
-											<div class="blog-slider__views-text">86 <span>просмотров</span></div>
-										</div>
-										<div class="blog-slider__date">12 янв. 2020</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						
-						<div class="slider-kit">
-							<div class="swiper-button-prev slider-button-prev other-slider-button blog-button-prev">
-								<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM10 3.5L1 3.5V4.5L10 4.5V3.5Z"
-										fill="#1A89FF" />
-								</svg>
-							</div>
-
-							<div class="swiper-pagination slider-pagination blog-pagination"></div>
-
-							<div class="swiper-button-next slider-button-next other-slider-button blog-button-next">
-								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0L0 3.4Z"
-										fill="#1A89FF" />
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="news">
-			<div class="container">
-				<div class="news-heading section-heading">
-					<div class="news-title title section-title">Новости</div>
-					<a href="#" class="news-more btn team-btn team-btn-w">
-						Все новости
-						<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path opacity="0.7"
-								d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-								fill="white" />
-						</svg>
-					</a>
-				</div>
-			</div>
-
-			<div class="news-content">
-				<div class="container">
-					<div class="swiper news-slider" id="news-slider">
-						<div class="swiper-wrapper news-slider-wrapper">
-							<div class="swiper-slide news-slider__item">
-								<div class="news-slider__date">
-									<div class="news-slider__date-day">22</div>
-									<div class="news-slider__date-month">/ 09</div>
-								</div>
-								<div class="news-slider__title">Привлечение руководителя должника к субсидиарной ответственности</div>
-								<a href="#" class="news-slider__link">
-									Читать полностью
-									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-											fill="#1A89FF" />
-									</svg>
-								</a>
-							</div>
-
-							<div class="swiper-slide news-slider__item">
-								<div class="news-slider__date">
-									<div class="news-slider__date-day">19</div>
-									<div class="news-slider__date-month">/ 09</div>
-								</div>
-								<div class="news-slider__title">Привлечение руководителя должника к субсидиарной ответственности</div>
-								<a href="#" class="news-slider__link">
-									Читать полностью
-									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-											fill="#1A89FF" />
-									</svg>
-								</a>
-							</div>
-
-							<div class="swiper-slide news-slider__item">
-								<div class="news-slider__date">
-									<div class="news-slider__date-day">14</div>
-									<div class="news-slider__date-month">/ 08</div>
-								</div>
-								<div class="news-slider__title">Привлечение руководителя должника к субсидиарной ответственности</div>
-								<a href="#" class="news-slider__link">
-									Читать полностью
-									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-											fill="#1A89FF" />
-									</svg>
-								</a>
-							</div>
-
-							<div class="swiper-slide news-slider__item">
-								<div class="news-slider__date">
-									<div class="news-slider__date-day">12</div>
-									<div class="news-slider__date-month">/ 08</div>
-								</div>
-								<div class="news-slider__title">Привлечение руководителя должника к субсидиарной ответственности</div>
-								<a href="#" class="news-slider__link">
-									Читать полностью
-									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-											fill="#1A89FF" />
-									</svg>
-								</a>
-							</div>
-
-							<div class="swiper-slide news-slider__item">
-								<div class="news-slider__date">
-									<div class="news-slider__date-day">10</div>
-									<div class="news-slider__date-month">/ 08</div>
-								</div>
-								<div class="news-slider__title">Привлечение руководителя должника к субсидиарной ответственности</div>
-								<a href="#" class="news-slider__link">
-									Читать полностью
-									<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0V3.4Z"
-											fill="#1A89FF" />
-									</svg>
-								</a>
-							</div>
-						</div>
-
-						<div class="slider-kit">
-							<div class="swiper-button-prev slider-button-prev other-slider-button news-button-prev">
-								<svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM10 3.5L1 3.5V4.5L10 4.5V3.5Z"
-										fill="#1A89FF" />
-								</svg>
-							</div>
-
-							<div class="swiper-pagination slider-pagination news-pagination"></div>
-
-							<div class="swiper-button-next slider-button-next other-slider-button news-button-next">
-								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M9.28284 3.28284C9.43905 3.12663 9.43905 2.87337 9.28284 2.71716L6.73726 0.171573C6.58105 0.0153632 6.32778 0.0153632 6.17157 0.171573C6.01536 0.327783 6.01536 0.581048 6.17157 0.737258L8.43431 3L6.17157 5.26274C6.01536 5.41895 6.01536 5.67222 6.17157 5.82843C6.32778 5.98464 6.58105 5.98464 6.73726 5.82843L9.28284 3.28284ZM0 3.4H9V2.6H0L0 3.4Z"
-										fill="#1A89FF" />
-								</svg>
-							</div>
+						<img src="img/specialist.png" alt="" class="consultation-author__photo">
+						<div class="consultation-author__text">
+							<div class="consultation-author__name">Павел <br> Нечаев</div>
+							<div class="consultation-author__position">партнер, адвокат, арбитражный управляющий</div>
 						</div>
 					</div>
 				</div>
@@ -2120,7 +2476,7 @@
 					<img src="img/logo-f.svg" alt="">
 				</a>
 			</div>
-			
+
 			<div class="footer-content">
 				<div class="footer-left">
 					<div class="footer-info">
@@ -2226,7 +2582,7 @@
 							<span>мы перезвоним в течении 10 минут</span>
 						</div>
 					</div>
-					
+
 					<div class="form-content">
 						<label>
 							<input type="text" required placeholder="ФИО">
@@ -2245,7 +2601,8 @@
 								<input type="checkbox" class="visually-hidden" checked>
 								<span></span>
 								<div class="checkbox-title desktop">
-									При нажатии на кнопку “Получить консультацию” вы соглашаетесь с <a href="#">политикой конфиденциальности</a>
+									При нажатии на кнопку “Получить консультацию” вы соглашаетесь с <a href="#">политикой
+										конфиденциальности</a>
 								</div>
 								<div class="checkbox-title mobile">
 									Нажимая кнопку “Получить консультацию” я соглашаюсь с <a href="#">политикой конфиденциальности</a>
@@ -2257,7 +2614,8 @@
 			</div>
 
 			<div class="footer-bottom">
-				<div class="footer-copy">&copy; 2012-2021 Юридическая фирма Нечаев и&nbsp;Партнеры. <span>Все права защищены</span></div>
+				<div class="footer-copy">&copy; 2012-2021 Юридическая фирма Нечаев и&nbsp;Партнеры. <span>Все права
+						защищены</span></div>
 
 				<div class="footer-social">
 					<a href="#" class="footer-social__item">
@@ -2265,7 +2623,7 @@
 							<img src="img/vk-w.svg" alt="">
 						</div>
 					</a>
-					
+
 					<a href="#" class="footer-social__item">
 						<div class="footer-social__img">
 							<img src="img/telegram-w.svg" alt="">
@@ -2288,88 +2646,10 @@
 		</div>
 	</footer>
 
-	<div class="popup" id="popup">
-		<div class="popup-wrap">
-			<div class="popup-content">
-				<div class="popup-close">
-					<img src="img/delete.svg" alt="">
-				</div>
-
-				<img src="img/logo-decor.png" alt="" class="popup-content__img">
-
-				<form action="#" class="popup-form form form-w">
-					<div class="popup-heading">
-						<!-- <div class="popup-title title">Получите юридическую консультацию</div> -->
-						<div class="popup-title title"></div>
-						<div class="popup-subtitle">Мы свяжемся с Вам в течении 15 минут и ответим на все вопросы</div>
-					</div>
-
-					<div class="form-content">
-						<label>
-							<input type="text" required placeholder="ФИО">
-							<span>Ваше имя*</span>
-						</label>
-
-						<label class="label-phone">
-							<input type="text" required class="form-phone" placeholder="+ 7 (___) ___ - __ - __">
-							<span>Введите телефон*</span>
-						</label>
-
-						<label>
-							<input type="email" required placeholder="example@yandex.ru:">
-							<span>Введите E-mail</span>
-						</label>
-
-						<label class="wide">
-							<textarea placeholder="Опишите свою проблему или задайте свой вопрос"></textarea>
-							<span>Ваше сообщение</span>
-						</label>
-
-						<div class="form-small">* Обязательные поля для заполнения</div>
-
-						<div class="form-privacy">
-							<!-- <button class="popup-form__btn btn consultation-btn">Получить консультацию</button> -->
-							<button class="popup-form__btn btn consultation-btn"></button>
-
-							<label class="label-checkbox">
-								<input type="checkbox" class="visually-hidden" checked>
-								<span></span>
-								<div class="checkbox-title desktop">
-									Отправляя заявку, я соглашаюсь на обработку персональных данных, в соответствии с 
-									<a href="#">политикой конфиденциальности</a>
-								</div>
-								<div class="checkbox-title mobile">
-									При нажатии на кнопку “Получить консультацию” вы соглашаетесь с
-									<a href="#">политикой конфиденциальности</a>
-								</div>
-							</label>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<div class="popup popup-sent" id="popup-sent">
-		<div class="popup-wrap">
-			<div class="popup-content">
-				<div class="popup-close">
-					<img src="img/delete.svg" alt="">
-				</div>
-
-				<div class="popup-heading">
-					<div class="popup-title popup-sent__title title">
-						<span>Спасибо за вашу заявку,</span> наш юрист свяжется с вами в ближайшее время
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
+	<!-- <script src="js/jquery.fancybox.min.js"></script> -->
 	<script src="js/main.js"></script>
 
 </body>
