@@ -1,39 +1,71 @@
 .info
-  padding: 6rem 0 18.9rem
+  padding: 8.9rem 0 21.3rem
   background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
   &-content
     display: flex
     justify-content: space-between
   &-text
-    width: 41%
+    width: 46%
     flex-shrink: 0
-    padding-top: 2.6rem
+    padding-top: 2.1rem
     color: rgba(0, 0, 0, 0.82)
   &-title
-    width: 65%
-    font-size: 2.8rem
-    line-height: 1.36
-    margin-bottom: 2.4rem
+    width: 70%
+    font-size: 3.4rem
+    line-height: 1.47
+    margin-bottom: 3.9rem
     span
       font-weight: 700
   &-description
-    font-size: 1.4rem
-    font-weight: 500
-    line-height: 1.71
+    font-size: 1.6rem
+    // font-weight: 500
+    line-height: 1.62
     p
       &:not(:last-child)
-        margin-bottom: 2.4rem
+        margin-bottom: 2.6rem
+    &__more
+      display: none
+  &-list
+    padding-left: 2.9rem
+    &__group
+      margin: 4.8rem 0
+    &__title
+      font-size: 1.8rem
+      font-weight: 600
+      color: rgba(0, 0, 0, 0.9)
+      margin-bottom: 3.6rem
+    li
+      font-size: 1.6rem
+      color: #000
+      position: relative
+      &:not(:last-child)
+        margin-bottom: .7rem
+      &::before
+        content: ''
+        position: absolute
+        top: 1rem
+        left: -2.9rem
+        width: 1.6rem
+        height: 1px
+        background: #1A89FF
+  &-bottom
+    font-size: 1.8rem
+    font-weight: 600
+    line-height: 1.44
+    color: rgba(0, 0, 0, 0.9)
   &-item
     background: #fff
     border-radius: 0.6rem
-    box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    // box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
     &s
       width: 48.6%
       flex-shrink: 0
     &:not(:last-child)
-      margin-bottom: 1.8rem
+      margin-bottom: 2rem
     &__heading
-      min-height: 9.8rem
+      // min-height: 9.8rem
+      min-height: 12.4rem
       display: flex
       align-items: center
       padding: 2.8rem 2.8rem
@@ -52,6 +84,7 @@
       width: 4.2rem
       height: 4.2rem
       border-radius: 50%
+      flex-shrink: 0
       background: rgba(26, 137, 255, 0.08)
       position: relative
       z-index: 1
@@ -67,10 +100,11 @@
         width: 1.2rem
         height: auto
     &__title
-      font-size: 1.5rem
+      font-size: 1.8rem
       font-weight: 600
-      color: rgba(#000, .8)
-      margin-right: 2rem
+      line-height: 1.44
+      color: rgba(#000, .82)
+      margin-right: 10rem
       transition: color .25s
     &__arrow
       margin-left: auto
@@ -80,6 +114,7 @@
       width: 3.4rem
       height: 3.4rem
       border-radius: 50%
+      flex-shrink: 0
       border: .14rem solid rgba(26, 137, 255, 0.14)
       transition: all .25s
       // cursor: pointer
@@ -99,8 +134,8 @@
       display: none
       margin: 0 8.3rem 0 4.7rem
       padding: 1.9rem 0 5.5rem
-      font-size: 1.4rem
-      line-height: 1.86
+      font-size: 1.6rem
+      line-height: 1.62
       color: rgba(#000, .82)
       position: relative
       &::before
@@ -115,3 +150,41 @@
       p
         &:not(:last-child)
           margin-bottom: 2.6rem
+
+  &.info-services
+    padding: 9rem 0 9.5rem
+    background: none
+    .info
+      &-content
+        align-items: center
+      &-text
+        padding-top: 0
+      &-item
+        &s
+          // margin-top: 7.3rem
+        &__heading
+          min-height: 9.1rem
+          padding: 2.4rem 2.8rem
+  &.info-price
+    padding-bottom: 8rem
+    .info-title
+      width: 95%
+    .info-description
+      ul
+        margin-top: 3rem
+        margin-bottom: 2.4rem
+        li
+          padding-left: 2.7rem
+          position: relative
+          font-size: 1.6rem
+          line-height: 162%
+          font-weight: 400
+          color: #000000
+          &:before
+            width: 1.6rem
+            position: absolute
+            left: 0
+            top: 50%
+            content: ''
+            height: 0.1rem
+            background: #1A89FF

@@ -1,5 +1,5 @@
 .footer
-  padding: 6.4rem 0 4.6rem
+  padding: 7.2rem 0 4.1rem
   box-shadow: 0 -3.1rem 8rem rgba(0, 0, 0, 0.12), 0 -2.1rem 5rem rgba(0, 0, 0, 0.1)
   color: #fff
   position: relative
@@ -19,33 +19,37 @@
   &-logo
     display: inline-block
     width: 17.1rem
-    margin-bottom: 4.7rem
+    margin-bottom: 5.5rem
   &-content
     display: flex
     justify-content: space-between
-    margin-bottom: 4.5rem
+    margin-bottom: 5.5rem
   &-left
     display: flex
   &-info
-    max-width: 24rem
+    max-width: 27rem
     flex-shrink: 0
-    margin-right: 6.3rem
+    margin-right: 5.6rem
     &__list
       li
-        font-size: 1.4rem
-        font-weight: 500
+        font-size: 1.6rem
+        // font-weight: 500
         &:not(:last-child)
-          margin-bottom: 1.7rem
+          margin-bottom: 1.5rem
+        a
+          transition: color .25s
+          &:hover
+            color: #1A89FF
   &-contacts
-    font-size: 1.4rem
-    font-weight: 500
-    margin-bottom: 3.7rem
+    font-size: 1.6rem
+    // font-weight: 500
+    margin-bottom: 3.6rem
   &-phone
     display: inline-flex
     align-items: center
-    font-size: 2rem
-    font-weight: 600
-    letter-spacing: .01em
+    font-size: 1.8rem
+    font-weight: 700
+    // letter-spacing: .01em
     margin-bottom: 1.2rem
     transition: all .25s
     &__img
@@ -63,19 +67,24 @@
           fill: #1a89ff
           stroke: #1a89ff
   &-work
-    font-size: 1.2rem
-    font-weight: 500
-    letter-spacing: .02em
-    margin-bottom: 3.7rem
+    // font-size: 1.6rem
+    // font-weight: 500
+    // letter-spacing: .02em
+    margin-bottom: 3.2rem
   &-address
-    margin-bottom: 1.7rem
+    margin-bottom: 1.4rem
+  &-email
+    transition: color .25s
+    &:hover
+      color: #1A89FF
   &-payment
     margin-bottom: 7.4rem
     &__btn
-      margin-bottom: 3.7rem
+      min-width: auto
       width: 24rem
+      margin-bottom: 2.2rem
       border: .12rem solid #fff
-      font-size: 1.3rem
+      font-size: 1.6rem
       color: #fff
       &:hover
         background: #fff
@@ -91,13 +100,13 @@
         margin-left: -0.5rem
   &-group
     &:not(:last-child)
-      margin-right: 7.8rem
-    &:nth-last-child(2)
-      margin-right: 6.7rem
+      margin-right: 6.8rem
+    // &:nth-last-child(2)
+    //   margin-right: 6.7rem
     &__title
-      font-size: 2rem
-      font-weight: 600
-      letter-spacing: .01em
+      font-size: 1.8rem
+      font-weight: 700
+      // letter-spacing: .01em
       margin-bottom: 6.3rem
       a
         transition: color .25s
@@ -105,60 +114,63 @@
           color: #1A89FF
   &-list
     li
-      font-size: 1.4rem
+      font-size: 1.6rem
       font-weight: 500
       &:not(:last-child)
-        margin-bottom: 1.72rem
+        margin-bottom: 1.48rem
       a
         transition: color .25s
         &:hover
           color: #1A89FF
   &-form
-    width: 22.3%
+    width: 22.8%
     flex-shrink: 0
+    &__text
+      margin-bottom: 7rem
     &__title
-      font-size: 2rem
-      font-weight: 500
-      letter-spacing: .01em
-      margin-bottom: 1.5rem
+      font-size: 1.8rem
+      font-weight: 700
+      // letter-spacing: .01em
+      margin-bottom: 1.4rem
     &__subtitle
-      font-size: 1.4rem
-      margin-bottom: 6.7rem
+      font-size: 1.6rem
+      line-height: 1.62
       span
         display: block
-        font-size: 1.5rem
-        font-weight: 600
-        margin-top: 0.4rem
+        // font-size: 1.5rem
+        // font-weight: 600
+        // margin-top: 0.4rem
     label
       width: 100%
       &:not(:last-child)
-        margin-bottom: 5.5rem
-      span
-        font-weight: 500
+        margin-bottom: 6.5rem
+      // span
+      //   font-weight: 500
     &__btn
       width: 100%
-      margin-top: -3.1rem
+      margin-top: -3.5rem
     .form-privacy
-      margin-top: 2.8rem
+      margin-top: 3rem
+      width: 95%
       label
         align-items: flex-start
         &.label-checkbox > span
           margin-top: 0.5rem
         .checkbox-title
-          font-weight: 500
+          // font-weight: 500
           line-height: 2.17
-          a
-            font-weight: 600
+          // a
+          //   font-weight: 600
   &-bottom
     border-top: 1px solid rgba(255, 255, 255, 0.14)
-    padding-top: 3.9rem
+    padding-top: 5.2rem
     display: flex
     justify-content: space-between
     align-items: center
   &-copy
-    font-size: 1.5rem
-    font-weight: 500
-    letter-spacing: .01em
+    font-size: 1.8rem
+    font-weight: 600
+    // letter-spacing: .01em
     span
       color: rgba(255, 255, 255, 0.5)
   &-social

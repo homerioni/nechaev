@@ -1,8 +1,8 @@
 .blog
-  padding-bottom: 18rem
+  padding-bottom: 18.4rem
   overflow: hidden
   &-heading
-    margin-bottom: 5.5rem
+    margin-bottom: 4.4rem
   &-content
     position: relative
     &::after
@@ -28,8 +28,9 @@
     &__item
       width: 92.5rem
       min-height: 50rem
+      height: auto
       border-radius: 0.6rem
-      padding: 4.5rem 5.5rem 8rem 4rem
+      padding: 4.5rem 4.8rem 8rem
       // background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.7) 1.08%, rgba(20, 99, 197, 0.7) 99.1%)
       box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.1), 0 1rem 5.5rem rgba(0, 0, 0, 0.1), 0 1rem 3.5rem rgba(0, 0, 0, 0.1)
       position: relative
@@ -53,40 +54,44 @@
       +cover
       z-index: -2
     &__label
-      height: 4.2rem
-      padding: 0 2.7rem
+      height: 6rem
+      padding: 0 3rem
       display: inline-flex
       justify-content: center
       align-items: center
       background: rgba(255, 255, 255, 0.1)
-      border-radius: 2rem
-      font-size: 1.2rem
-      font-weight: 500
+      border-radius: 3rem
+      font-size: 1.4rem
+      // font-weight: 500
       line-height: 1
-      margin-bottom: 6.6rem
+      margin-bottom: 5rem
     &__title
       width: 50%
-      font-size: 2.6rem
+      font-size: 3.4rem
       font-weight: 600
-      line-height: 1.31
-      margin-left: .5rem
+      line-height: 1.47
+      // margin-left: .5rem
       margin-right: 5rem
     &__info
       position: absolute
-      bottom: 5.4rem
-      left: 6.6rem
-      right: 5.6rem
+      bottom: 5rem
+      // left: 6.6rem
+      // right: 5.6rem
+      left: 6.9rem
+      right: 3.8rem
       display: flex
       justify-content: space-between
       align-items: center
     &__left
       max-width: 55%
     &__author
-      font-size: 1.4rem
+      // font-size: 1.4rem
+      font-size: 1.6rem
       position: relative
       span
-        font-weight: 600
-        margin-left: .3rem
+        font-size: 1.8rem
+        font-weight: 700
+        margin-left: 1rem
       &::before
         content: ''
         position: absolute
@@ -101,17 +106,17 @@
     &__views
       display: flex
       align-items: center
-      margin-right: 3rem
+      margin-right: 3.9rem
       &-img
         width: 1.6rem
         flex-shrink: 0
         margin-right: 1.2rem
       &-text
-        font-size: 1.3rem
-        font-weight: 500
+        font-size: 1.6rem
+        // font-weight: 500
     &__date
-      font-size: 1.3rem
-      font-weight: 500
+      font-size: 1.6rem
+      // font-weight: 500
   &-button
     &-prev, &-next
       opacity: 0
@@ -124,7 +129,8 @@
     &-next
       transform: translate(50%, -50%)
   &-pagination.swiper-pagination
-    bottom: -7.7rem
+    // bottom: -7.7rem
+    bottom: -10.5rem
     left: -.6rem
     .swiper-pagination-bullet
       svg
@@ -135,9 +141,12 @@
       // &-active
       //   svg
       //     animation-duration: 6.3s
+  // &.other-blog
+  //   .blog-pagination
+  //     display: none
 
 .all-blog
-  padding: 9.6rem 0 9rem
+  padding: 10.5rem 0 8rem
   position: relative
   &::before
     content: ''
@@ -152,33 +161,36 @@
     background-size: cover
     z-index: -1
   &__title
-    margin-bottom: 5.5rem
+    margin-bottom: 5rem
   &__content
     display: grid
     grid-template-columns: repeat(3, 1fr)
-    grid-gap: 3.8rem 3.4rem
-    margin-bottom: 4rem
+    grid-gap: 3.4rem 3.4rem
+    margin-bottom: 6rem
   .blog-slider
     &__item
+      display: inline-block
       width: 100%
-      min-height: 34rem
+      min-height: 40rem
+      padding: 4rem 4rem 8rem
       padding-bottom: 11rem
       box-shadow: none
     &__label
-      margin-bottom: 4.2rem
+      height: 4.7rem
+      margin-bottom: 7.2rem
     &__title
       width: 75%
       font-size: 1.8rem
-      font-weight: 700
+      font-weight: 600
       line-height: 1.44
       margin-left: 0
     &__info
       display: block
       left: 4rem
       right: 4rem
-      bottom: 4rem
+      bottom: 3.6rem
     &__left
-      margin-bottom: 2.5rem
+      margin-bottom: 1.6rem
       margin-left: 2rem
   &__more.btn
     padding: 0 5.6rem
@@ -186,17 +198,19 @@
     transform: translateX(-50%)
 
 .page-blog
-  margin-top: 15.15rem
-  padding: 3.5rem 0 10rem
+  margin-top: 14.8rem
+  padding: 3.5rem 0 7.3rem
   .path
-    margin-bottom: 6.1rem
+    margin-bottom: 6.2rem
   &__content
     // display: flex
     // justify-content: space-between
     // flex-wrap: wrap
     display: grid
-    grid-template-columns: 19.3% 77%
-    grid-gap: 0 5.2rem
+    // grid-template-columns: 19.3% 77%
+    // grid-gap: 0 5.2rem
+    grid-template-columns: 19.8% 77%
+    grid-gap: 0 4.5rem
     .publications
       // width: 77%
       // margin-left: auto
@@ -251,35 +265,41 @@
     //     margin-left: .6rem
     //     path
     //       transition: fill .25s
-  &__title
-    // width: 77%
-    // margin-left: auto
+  &__heading
+    display: flex
+    align-items: center
+    justify-content: space-between
     grid-column-start: 2
+    margin-bottom: 6rem
+    &-btn
+      display: none
+  &__title
     font-size: 4.2rem
-    margin-bottom: 3.2rem
   &__filter
     // width: 77%
     grid-column-start: 2
     display: flex
     align-items: center
     // margin: -5rem 0 7.4rem auto
-    margin-bottom: 7.4rem
+    margin-bottom: 8rem
     &.page-blog__filter-category
-      margin-bottom: 5rem
+      margin-bottom: 6rem
     &-item
-      height: 4.6rem
+      min-width: 17.1rem
+      height: 5.9rem
       display: flex
       justify-content: center
       align-items: center
-      padding: 0 5rem
-      border-radius: 2.4rem
+      flex-shrink: 0
+      padding: 0 5.5rem
+      border-radius: 3rem
       border: 1px solid rgba(#2E2E2E, .14)
-      font-size: 1.2rem
+      font-size: 1.8rem
       font-weight: 600
       color: rgba(#000, .82)
       transition: all .25s
       &:not(:last-child)
-        margin-right: 2.6rem
+        margin-right: 2rem
       &:hover
         background: #daecff
         border-color: #daecff
@@ -295,17 +315,20 @@
     grid-column-start: 2
     .blog
       &-heading
-        margin-bottom: 4.2rem
+        margin-bottom: 6rem
       &-more.btn
-        padding: 0 4.4rem
+        padding: 0 1.5rem
+        svg
+          margin-left: 1rem
       &-slider
         &-wrapper
           display: grid
           grid-template-columns: repeat(3, 1fr)
-          grid-gap: 3.8rem 3.2rem
+          // grid-gap: 3.8rem 3.2rem
+          grid-gap: 3rem 3rem
         &__item
           width: 100%
-          min-height: 34rem
+          min-height: 40rem
           padding: 3.8rem 4rem 11rem
           box-shadow: none
           &.wide
@@ -313,57 +336,62 @@
             padding: 3.8rem 4rem 7rem
             .blog-slider
               &__label
-                margin-bottom: 2rem
+                margin-bottom: 3rem
               &__title
-                width: 55%
-                font-size: 2.6rem
+                margin-left: 0.5rem
+                width: 70%
+                font-size: 3.4rem
                 font-weight: 600
-                line-height: 1.31
-                margin-bottom: 1.8rem
+                line-height: 1.48
+                margin-bottom: 2.1rem
               &__description
                 display: block
                 margin-bottom: 2rem
               &__info
-                right: 4.6rem
-                bottom: 4rem
+                left: 6.5rem
+                right: 4rem
+                bottom: 3.5rem
           &:not(.wide)
+            padding: 3.8rem 2.5rem 11rem
             .blog-slider
               &__label
-                margin-bottom: 4.2rem
+                margin-bottom: 7.3rem
               &__title
                 width: 100%
                 font-size: 1.8rem
-                font-weight: 700
+                // font-weight: 700
                 line-height: 1.44
                 margin-left: 0
               &__info
                 display: block
-                left: 4rem
-                right: 4rem
-                bottom: 4rem
+                left: 2.5rem
+                right: 2.5rem
+                bottom: 3.5rem
               &__left
                 max-width: none
-                margin-bottom: 2.5rem
+                margin-bottom: 1.8rem
                 margin-left: 2rem
+        &__label
+          height: 4.7rem
         &__description
           display: none
-          width: 75%
-          font-size: 1.4rem
-          font-weight: 500
-          line-height: 1.86
+          width: 90%
+          font-size: 1.6rem
+          // font-weight: 500
+          line-height: 1.62
           margin-left: .5rem  
   &__group
     &:not(:last-child)
       margin-bottom: 8rem
   &__banner
-    padding: 6.4rem 7.2rem 7rem
+    padding: 5.4rem 7.2rem 5.5rem
     border-radius: 3rem
     position: relative
     z-index: 1
     overflow: hidden
     color: #fff
     box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.1), 0 1rem 5.5rem rgba(0, 0, 0, 0.146387), 0 1rem 3.5rem rgba(0, 0, 0, 0.100323)
-    margin-bottom: 7.5rem
+    margin-bottom: 8.7rem
     &::before
       content: ''
       position: absolute
@@ -375,6 +403,8 @@
       position: absolute
       inset: 0
       z-index: -2
+      height: 100%
+      object-fit: cover
     &-photo
       position: absolute
       bottom: -8.5rem
@@ -382,50 +412,55 @@
       width: 45rem
       z-index: 1
     &-text
-      width: 45%
+      width: 49%
     &-title
-      font-size: 3rem
-      font-weight: 700
-      line-height: 1.53
-      margin-bottom: 3.3rem
+      font-size: 3.4rem
+      font-weight: 600
+      line-height: 1.48
+      margin-bottom: 2.4rem
     &-description
-      font-size: 1.4rem
-      font-weight: 500
-      margin-bottom: 3.4rem
+      font-size: 1.6rem
+      // font-weight: 500
+      margin-bottom: 4.3rem
     &-btn.btn
       min-width: auto
-      padding: 0 9.4rem
+      padding: 0 11.7rem
+  &-slider
+    .slider-kit
+      display: none
 
 .blog-article
-  padding: 6.7rem 0 8.2rem
+  padding: 16.1rem 0 8.2rem
   &__content
     display: flex
     justify-content: space-between
   &__left
-    width: 19.3%
+    width: 19.8%
     .page-rubric
       position: static
       &:not(:last-child)
-        margin-bottom: 3.6rem
-      &__list
-        li
-          line-height: 1.54
+        margin-bottom: 8.4rem
+      // &__list
+      //   li
+      //     line-height: 1.54
   &__social
-    padding: 4.2rem 3.6rem 4.6rem
+    padding: 2.9rem 3.6rem 3.6rem
     background: rgba(26, 137, 255, 0.06)
     backdrop-filter: blur(1rem)
     border-radius: 0.6rem
     &-title
-      font-size: 1.5rem
+      width: 75%
+      margin: 0 auto 2.5rem
+      text-align: center
+      font-size: 1.8rem
       font-weight: 600
-      line-height: 1.2
-      margin-bottom: 2.7rem
+      line-height: 1.44
     &-item
       &s
         display: flex
-        margin-left: .8rem
+        margin-left: 1.5rem
       &:not(:last-child)
-        margin-right: 2.4rem
+        margin-right: 2.1rem
       &:hover
         .blog-article__social
           &-img
@@ -474,32 +509,37 @@
   &__text
     width: 77%
     padding-top: 5rem
-    font-size: 1.4rem
-    line-height: 1.86
+    font-size: 1.6rem
+    line-height: 1.62
     color: rgba(#000, .82)
     p
       &:not(:last-child)
         margin-bottom: 2.6rem
     > p
       width: 80%
+  &__heading
+    font-size: 1.8rem
+    line-height: 1.44
+    margin-bottom: 6.8rem
   &__title
     width: 70%
     font-size: 3.4rem
     font-weight: 700
-    line-height: 1.35
+    line-height: 1.47
     color: rgba(#000, .9)
-    margin-bottom: 2.8rem
+    margin-bottom: 3rem
   &__subtitle
-    font-size: 2.2rem
-    font-weight: 600
-    line-height: 1.36
+    font-size: 1.8rem
+    font-weight: 700
+    line-height: 1.44
     color: rgba(#000, 1)
-    margin-bottom: 2.8rem
+    margin-bottom: 3rem
   &__group
-    margin: 4.2rem 0 4rem
-    padding: 5rem 8rem
+    margin: 5rem 0 4rem
+    padding: 5.3rem 8.4rem
     background: #fff
-    box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    // box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
     border-radius: 0.6rem
   &__list
     &:not(:last-child)
@@ -508,12 +548,12 @@
       color: #000
       position: relative
       &:not(:last-child)
-        margin-bottom: 1.4rem
+        margin-bottom: 2.55rem
       &::before
         content: ''
         position: absolute
         top: 1.4rem
-        left: -3rem
+        left: -3.4rem
         width: 1.6rem
         height: 1px
         background: #1A89FF
@@ -524,13 +564,13 @@
         counter-increment: num
         content: counter(num) '.'
         position: absolute
-        left: -3rem
-        top: .6rem
+        left: -3.4rem
+        top: .5rem
         width: auto
         height: auto
         background: none
-        font-size: 1.4rem
-        font-weight: 600
+        font-size: 1.8rem
+        font-weight: 700
         color: #1A89FF
         line-height: 1
   &__consultation
@@ -542,13 +582,13 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 2.2rem 3rem 2.2rem 2.6rem
+    padding: 1.8rem 2.1rem 1.8rem 1.8rem
     background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
     border-radius: .6rem
     color: #1A89FF
     margin-bottom: 3.2rem
     &-text
-      width: 75%
+      max-width: 75%
       display: flex
       align-items: center
     &-img
@@ -556,29 +596,30 @@
       justify-content: center
       align-items: center
       flex-shrink: 0
-      width: 3.6rem
-      height: 3.6rem
+      width: 5.1rem
+      height: 5.1rem
       border-radius: 50%
       background: rgba(26, 137, 255, 0.1)
-      margin-right: 2rem
+      margin-right: 1.4rem
       img
-        width: 1.5rem
+        width: 2.1rem
     &-title
-      font-weight: 600
+      // font-weight: 600
     &-info
       display: flex
       align-items: center
-      font-weight: 500
+      // font-weight: 500
       &-icon
         width: 1.6rem
         flex-shrink: 0
-        margin-right: 0.6rem
+        margin-right: 0.8rem
       &-left
         display: flex
         align-items: center
+        font-size: 1.3rem
         font-weight: 600
       > span
-        margin: 0 1rem 0 1.4rem
+        margin: 0 1.3rem 0 1.5rem
       &-weight
         display: flex
         align-items: center
@@ -588,8 +629,9 @@
     display: flex
     justify-content: space-between
     align-items: flex-end
-    padding: 3.8rem 3.4rem 3.8rem 4.9rem
-    box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.1), 0 1rem 5.5rem rgba(0, 0, 0, 0.146387), 0 1rem 3.5rem rgba(0, 0, 0, 0.100323)
+    padding: 2.2rem 7.1rem 2.2rem 4.9rem
+    // box-shadow: 0 5rem 8rem rgba(0, 0, 0, 0.1), 0 1rem 5.5rem rgba(0, 0, 0, 0.146387), 0 1rem 3.5rem rgba(0, 0, 0, 0.100323)
+    box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
     border-radius: .6rem
     position: relative
     overflow: hidden
@@ -610,46 +652,48 @@
       z-index: -2
       object-position: 0 -33rem
     &-text
-      max-width: 75%
+      max-width: 55%
     &-suptitle
-      font-size: 1.2rem
-      font-weight: 500
-      margin-bottom: .5rem
+      font-size: 1.6rem
+      // font-weight: 500
+      margin-bottom: 1rem
     &-title
-      font-size: 2.4rem
+      font-size: 3.4rem
       font-weight: 600
-      line-height: 1.42
+      line-height: 1.47
     &-author
-      font-size: 1.4rem
+      font-size: 1.6rem
       position: relative
       margin-bottom: 0.5rem
       span
-        font-weight: 600
-        margin-left: .3rem
+        font-size: 1.8rem
+        font-weight: 700
+        margin-left: 1rem
       &::before
         content: ''
         position: absolute
         top: 50%
-        left: -2rem
+        left: -2.2rem
+        transform: translateY(-50%)
         width: 1rem
         height: 1px
         background: #fff
   &__quote
     // padding: 4.5rem 6.2rem 4.5rem 4.9rem
-    padding: 6.7rem 6.2rem 4.5rem 4.9rem
+    padding: 7.6rem 6.2rem 5.4rem 4.9rem
     background: rgba(26, 137, 255, 0.04)
     border-radius: 0.6rem
     font-size: 1.6rem
-    font-weight: 500
+    // font-weight: 500
     font-style: italic
-    line-height: 1.88
+    line-height: 1.62
     color: #1A89FF
     margin-bottom: 3.5rem
     position: relative
     &-img
       // display: none
       position: absolute
-      top: 3.3rem
+      top: 4.1rem
       left: 5rem
       width: 2.2rem
     // &.w-quote
@@ -657,38 +701,50 @@
     //   .blog-article__quote-img
     //     display: block
   &__block
-    padding: 4.7rem 4.9rem 5.1rem 4.9rem
+    padding: 4.7rem 4rem 5.1rem 4.8rem
     border: .14rem solid #1A89FF
     border-radius: 0.6rem
-    margin-bottom: 4.4rem
-    &-title
-      width: 80%
-      font-weight: 600
-      margin-bottom: 2.5rem
+    margin: 4.5rem 0 7.8rem
+    // &-title
+    //   // width: 80%
+    //   // font-weight: 600
+    //   margin-bottom: 2.5rem
+    p
+      &:not(:last-child)
+        margin-bottom: 2.5rem
   .faq
     background: none
     box-shadow: none
     padding: 0
     margin-bottom: 8rem
     &-title
-      margin-bottom: 5.5rem
+      margin-bottom: 5.7rem
+    &-content
+      margin-bottom: 4.5rem
     &-group
       width: 100%
+    &-item
+      &__dropdown
+        padding-right: 35rem
+        padding-bottom: 5.3rem
+    &-btn.btn
+      padding: 0 7.3rem
   &__services
     color: rgba(#000, .82)
-    margin-bottom: 3.8rem
+    margin-bottom: 4.4rem
     &-heading
       display: flex
       align-items: center
       justify-content: space-between
-      margin-bottom: .5rem
+      margin-bottom: 1.5rem
       .blog-article__services-elem
-          padding-top: 2.3rem
-          padding-bottom: 2.3rem
-          background: #fff
-          box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06)
-          font-size: 1.8rem
-          font-weight: 700
+        padding-top: 2.6rem
+        padding-bottom: 2.6rem
+        background: #fff
+        // box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.06)
+        box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+        font-size: 1.8rem
+        font-weight: 700
     &-item
       display: flex
       // align-items: center
@@ -697,29 +753,30 @@
         .blog-article__services-elem
           background: rgba(26, 137, 255, 0.06)
     &-elem
-      padding: 2.8rem 4.6rem 3.3rem
+      padding: 2.4rem 4.6rem 3rem
       border-radius: .6rem
     &-name
       width: 31%
+      padding-bottom: 2.4rem
       display: flex
       align-items: center
-      font-size: 1.5rem
+      font-size: 1.8rem
       font-weight: 600
     &-description
       width: 67.7%
-      font-size: 1.4rem
+      font-size: 1.6rem
   &__free
-    padding: 4.2rem 6.2rem 4rem
+    padding: 4.9rem 4rem 5rem
     background: rgba(26, 137, 255, 0.06)
     border: .14rem solid #1A89FF
     backdrop-filter: blur(1rem)
     border-radius: 3rem
-    margin-bottom: 5.3rem
+    margin-bottom: 8rem
     &-title
       font-size: 2rem
       color: rgba(0, 0, 0, 0.82)
       text-align: center
-      margin-bottom: 3rem
+      margin-bottom: 4.2rem
       span
         font-weight: 700
     &-form.form
@@ -729,95 +786,118 @@
       flex-wrap: wrap
       label
         &:not(.label-checkbox)
-          width: 22.8rem
+          width: 22.2rem
+        &.label-checkbox
+          // span
+          //   margin-top: -1.5rem
+          // .checkbox-title
+          //   line-height: 2.17
+      // .form-privacy
+      //   width: 75%
+      //   margin-top: 2.3rem
     &-btn.btn
       min-width: auto
-      width: 22.8rem
+      width: 22.2rem
+      padding: 0 2rem
   &__inheritance
-    padding: 4rem 0 4.7rem
+    padding: 5.7rem 0 6.4rem
     background: #fff
     border: .14rem solid #1A89FF
-    box-shadow: 0 .6rem 4rem rgba(0, 0, 0, 0.06)
+    // box-shadow: 0 .6rem 4rem rgba(0, 0, 0, 0.06)
+    box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
     border-radius: 3rem
-    margin-bottom: 7rem
+    margin-bottom: 8rem
     &-heading
-      padding: 0 6rem
+      padding: 0 5rem
       color: rgba(0, 0, 0, 0.82)
-      margin-bottom: 3.6rem
+      margin-bottom: 5.5rem
     &-title
       font-size: 2.8rem
-      margin-bottom: 0.2rem
+      margin-bottom: 1rem
       span
         font-weight: 700
     &-subtitle
-      font-size: 1.4rem
+      font-size: 1.6rem
       span
-        font-weight: 600
+        font-size: 1.8rem
+        font-weight: 700
         color: #1A89FF
     &-info
       display: flex
       justify-content: space-between
       color: rgba(0, 0, 0, 0.82)
-      padding: 4.3rem 6.2rem 5rem
+      padding: 3.2rem 7rem 3.2rem 5.2rem
       background: rgba(26, 137, 255, 0.04)
-      margin-bottom: 7.5rem
+      margin-bottom: 6.5rem
       &-item
         display: flex
         max-width: 31.5%
         .decor
-          margin-right: 1.6rem
+          margin-right: 1.5rem
       &-text
         padding-top: .5rem
       &-title
-        font-size: 1.6rem
-        font-weight: 600
-        margin-bottom: 0.2rem
+        font-size: 1.8rem
+        font-weight: 700
+        margin-bottom: 1rem
       &-description
-        width: 96%
-        font-size: 1.3rem
-        line-height: 1.85
+        width: 90%
+        font-size: 1.6rem
+        line-height: 1.62
     &-form.form
       display: flex
       justify-content: space-between
       flex-wrap: wrap
-      padding: 0 6rem
+      padding: 0 5rem
       label
         &:not(.label-checkbox)
-          width: 22.8rem
+          width: 22.2rem
       .form-privacy
         // margin-top: 3.5rem
     &-btn.btn
       min-width: auto
-      width: 22.8rem
+      width: 22.2rem
+      padding: 0
   .page-blog__banner
-    margin-bottom: 6.8rem
+    margin-bottom: 5.5rem
   &__bottom
     text-align: center
   &__share
     display: inline-flex
     align-items: center
     font-size: 1.6rem
-    font-weight: 600
-    margin-bottom: 6.2rem
+    // font-weight: 600
+    margin-bottom: 8rem
     &-item
       display: inline-block
-      width: 1.6rem
+      width: 1.7rem
+      opacity: .5
+      transition: opacity .25s
+      &:hover
+        opacity: 1
       &:not(:last-child)
-        margin-right: 1.8rem
+        margin-right: 1.3rem
       &s
         display: flex
         align-items: center
-        margin-left: 2.3rem
+        margin-left: 3rem
   &__link
     &s
-      display: inline-flex
-      margin-bottom: 4.7rem
+      display: flex
+      flex-wrap: wrap
+      margin-bottom: 4rem
     &.btn
       min-width: auto
+      // width: 24.4rem
+      height: 6.5rem
       padding: 0 3.1rem
+      font-size: 1.6rem
+      font-weight: 400
+      line-height: 1.62
       border: none
       background: rgba(26, 137, 255, 0.1)
       color: #1A89FF
+      margin-bottom: 2rem
       &:hover
         background: #1A89FF
         color: #fff
@@ -826,14 +906,16 @@
   &__author
     display: flex
     justify-content: space-between
-    padding: 5rem 6.2rem 4.7rem
+    padding: 4.7rem 5.2rem 4.5rem
     background: #fff
     border-radius: 3rem
-    box-shadow: 0 .6rem 4rem rgba(0, 0, 0, 0.06)
-    margin-bottom: 6.7rem
+    // box-shadow: 0 .6rem 4rem rgba(0, 0, 0, 0.06)
+    box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
+    margin-bottom: 6rem
     &-left
-      width: 37%
+      width: 39.7%
       display: flex
+      // align-items: center
       justify-content: space-between
       flex-shrink: 0
     &-photo
@@ -846,7 +928,7 @@
       padding: 1rem
       border-radius: 50%
       border: 1px solid rgba(26, 137, 255, 0.2)
-      margin-right: 2rem
+      margin: auto 0
       img
         width: 100%
         height: 100%
@@ -856,43 +938,47 @@
       display: flex
       flex-direction: column
       align-items: flex-start
+      margin-left: 1rem
     &-suptitle
-      font-size: 1.3rem
-      line-height: 1.2
-      margin-bottom: 0.4rem
-    &-name
       font-size: 1.6rem
-      font-weight: 600
+      line-height: 1.2
+      margin-bottom: 0.7rem
+    &-name
+      display: inline-block
+      font-size: 1.8rem
+      font-weight: 700
       line-height: 1.62
-      margin-bottom: 1rem
+      margin-bottom: 1.2rem
     &-publications
-      font-size: 1.3rem
+      font-size: 1.6rem
       color: rgba(0, 0, 0, 0.4)
       margin-bottom: 2rem
     &-more
       margin-top: auto
       display: inline-flex
       align-items: center
-      font-size: 1.2rem
-      font-weight: 500
+      font-size: 1.6rem
+      // font-weight: 500
       svg
-        width: 1rem
+        width: 1.6rem
         height: auto
         flex-shrink: 0
-        margin-left: .6rem
+        margin-left: 1.2rem
     &-text
       width: 55%
+      padding-right: 1rem
       flex-shrink: 0
     &-description
-      font-size: 1.3rem
+      font-size: 1.6rem
 
 .popular-blog
-  padding: 0 0 10rem
+  padding: 0 0 8rem
   position: relative
   &::before
     content: ''
     position: absolute
-    bottom: 17.6rem
+    // bottom: 17.6rem
+    top: -23.4rem
     left: 0
     right: 0
     height: 72rem

@@ -8,6 +8,7 @@
 	<title>Нечаев и партнеры</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -340,15 +341,38 @@
 				<div class="team-title title">Вся команда</div>
 
 				<div class="team-filter">
-					<a href="#" class="team-filter__item active">Все</a>
-					<a href="#" class="team-filter__item">Партнеры</a>
-					<a href="#" class="team-filter__item">Старшие юристы</a>
-					<a href="#" class="team-filter__item">Юристы</a>
-					<a href="#" class="team-filter__item">Маркетинг</a>
-					<a href="#" class="team-filter__item">Бухгалтерия</a>
-					<a href="#" class="team-filter__item">Бухгалтерия</a>
-					<a href="#" class="team-filter__item">Бухгалтерия</a>
-					<a href="#" class="team-filter__item">Бухгалтерия</a>
+					<div class="team-filter__swiper swiper">
+						<div class="team-filter__swiper-wrapper swiper-wrapper">
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item team-filter__item--small active">Все</a>
+							</div>
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Партнеры</a>
+							</div>
+
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Старшие юристы</a>
+							</div>
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Юристы</a>
+							</div>
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Маркетинг</a>
+							</div>
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Бухгалтерия</a>
+							</div>
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Бухгалтерия</a>
+							</div>
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Бухгалтерия</a>
+							</div>
+							<div class="team-filter__slide swiper-slide">
+								<a href="#" class="team-filter__item">Бухгалтерия</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -736,6 +760,7 @@
 	</footer>
 
 	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="/js/jquery.scrollbar.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>

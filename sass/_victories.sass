@@ -1,7 +1,10 @@
 .victories
   // padding-bottom: 10.4rem
-  padding: 10.5rem 0 10.4rem
+  // padding: 10.5rem 0 10.4rem
+  padding: 8rem 0 8.6rem
   overflow: hidden
+  &-heading
+    margin-bottom: 4.5rem
   &-content
     position: relative
     &::after
@@ -32,6 +35,7 @@
       flex-shrink: 0
       width: 44.4rem
       min-height: 52.4rem
+      height: auto
       // border: .14rem solid #1A89FF
       position: relative
       transition: box-shadow .25s, transform .25s
@@ -57,25 +61,33 @@
       position: absolute
       top: 3rem
       left: 3rem
-      background: rgba(255, 255, 255, 0.2)
+      min-width: auto
+      padding: 0 3.5rem
+      // background: rgba(255, 255, 255, 0.2)
+      background: rgba(255, 255, 255, 0.1)
       font-size: 1.4rem
-      +futura
-      font-weight: 300
+      // +futura
+      // font-weight: 300
     &__text
       flex-grow: 1
-      padding: 3.8rem 4.6rem
+      // padding: 3.8rem 4.6rem
+      padding: 3.8rem 3.5rem 3.2rem 2.9rem
       border: .14rem solid #1A89FF
       border-top: none
       border-radius: 0 0 .6rem .6rem 
     &__title
+      padding-left: 0.8rem
       font-size: 1.8rem
       font-weight: 600
-      line-height: 1.56
-      letter-spacing: .02em
+      // line-height: 1.56
+      line-height: 1.44
+      // letter-spacing: .02em
       color: rgba(0, 0, 0, 0.9)
-      margin-bottom: 4rem
+      // margin-bottom: 4rem
+      margin-bottom: 5rem
     &__group
-      width: 98.5%
+      // width: 98.5%
+      width: 100%
       display: flex
       justify-content: space-between
       flex-wrap: wrap
@@ -105,10 +117,12 @@
           span
             font-size: 3rem
       &-title
-        font-size: 2rem
-        font-weight: 600
+        font-size: 1.8rem
+        font-weight: 700
+        margin-bottom: .8rem
       &-subtitle
-        font-size: 1.3rem
+        // font-size: 1.3rem
+        font-size: 1.6rem
         text-transform: lowercase
   &-button
     &-prev, &-next
@@ -121,11 +135,15 @@
       transform: translateX(-50%)
     &-next
       transform: translateX(50%)
+  &-pagination.swiper-pagination
+    display: none
   
   &.other-victories
-    padding: 0 0 10rem
-    margin-top: -1.5rem
+    padding: 0 0 9.1rem
+    margin-top: .8rem
     .victories
+      &-heading
+        margin-bottom: 7rem
       &-content
         &::after
           // content: none

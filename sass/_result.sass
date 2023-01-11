@@ -1,6 +1,6 @@
 .result
   // padding: 10.6rem 0 17.9rem
-  padding: 10.6rem 0 7.9rem
+  padding: 8.5rem 0 0
   position: relative
   &::before
     content: ''
@@ -13,7 +13,7 @@
     z-index: -1
   &-title
     font-weight: 400
-    margin-bottom: 1rem
+    margin-bottom: 2.2rem
     span
       font-weight: 700
   &-heading
@@ -21,7 +21,8 @@
     align-items: center
     justify-content: space-between
     position: relative
-    margin-bottom: 5.2rem
+    // margin-bottom: 5.2rem
+    margin-bottom: 4.6rem
     #marker
       position: absolute
       bottom: 0
@@ -40,11 +41,14 @@
       height: 1px
       background: rgba(46, 46, 46, 0.14)
     &__item
+      height: 8.5rem
       display: inline-flex
-      align-items: baseline
-      padding: 2.4rem .5rem
-      font-size: 1.3rem
-      font-weight: 500
+      align-items: center
+      // align-items: baseline
+      // padding: 2.4rem .5rem
+      // padding: 2.4rem 0
+      font-size: 1.6rem
+      // font-weight: 500
       color: rgba(#000, .3)
       position: relative
       cursor: pointer
@@ -52,9 +56,10 @@
       &-text
         transition: color .25s, text-shadow .25s
         pointer-events: none
+        margin-top: 1rem
       span
         font-size: 3.4rem
-        font-weight: 600
+        font-weight: 700
         line-height: 1
         transition: color .25s
         margin-right: 0.5rem
@@ -71,10 +76,12 @@
         opacity: 0
         transition: opacity .25s
       &.active
+        font-size: 1.8rem
+        font-weight: 700
         span
           color: #1A89FF
         .result-heading__item-text
-          text-shadow: 0 0 .1rem rgba(#000, .82)
+          // text-shadow: 0 0 .1rem rgba(#000, .82)
           color: rgba(#000, .82)
         &::after
           opacity: 1
@@ -82,109 +89,122 @@
         span
           color: #1A89FF
         .result-heading__item-text
-          text-shadow: 0 0 .1rem rgba(#000, .82)
+          // text-shadow: 0 0 .1rem rgba(#000, .82)
           color: rgba(#000, .82)
-        &::after
-          opacity: 1
+        // &::after
+        //   opacity: 1
   &-item
     display: none
     justify-content: space-between
     &.active
       display: flex
     &__left
-      width: 29%
+      width: 32%
       flex-shrink: 0
-      padding: 2.1rem 0
+      padding: 5.1rem 0 4.8rem
     &__right
       width: 65%
       flex-shrink: 0
       background: #fff
       border-radius: .6rem
-      box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+      // box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+      box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
       position: relative
       &-bg
         position: absolute
-        top: 49.5%
-        right: 4rem
+        top: 50%
+        right: -2rem
         transform: translateY(-50%)
-        width: 40.3rem
-        height: 56rem
+        // width: 40.3rem
+        // height: 56rem
+        width: 42.6rem
+        height: 59.2rem
         object-fit: contain
     &__consultation
       &-left
         .result-item
           &__title
-            width: 75%
+            // width: 75%
           &__description
-            margin-bottom: 4.9rem
+            margin-bottom: 4.7rem
           &__group
-            margin-bottom: 4.3rem
+            margin-bottom: 5.3rem
       &-right
-        padding: 7.3rem 43rem 6.1rem 7.5rem
+        padding: 7.4rem 40rem 6.8rem 7.5rem
         .result-item
           &__title
-            margin-bottom: 4rem
+            margin-bottom: 4.1rem
           &__block
-            width: 90%
+            // width: 90%
     &__strategy
       .result-item
         &__left
-          width: 32%
-          padding: 7.2rem 5.1rem 5.3rem
+          width: 32.7%
+          padding: 3.5rem 3.6rem 3.2rem
           background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
           border-radius: 0.6rem    
         &__title
-          margin-bottom: 3.9rem
+          margin-bottom: 2.6rem
+          span
+            font-weight: 600
         &__description
-          width: 100%
-          margin-bottom: 3.8rem
+          width: 96%
+          margin-bottom: 2.8rem
         &__right
           display: flex
           justify-content: space-between
           align-content: baseline
           flex-wrap: wrap
-          padding: 7.3rem 6.5rem 6rem
+          padding: 5.1rem 6rem 6rem
           &-bg
             width: 48.7rem
             height: 48.7rem
             top: auto
-            bottom: -4.7rem
-            right: -5.3rem
+            bottom: -5.2rem
+            right: -4.3rem
             transform: none
         &__block
-          width: 56%
+          width: 50%
           &:not(:last-child)
-            margin-bottom: 3.3rem
+            margin-bottom: 3.1rem
           &:nth-of-type(2)
-            width: 40%
+            width: 43%
             .result-item__block-description
-              width: 112%
+              // width: 112%
           &:nth-of-type(3), &:nth-of-type(4)
-            width: 53%
+            width: 45%
             margin-right: 40%
     &__documents
-      align-items: flex-start
+      // align-items: flex-start
+      align-items: center
       .result-item
         &__left
-          width: 56%
-          padding: 5.7rem 6rem 5.3rem 6.5rem
+          width: 58%
+          padding: 5.3rem 4rem 5.3rem 6.5rem
           background: #fff
           box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
           border-radius: 0.6rem  
         &__title
-          width: 75%
-          margin-bottom: 3.9rem
+          // width: 75%
+          margin-bottom: 3rem
+          font-weight: 600
+          span
+            font-weight: inherit
         &__description
           width: 100%
-          margin-bottom: 2.5rem
+          margin-bottom: 5rem
         &__group
           display: flex
-          justify-content: space-between
+          // justify-content: space-between
           margin-bottom: 3rem
         &__list
-          max-width: 47.5%
+          width: auto
+          // max-width: 47.5%
+          &:not(:last-child)
+            margin-right: 7.4rem
         &__right
-          width: 40.4%
+          width: 40.1%
+          margin-top: 3rem
           display: flex
           justify-content: space-between
           flex-wrap: wrap
@@ -194,77 +214,78 @@
           width: 100%
           height: 24rem
           object-fit: cover
-          filter: drop-shadow(0 2.5rem 4rem rgba(0, 0, 0, 0.1)) drop-shadow(0 .5rem 2.75rem rgba(0, 0, 0, 0.15)) drop-shadow(0 .5rem 1.75rem rgba(0, 0, 0, 0.1))
+          // filter: drop-shadow(0 2.5rem 4rem rgba(0, 0, 0, 0.1)) drop-shadow(0 .5rem 2.75rem rgba(0, 0, 0, 0.15)) drop-shadow(0 .5rem 1.75rem rgba(0, 0, 0, 0.1))
+          filter: drop-shadow(-.25rem .2rem 3rem rgba(0, 0, 0, 0.06)) drop-shadow(0 0 2.5rem rgba(0, 0, 0, 0.1))
           margin-bottom: -4.2rem
           &-block
             width: 47.5%
             padding: 2.8rem 4.9rem 0
             background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
             border-radius: 0.6rem
-            margin-bottom: 8.2rem
+            margin-bottom: 6.9rem
     &__protection
       .result-item
         &__left
           width: 100%
           padding: 0
         &__title
-          margin-bottom: 3.3rem
+          font-weight: 700
+          margin-bottom: 2.9rem
         &__description
-          width: 68%
-          margin-bottom: 3.8rem
+          width: 80%
+          margin-bottom: 3rem
         &__group
-          padding: 4.5rem 7rem
+          padding: 4.8rem 6.6rem
           background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
           border-radius: 0.6rem
           &-title
-            font-size: 2rem
-            margin-bottom: 3.6rem
+            font-size: 1.8rem
+            margin-bottom: 3.8rem
         &__block
-          max-width: 33.3%
+          max-width: 32.5%
           &:not(:last-child)
-            margin-bottom: 4.5rem
+            margin-bottom: 3.5rem
           &-decor
             margin-top: 0.8rem
           &-title
-            font-size: 1.3rem
-            line-height: 1.69
-          &-description
-            width: 95%
-
-
+            font-size: 1.8rem
+            line-height: 1.44
+            margin-bottom: 1.5rem
+          // &-description
+          //   width: 95%
     &__title
-      font-size: 2.2rem
-      font-weight: 500
-      line-height: 1.36
-      margin-bottom: 2.2rem
+      font-size: 3rem
+      // font-weight: 500
+      line-height: 1.67
+      margin-bottom: 2.3rem
       span
         font-weight: 700
     &__description
-      width: 93%
-      font-size: 1.4rem
-      line-height: 1.86
+      width: 96%
+      font-size: 1.6rem
+      line-height: 1.62
       p
         &:not(:last-child)
           margin-bottom: 2.6rem
     &__group
       &-title
-        font-size: 1.6rem
-        font-weight: 600
-        line-height: 1.62
-        letter-spacing: .02em
+        font-size: 1.8rem
+        font-weight: 700
+        line-height: 1.44
+        // letter-spacing: .02em
         color: rgba(0, 0, 0, 0.9)
-        margin-bottom: 2rem
+        margin-bottom: 3rem
     &__list
-      width: 90%
+      width: 82%
       padding-left: 3rem
       li
-        font-size: 1.4rem
-        line-height: 1.86
+        font-size: 1.6rem
+        line-height: 1.62
         position: relative
         &::before
           content: ''
           position: absolute
-          top: 1.4rem
+          top: 1.2rem
           left: -2.9rem
           width: 1.6rem
           height: 1px
@@ -277,9 +298,11 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-        margin-bottom: -.7rem
+        // margin-bottom: -.7rem
+        width: 98%
+        margin-bottom: 2rem
       &:not(:last-child)
-        margin-bottom: 3.1rem
+        margin-bottom: 3.2rem
       &-decor
         flex-shrink: 0
         margin-top: .5rem
@@ -288,9 +311,9 @@
           width: 1.2rem
           height: auto
       &-title
-        font-size: 1.6rem
+        font-size: 1.8rem
         font-weight: 600
         margin-bottom: .8rem
       &-description
-        font-size: 1.3rem
-        line-height: 1.85
+        font-size: 1.6rem
+        line-height: 1.62

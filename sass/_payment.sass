@@ -1,19 +1,19 @@
 .main-payment
   background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
 .payment
-  margin-top: 15.15rem
-  padding: 3.5rem 0 9rem
+  margin-top: 15.8rem
+  padding: 2.5rem 0 8.7rem
   .path
     margin-bottom: 7.3rem
   &-heading
-    width: 59%
-    margin-bottom: 4.5rem
+    width: 66%
+    margin-bottom: 5.4rem
   &-title
     font-size: 4.2rem
-    margin-bottom: 1.8rem
+    margin-bottom: 4rem
   &-description
-    font-size: 1.4rem
-    line-height: 1.57
+    font-size: 1.6rem
+    line-height: 1.62
   &-content
     display: flex
     justify-content: space-between
@@ -26,18 +26,18 @@
     &__heading
       display: flex
       align-items: center
-      padding: 3.1rem 10rem 2.7rem 6.1rem
+      padding: 4.2rem 6rem 3.5rem 6.1rem
       background: rgba(26, 137, 255, 0.1)
       .decor
         margin-right: 2.8rem
       &-text
-        font-size: 1.3rem
-        line-height: 1.69
+        font-size: 1.6rem
+        line-height: 1.62
         color: rgba(0, 0, 0, 0.82)
-        span
-          font-weight: 500
+        // span
+        //   font-weight: 500
     &__body
-      padding: 8.5rem 6.2rem 5rem
+      padding: 8.5rem 6.2rem 3.7rem
       display: flex
       justify-content: space-between
       flex-wrap: wrap
@@ -48,11 +48,22 @@
           color: #000
         &.label-checkbox
           margin-bottom: 0
+          align-items: flex-start
+          span
+            width: 1.6rem
+            height: 1.6rem
+            margin-top: 0.8rem
+            &::after
+              width: .9rem
+              height: .9rem
           .checkbox-title
-            line-height: 1.83
+            line-height: 2.17
             color: #000
+            a
+              text-decoration: underline
         input
           color: #1A89FF
+          height: 4.2rem
           &::placeholder
             color: #1A89FF
         &.wide
@@ -62,28 +73,28 @@
         width: 100%
         display: flex
         align-items: center
-        margin-top: -2rem
-        padding-bottom: 3.8rem
+        margin-top: -1.8rem
+        padding-bottom: 3rem
         position: relative
-        &::before
-          content: ''
-          position: absolute
-          bottom: 0
-          left: 0
-          right: 0
-          height: 1px
-          border: 0.8px solid rgba(0, 0, 0, 0.1)
-          opacity: .4
+        // &::before
+        //   content: ''
+        //   position: absolute
+        //   bottom: 0
+        //   left: 0
+        //   right: 0
+        //   height: 1px
+        //   border: 0.8px solid rgba(0, 0, 0, 0.1)
+        //   opacity: .4
     &__system
       display: flex
       align-items: center
-      margin-left: 3.2rem
+      margin-left: 2rem
       &-item
-        width: 5rem
+        width: 7rem
         &:not(:last-child)
-          margin-right: 1.4rem
+          margin-right: 2.1rem
     .form-privacy
-      margin-top: 3.2rem
+      margin-top: 0
   &-info
     width: 34.3%
     &__heading
@@ -103,13 +114,16 @@
       img
         width: 2rem
     &__title
-      font-size: 2.2rem
-      font-weight: 500
-      span
-        font-weight: 700
+      font-size: 1.8rem
+      font-weight: 600
+      // span
+      //   font-weight: 700
     &__item
+      display: flex
+      flex-direction: column
+      // align-items: flex-start
       width: 47.1%
-      padding: 3.4rem 2.6rem 3.2rem
+      padding: 2.2rem 2.6rem 2.5rem
       background: #fff
       border-radius: 0.6rem
       &:not(:nth-last-child(-n+2))
@@ -119,22 +133,24 @@
         justify-content: space-between
         flex-wrap: wrap
       &-text
-        font-size: 1.3rem
-        font-weight: 500
-        line-height: 1.85
-        margin-bottom: 2rem
+        font-size: 1.6rem
+        // font-weight: 500
+        line-height: 1.62
+        margin-bottom: 3.4rem
       &-city
         color: #1A89FF
       &-btn
         display: flex
         align-items: center
         justify-content: space-between
-        padding: 1.5rem 2rem
+        padding: 1.7rem 2rem
         background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
-        font-size: 1.3rem
-        font-weight: 500
-        line-height: 1.54
+        border-radius: 1rem
+        font-size: 1.8rem
+        font-weight: 600
+        // line-height: 1.44
         color: rgba(#000, .82)
+        margin-top: auto
         img
           width: 1.6rem
           flex-shrink: 0

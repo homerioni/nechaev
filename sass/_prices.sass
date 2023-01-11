@@ -1,50 +1,75 @@
 .prices
-  padding: 10.5rem 5rem 8.8rem
+  // padding: 10.5rem 5rem 8.8rem
+  padding: 8.6rem 0 8rem
   background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
   // margin-bottom: 10rem
   &-title
     font-weight: 400
-    margin-bottom: 3.6rem
+    margin-bottom: 5.2rem
     span
       font-weight: 700
+  &-inner
+    display: flex
+    justify-content: space-between
+  &-side
+    width: 19.8%
+  &-right
+    width: 77%
+    &__title
+      font-size: 2.8rem
+      font-weight: 700
+      color: #000
+      margin: 1.2rem 0 3.7rem
   &-content
-    margin-bottom: 4.8rem
+    margin-bottom: 6rem
   &-heading
-    margin-bottom: 4rem
+    margin-bottom: 4.5rem
     .prices-item
       display: flex
       align-items: center
       justify-content: space-between
-      padding: 2.8rem 13.9rem 2.8rem 4.7rem
+      padding: 4.1rem 13.9rem 4.1rem 4.7rem
       font-size: 1.8rem
       font-weight: 700
       color: rgba(#000, .82)
       &__left
         display: flex
         align-items: center
+      // &__title
+      //   font-weight: 600
       .decor
         margin-right: 1.6rem
   &-item
-    min-height: 8.2rem
+    // min-height: 9.8rem
     background: #fff
     border-radius: 0.6rem
     box-shadow: 0 .8rem 3rem rgba(0, 0, 0, 0.08)
+    box-shadow: -.5rem .4rem 6rem rgba(0, 0, 0, 0.06), 0 0 5rem rgba(0, 0, 0, 0.1)
     &:not(:last-child)
       margin-bottom: 2rem
     &__heading
+      min-height: 9.8rem
       display: flex
       justify-content: space-between
       align-items: center
-      padding: 2.4rem 5.1rem 2.4rem 5.6rem
+      // padding: 3.2rem 5.1rem 3.2rem 5.6rem
+      padding: 2.3rem 5.1rem 2.3rem 5.6rem
       &.active
-        label.label-checkbox
-          .checkbox-title
-            color: #1A89FF
+        .checkbox-title
+          color: #1A89FF 
         .prices-item__arrow
           border-color: #1A89FF
           transform: rotate(-180deg)
     &__left
       width: 81%
+      padding-right: 12rem
+      display: flex
+      .checkbox-title
+        font-size: 1.8rem
+        font-weight: 600
+        line-height: 1.44
+        transition: color .25s
+        cursor: pointer
     label.label-checkbox
       span
         width: 2.4rem
@@ -55,15 +80,11 @@
         &::after
           width: 1.2rem
           height: 1.2rem
-      .checkbox-title
-        font-size: 1.5rem
-        font-weight: 600
-        transition: color .25s
     &__cost
       margin-left: 5.2rem
       margin-right: auto
       font-size: 1.8rem
-      font-weight: 600
+      font-weight: 700
       color: #1A89FF
     &__arrow
       display: flex
@@ -81,7 +102,7 @@
     &__dropdown
       display: none
       margin: 0 13.5rem 0 10.5rem
-      padding: 3rem 0 3.4rem
+      padding: 2.8rem 0 3.1rem
       position: relative
       &::before
         content: ''
@@ -96,19 +117,19 @@
       &:not(:last-child)
         margin-bottom: 2rem
       &-title
-        font-size: 1.4rem
-        font-weight: 600
-        margin-bottom: 1.7rem
+        font-size: 1.6rem
+        // font-weight: 600
+        margin-bottom: 3rem
     &__list
       padding-left: 2.9rem
       li
-        font-size: 1.4rem
-        line-height: 1.86
+        font-size: 1.6rem
+        line-height: 1.62
         position: relative
         &::before
           content: ''
           position: absolute
-          top: 1.4rem
+          top: 1.3rem
           left: -2.8rem
           width: 1.6rem
           height: 1px
@@ -116,35 +137,50 @@
     &__time
       display: flex
       align-items: center
-      margin-top: 2.6rem
+      margin-top: 3.8rem
       &-icon
         width: 2.2rem
         flex-shrink: 0
         margin-right: 1.2rem
       &-text
-        font-size: 1.3rem
-        span
-          font-weight: 600
+        font-size: 1.6rem
+        // span
+        //   font-weight: 600
   &-bottom
-    display: flex
+    display: flex!important
     justify-content: space-between
     align-items: center
   &-total
     margin-left: auto
     margin-right: 3.1rem
     font-size: 1.6rem
-    font-weight: 500
+    // font-weight: 500
     span
-      font-size: 2rem
-      font-weight: 600
+      font-size: 1.8rem
+      font-weight: 700
       margin-left: 0.3rem
   &-btn
     &__more.btn
+      min-width: 32rem
       background: #fff
+      svg
+        width: 1.1rem
       &:hover
         svg
           path
             fill: #fff
             stroke: #fff
     &__order.btn
-      min-width: 22.4rem
+      min-width: 32rem
+  
+  &.prices-services
+    padding: 4rem 0 6rem
+    background: none
+    .prices
+      &-item
+        &__left
+          width: 74.5%
+          padding-right: 5rem
+  &.prices-price
+    background: linear-gradient(87.45deg, rgba(24, 55, 117, 0.06) 1.08%, rgba(20, 99, 197, 0.06) 99.1%)
+    

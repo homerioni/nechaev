@@ -86,16 +86,23 @@ input[type="number"]::-webkit-outer-spin-button
 input[type="number"]
   -moz-appearance: textfield
 
+@media (max-width: 75em)
+  html
+    font-size: .83333333vw
+    
+  .container
+    width: 104rem
+
 @media (max-width: 48em)
   html
     font-size: 5px
     font-size: 1.5625vw
-    font-size: (100/320) * 5vw
+    font-size: calc(100 / 375) * 5vw
     -webkit-text-size-adjust: none
 
   body
     -webkit-text-size-adjust: none
 
   .container
-    padding: 0 3.8rem
+    padding: 0 4rem
     width: 100%

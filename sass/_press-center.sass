@@ -1,26 +1,30 @@
 .press-center
-  padding: 8.2rem 0 8rem
+  padding: 7.2rem 0 8rem
   &__content
     display: flex
     justify-content: space-between
   &__side
-    width: 19.3%
+    margin-top: .8rem
+    width: 19.8%
   &__body
     width: 77%
   &__group
     .blog
       &-heading
-        margin-bottom: 3.6rem
+        margin-bottom: 6rem
+      &-title
+        font-size: 4.2rem
       &-more.btn
-        padding: 0 3.3rem
+        padding: 0 2.3rem
       &-slider
         &-wrapper
           display: grid
           grid-template-columns: repeat(3, 1fr)
-          grid-gap: 3.8rem 3.2rem
+          // grid-gap: 3.8rem 3.2rem
+          grid-gap: 3rem 3rem
         &__item
           width: 100%
-          min-height: 34rem
+          min-height: 40rem
           padding: 3.8rem 4rem 11rem
           box-shadow: none
           &.wide
@@ -28,65 +32,71 @@
             padding: 3.8rem 4rem 7rem
             .blog-slider
               &__label
-                margin-bottom: 2rem
+                margin-bottom: 3rem
               &__title
-                width: 55%
-                font-size: 2.6rem
+                margin-left: 0.5rem
+                width: 70%
+                font-size: 3.4rem
                 font-weight: 600
-                line-height: 1.31
-                margin-bottom: 1.8rem
+                line-height: 1.48
+                margin-bottom: 2.1rem
               &__description
                 display: block
                 margin-bottom: 2rem
               &__info
-                right: 4.6rem
-                bottom: 4rem
+                left: 6.5rem
+                right: 4rem
+                bottom: 3.5rem
           &:not(.wide)
+            padding: 3.8rem 2.5rem 11rem
             .blog-slider
               &__label
-                margin-bottom: 4.2rem
+                margin-bottom: 7.3rem
               &__title
                 width: 100%
                 font-size: 1.8rem
-                font-weight: 700
+                // font-weight: 700
                 line-height: 1.44
                 margin-left: 0
               &__info
                 display: block
-                left: 4rem
-                right: 4rem
-                bottom: 4rem
+                left: 2.5rem
+                right: 2.5rem
+                bottom: 3.5rem
               &__left
                 max-width: none
-                margin-bottom: 2.5rem
+                margin-bottom: 1.8rem
                 margin-left: 2rem
+        &__label
+          height: 4.7rem
         &__description
           display: none
-          width: 75%
-          font-size: 1.4rem
-          font-weight: 500
-          line-height: 1.86
-          margin-left: .5rem 
+          width: 90%
+          font-size: 1.6rem
+          // font-weight: 500
+          line-height: 1.62
+          margin-left: .5rem  
     &:not(:last-child)
       margin-bottom: 8rem
   .news
-    padding-bottom: 7.6rem
+    padding-bottom: 8rem
     &-heading
-      margin-bottom: 4.2rem
+      margin-bottom: 6rem
     &-content
       &::after
         content: none
     &-slider
       &-wrapper
-        justify-content: space-between
+        // justify-content: space-between
       &__item
         width: 33.8rem
-        padding: 4rem 3rem 5.3rem 5.1rem
+        padding: 4rem 4.6rem 3.3rem
         &:not(:last-child)
-          margin-right: 0
+          margin-right: 3.2rem
       &__date
-        margin-bottom: 3rem
+        margin-left: 0.2rem
+        margin-bottom: 4.2rem
       &__title
-        font-size: 1.6rem
-        line-height: 1.62
-        margin-bottom: 2.5rem
+        font-size: 1.8rem
+        line-height: 1.44
+        margin-bottom: 3.5rem

@@ -1,43 +1,46 @@
 .contacts
-  padding: 8.5rem 0 10rem
+  padding: 9.5rem 0 8.5rem
   &-content
     display: flex
     justify-content: space-between
   &-title
     font-weight: 400
-    margin-bottom: 4.3rem
+    margin-bottom: 4.7rem
     span
       font-weight: 700
   &-group
     border-bottom: 0.8px solid rgba(0, 0, 0, 0.1)
     &:not(:last-child)
-      margin-bottom: 2.5rem
+      margin-bottom: 1.7rem
   &-info
     width: 31.4%
     flex-shrink: 0
+    // margin-top: .5rem
     color: rgba(#000, .8)
     &__block
-      width: 82%
+      width: 95%
       display: flex
-      margin-bottom: 1.7rem
+      margin-bottom: 2.8rem
       &-img
         width: 1.2rem
         flex-shrink: 0
-        margin-top: 0.6rem
+        margin-top: 0.9rem
         margin-right: 2.2rem
         svg
           width: 100%
           height: auto
       &-text
-        font-size: 1.4rem
-        line-height: 1.71
+        font-size: 1.6rem
+        line-height: 1.62
         color: #000
         span
-          font-weight: 500
+          font-size: 1.8rem
+          font-weight: 600
+          margin-right: .5rem
     &__btn.btn
       min-width: auto
-      padding: 0 5.8rem
-      margin: 1.3rem 0 3.2rem
+      padding: 0 8rem
+      margin: 2.5rem 0 5.6rem
       &.active
         background: #286BB2
         color: #fff
@@ -50,49 +53,57 @@
         transition: transform .25s
     &__more
       display: none
-      margin-bottom: 8rem
+      margin-bottom: 7.1rem
       &-group
         &:not(:last-of-type)
-          margin-bottom: 5rem
+          margin-bottom: 7.1rem
       &-title
-        font-size: 2.2rem
-        font-weight: 500
-        line-height: 1.36
-        margin-bottom: 2.2rem
+        width: 75%
+        font-size: 1.6rem
+        // font-weight: 500
+        line-height: 1.62
+        margin-bottom: 2.7rem
         span
+          font-size: 1.8rem
           font-weight: 700
       &-subtitle
-        font-size: 2rem
-        +futura
-        font-weight: 450
-        margin: 3rem 0 2rem
+        font-size: 1.8rem
+        // +futura
+        font-weight: 700
+        margin: 3.2rem 0 2.2rem
       &-description
-        width: 78%
-        font-size: 1.4rem
-        line-height: 1.86
+        width: 87%
+        font-size: 1.6rem
+        line-height: 1.62
         color: rgba(#000, .82)
       &-coordinates
         display: flex
         &-item
-          font-size: 1.4rem
+          font-size: 1.6rem
           color: rgba(0, 0, 0, 0.4)
           &:not(:last-child)
-            margin-right: 4.8rem
+            margin-right: 3.7rem
         &-title
-          margin-bottom: .6rem
+          margin-bottom: 1.3rem
         &-number
           color: rgba(0, 0, 0, 0.82)
     &__links
       display: flex
       flex-direction: column
       align-items: flex-start
-      font-size: 1.6rem
-      font-weight: 500
-      letter-spacing: .01em
-      margin-bottom: 3rem
+      font-size: 1.8rem
+      font-weight: 600
+      // letter-spacing: .01em
+      margin-bottom: 2rem
     &__phone
+      font-weight: 700
       color: #1A89FF
-      margin-bottom: 1.2rem
+      margin-bottom: 2.5rem
+      transition: color .25s
+      &:hover
+        transition: color .25s
+        color: rgba(#000, .8)
+        
     &__email
       color: rgba(#000, .8)
       transition: color .25s
@@ -101,7 +112,20 @@
     &__social
       display: flex
       align-items: center
-      margin: 4rem 1.2rem
+      margin: 3rem 1.2rem 4.2rem
+      &-text
+        position: absolute
+        bottom: -3rem
+        background: #1A89FF
+        color: #fff
+        font-size: 1.4rem
+        width: fit-content
+        white-space: nowrap
+        padding: 0.4rem
+        border-radius: 1rem
+        opacity: 0
+        right: 0
+        transition: opacity .25s
       &-item
         width: 3.8rem
         height: 3.8rem
@@ -113,9 +137,14 @@
         position: relative
         flex-shrink: 0
         transition: all .25s
+        
         &:hover
           border-color: rgba(255, 255, 255, 0.2)
           background: #1A89FF
+          transition: opacity .25s
+          .contacts-info__social-text
+            opacity: 1
+            transition: opacity .25s
           &::after
             background: #1A89FF
           img
@@ -150,20 +179,29 @@
     &__bottom
       display: flex
       align-items: center
+      margin-top: 2.5rem
       &-text
-        font-size: 1.4rem
-        font-weight: 500
-        margin-right: 2.8rem
+        font-size: 1.8rem
+        font-weight: 600
+        margin-right: auto
       &-social
         display: flex
         align-items: center
         &-item
-          width: 1.8rem
+          width: 2.1rem
+          opacity: 0.45
+          transition: opacity .25s
+          position: relative
+          &:hover
+            opacity: 1
+            &::after
+              opacity: 1
           &:not(:last-child)
-            margin-right: 2.6rem
+            margin-right: 1.3rem
   &-map
     width: 63%
     height: 65.8rem
+    margin-top: 0.3rem
     flex-shrink: 0
     .ymaps-2-1-79
       &-ground-pane
@@ -175,14 +213,23 @@
           padding: 0
           background: none
     .hint
-      padding: 3.2rem 3rem
+      padding: 3rem 3.1rem
       background: #fff
       border-radius: 0.6rem
       box-shadow: 0 .4rem 5rem rgba(0, 0, 0, 0.1)
-      font-size: 1.4rem
-      letter-spacing: .02em
+      font-size: 1.6rem
+      +mont
+      // letter-spacing: .02em
+      line-height: 1.62
       color: #1E1E1E
-      &-suptitle
-        margin-bottom: 1rem
+      // &-suptitle
+      //   margin-bottom: 1rem
       &-title
-        font-weight: 600
+        font-size: 1.8rem
+        font-weight: 700
+        line-height: 1.44
+
+.contacts-content-tab
+  display: none
+.contacts-content-tab--active
+  display: flex

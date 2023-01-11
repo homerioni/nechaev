@@ -1,13 +1,13 @@
 .publications
-  padding-bottom: 5.5rem
+  padding-bottom: 5.3rem
   &-heading
-    margin-bottom: 3.4rem
+    margin-bottom: 5.4rem
   &-title
     font-size: 4.2rem
-    margin-bottom: 1.2rem
+    margin-bottom: 4.7rem
   &-subtitle
     font-size: 1.8rem
-    font-weight: 500
+    font-weight: 600
     color: rgba(0, 0, 0, 0.82)
   &-content
     position: relative
@@ -27,23 +27,60 @@
         width: 100%
         height: 17rem
         background: linear-gradient(63deg, #102E69 10.03%, #2E4B91 90.57%)
-        border: .14rem solid #1A89FF
+        // border: .14rem solid #1A89FF
         border-radius: .6rem
         margin-bottom: 2.5rem
+        position: relative
         // box-shadow: 0px 9px 39px rgba(0, 0, 0, 0.12), 0px 8.62233px 10.9549px rgba(0, 0, 0, 0.046221)
+        &::before,
+        &::after 
+          content: ""
+          position: absolute
+          width: 0
+          height: 0
+          transition: .5s ease-in-out
+          border-radius: .6rem  
+        &::before 
+          top: 0
+          left: 0
+          border-top: 0px solid #1A89FF
+          border-left: 0px solid #1A89FF
+    
+    
+        &::after 
+            right: 0
+            bottom: 0
+            border-bottom: 0px solid #1A89FF
+            border-right: 0px solid #1A89FF
+    
+        &:hover::before,
+        &:hover::after 
+            width: 100%
+            height: 100%
+            
+        &:hover::before
+            border-top: 3px solid #1A89FF
+            border-left: 3px solid #1A89FF
+        &:hover::after
+            border-bottom: 3px solid #1A89FF
+            border-right: 3px solid #1A89FF
         img
           height: 100%
           object-fit: cover
       &-text
-        width: 90%
-        font-size: 1.4rem
-        line-height: 1.57
+        // width: 90%
+        font-size: 1.6rem
+        line-height: 1.62
         color: rgba(0, 0, 0, 0.9)
         opacity: 0.7
+        transition: color .25s
+      &:hover
+        .publications-slider__item-text
+          color: #1A89FF
   &-button
     &-prev, &-next
       opacity: 0
-      top: 33%
+      top: 31.5%
       z-index: 2
       &.swiper-button-disabled
         opacity: 0
@@ -51,3 +88,25 @@
       transform: translate(-50%, -50%)
     &-next
       transform: translate(50%, -50%)
+  &-pagination.swiper-pagination
+    .swiper-pagination-bullet
+      svg
+        path
+          stroke: #1A89FF
+      &::before
+        background: #1A89FF
+      &-active
+        svg
+          animation-duration: 8s
+  .slider-kit
+    position: unset
+    .slider
+      &-button
+        &-prev, &-next
+          position: absolute
+        &-prev
+          transform: translate(-50%, -50%)
+        &-next
+          transform: translate(50%, -50%)
+      &-pagination.swiper-pagination
+        display: none

@@ -39,17 +39,17 @@
 							</div>
 						</div>
 					</div>
-
+					
 					<div class="header-group header-consultation desktop">
 						<div class="header-group__title">Консультация:</div>
 						<div class="header-social">
-							<a href="#" class="header-social__item">
-								<img src="img/whatsapp.svg" alt="">
+							<a href="#" tooltip="написать в whatsapp"  class="header-social__item">
+								<img src="img/whatsapp.svg" alt="whatsapp">
 							</a>
-							<a href="#" class="header-social__item">
+							<a href="#" tooltip="написать в viber" class="header-social__item">
 								<img src="img/viber.svg" alt="">
 							</a>
-							<a href="#" class="header-social__item">
+							<a href="#" tooltip="написать в telegram" class="header-social__item">
 								<img src="img/telegram.svg" alt="">
 							</a>
 						</div>
@@ -1761,7 +1761,29 @@
 								</svg>
 							</div>
 
-							<div class="swiper-pagination slider-pagination mass-media-pagination"></div>
+							<div class="swiper-pagination slider-pagination mass-media-pagination">
+								<span class="swiper-pagination-bullet">
+									    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									          <path opacity="0.2"
+									           d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+									            stroke="white" stroke-width="1.4" />
+									    </svg>
+								</span>
+								<span class="swiper-pagination-bullet">
+									<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										  <path opacity="0.2"
+										   d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+											stroke="white" stroke-width="1.4" />
+									</svg>
+							</span>
+							<span class="swiper-pagination-bullet">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									  <path opacity="0.2"
+									   d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+										stroke="white" stroke-width="1.4" />
+								</svg>
+							</span>
+							</div>
 
 							<div class="swiper-button-next slider-button-next other-slider-button mass-media-button-next">
 								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1971,7 +1993,29 @@
 								</svg>
 							</div>
 
-							<div class="swiper-pagination slider-pagination blog-pagination"></div>
+							<div class="swiper-pagination slider-pagination blog-pagination">
+								<span class="swiper-pagination-bullet">
+									<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+										  <path opacity="0.2"
+										   d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+											stroke="white" stroke-width="1.4" />
+									</svg>
+							</span>
+							<span class="swiper-pagination-bullet">
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+									  <path opacity="0.2"
+									   d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+										stroke="white" stroke-width="1.4" />
+								</svg>
+						</span>
+						<span class="swiper-pagination-bullet">
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								  <path opacity="0.2"
+								   d="M1 13C1 19.6274 6.37258 25 13 25C19.2907 25 25 19.6274 25 13C25 6.37258 19.6274 1 13 1C6.37258 1 1 6.37258 1 13Z"
+									stroke="white" stroke-width="1.4" />
+							</svg>
+						</span>
+							</div>
 
 							<div class="swiper-button-next slider-button-next other-slider-button blog-button-next">
 								<svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2288,11 +2332,11 @@
 		</div>
 	</footer>
 
-	<div class="popup" id="popup">
+	<div  class="popup" id="popup">
 		<div class="popup-wrap">
 			<div class="popup-content">
 				<div class="popup-close">
-					<img src="img/delete.svg" alt="">
+					<img src="img/deletewhite.svg" alt="">
 				</div>
 
 				<img src="img/logo-decor.png" alt="" class="popup-content__img">
@@ -2316,7 +2360,7 @@
 						</label>
 
 						<label>
-							<input type="email" required placeholder="example@yandex.ru:">
+							<input type="email" required placeholder="example@yandex.ru">
 							<span>Введите E-mail</span>
 						</label>
 
@@ -2329,7 +2373,7 @@
 
 						<div class="form-privacy">
 							<!-- <button class="popup-form__btn btn consultation-btn">Получить консультацию</button> -->
-							<button class="popup-form__btn btn consultation-btn"></button>
+							<button class="popup-form__btn btn consultation-btn">Получить консультацию</button>
 
 							<label class="label-checkbox">
 								<input type="checkbox" class="visually-hidden" checked>

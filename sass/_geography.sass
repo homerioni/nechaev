@@ -1,27 +1,30 @@
 .geography
   // padding: 10.5rem 0 1.6rem
-  padding: 10.5rem 0 2.4rem
+  padding: 8.5rem 0 6.4rem
   box-shadow: 0 -.4rem 6rem rgba(0, 0, 0, 0.2), 0 0 5rem rgba(0, 0, 0, 0.1)
   &-heading
-    width: 40%
+    width: 45%
+    position: relative
+    z-index: 1
   &-title
     margin-bottom: 2.5rem
   &-description
-    font-size: 1.4rem
-    line-height: 1.86
+    font-size: 1.6rem
+    line-height: 1.62
     color: rgba(#000, .82)
   &-content
     display: flex
     justify-content: flex-end
-    margin-top: -9rem
+    margin-top: -1rem
     // margin-right: 1.5rem
-    margin-right: 5.3rem
+    margin-right: 8.3rem
     position: relative
   &-map
     // width: 137.2rem
     // height: 71.7rem
     width: 133.5rem
     height: 70.9rem
+    flex-shrink: 0
     position: relative
     .spot
       display: flex
@@ -89,14 +92,14 @@
   &-info
     position: absolute
     // bottom: 10.8rem
-    bottom: 10rem
+    bottom: 9.8rem
     left: 0
     z-index: 1
     &::before
       content: ''
       position: absolute
-      top: 0
-      right: -.5rem
+      top: 0.3rem
+      right: .8rem
       width: 4.8rem
       height: 4.8rem
       border-radius: 50%
@@ -104,11 +107,11 @@
       z-index: -1
     &__number
       font-size: 3.4rem
-      font-weight: 600
+      font-weight: 700
       line-height: 1
       color: #1A89FF
     &__title
-      font-size: 1.3rem
+      font-size: 1.6rem
       color: rgba(#000, .6)
 
 @keyframes mapSpotAnimate
